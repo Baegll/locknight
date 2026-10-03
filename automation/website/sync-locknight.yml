@@ -1,0 +1,84 @@
+# Install this file in Baegll/Baegll.github.io/.github/workflows/.
+name: Sync Locknight
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-locknight
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          submodules: recursive
+
+      - name: Read latest Locknight commit
+        id: source
+        run: |
+          previous=$(git -C tools/locknight rev-parse HEAD)
+          git submodule update --init --remote tools/locknight
+          latest=$(git -C tools/locknight rev-parse HEAD)
+          echo "sha=$latest" >> "$GITHUB_OUTPUT"
+          if [ "$previous" != "$latest" ]; then
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v4
+        if: steps.source.outputs.changed == 'true'
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - name: Integrate and build website
+        if: steps.source.outputs.changed == 'true'
+        run: |
+          node tools/locknight/scripts/integrate.mjs .
+          npm ci
+          npx astro build --outDir _site
+          test -f _site/projects/locknight/index.html
+          test -f _site/projects/locknight/preferences/index.html
+          git diff --check
+
+      - name: Create or update the Locknight PR
+        if: steps.source.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/locknight
+          base: main
+          title: Update Locknight
+          commit-message: Update Locknight
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          body: |
+            Updates Locknight to https://github.com/Baegll/locknight/commit/${{ steps.source.outputs.sha }}.
+
+            The submodule and copied app files are updated together.
+            The complete website build and Locknight output checks passed before this PR was updated.
+
+            Further Locknight pushes update this same PR until it is merged.
+            Merge to publish through the existing GitHub Pages workflow.
+          add-paths: |
+            tools/locknight
+            src/client
+            src/lib
+            src/config
+            src/vendor
+            src/styles/locknight.css
+            src/pages/projects
+            public/projects/locknight

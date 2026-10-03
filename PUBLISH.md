@@ -104,6 +104,9 @@ passes. Verify the full website build in your normal terminal before merging.
 
 ## 3. Update later
 
+For push notifications and one reusable website update PR, follow
+[AUTOMATION.md](AUTOMATION.md). The manual commands below remain available.
+
 Commit and push Locknight source changes first. In the website repository:
 
 ```powershell

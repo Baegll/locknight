@@ -12,8 +12,8 @@
   "preferences": [
     {"value": -1, "label": "Avoid"},
     {"value": 0, "label": "Neutral"},
-    {"value": 1, "label": "Comfortable"},
-    {"value": 2, "label": "Preferred"},
+    {"value": 1, "label": "Comfortable", "shortLabel": "Comfort"},
+    {"value": 2, "label": "Preferred", "shortLabel": "Prefer"},
     {"value": 3, "label": "Favorite"}
   ]
 }

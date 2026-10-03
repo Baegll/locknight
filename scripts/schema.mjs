@@ -1,5 +1,5 @@
 import {writeFile,mkdir} from 'node:fs/promises';
-import {heroes} from '../src/lib/catalog.mjs';
+import {allHeroes as heroes} from '../src/lib/catalog.mjs';
 const ref=name=>({$ref:`#/$defs/${name}`}),id={type:'string',pattern:'^[a-zA-Z0-9_-]{1,100}$'},date={type:'string',format:'date-time'},text={type:'string',minLength:1,maxLength:500};
 const object=(properties,required=Object.keys(properties))=>({type:'object',properties,required});
 const team={type:'array',items:id,minItems:6,maxItems:6,uniqueItems:true},hero={enum:heroes.map(h=>h.id)},winner={enum:['amber','sapphire']};
@@ -12,7 +12,7 @@ const schema={
   patch:object({id,label:text,effectiveAt:date,refreshedAt:date,sourceUrl:{type:'string',pattern:'^https://steamdb\\.info/(app/1422450/patchnotes/|patchnotes/[0-9]+/?)$'}}),
   edit:object({at:date,previousWinner:winner,winner}),
   metadata:object({model:{const:'PlackettLuce'},calculationVersion:{const:1},parameters:object({mu:{type:'number',exclusiveMinimum:0,maximum:1000},sigma:{type:'number',exclusiveMinimum:0,maximum:1000},beta:{type:'number',exclusiveMinimum:0,maximum:1000},tau:{type:'number',minimum:0,maximum:1000}})}),
-  match:object({id,timestamp:date,patchId:id,teams:object({amber:team,sapphire:team}),heroes:{type:'object',minProperties:12,maxProperties:12,additionalProperties:hero},winner,draft:object({mode:{enum:['random','manual','captains']},settings:{type:'object'},snapshot:object({amberProbability:{type:'number',minimum:0,maximum:1},ratings:{type:'object',minProperties:12,maxProperties:12,additionalProperties:ref('rating')}})}),edits:{type:'array',items:ref('edit')}}),
+  match:object({id,timestamp:date,patchId:id,teams:object({amber:team,sapphire:team}),heroes:{type:'object',minProperties:12,maxProperties:12,additionalProperties:hero},winner,draft:object({mode:{enum:['random','manual','captains']},settings:{type:'object',properties:{allowDuplicateHeroes:{type:'boolean'},excludedHeroes:{type:'array',items:hero,uniqueItems:true}}},snapshot:object({amberProbability:{type:'number',minimum:0,maximum:1},ratings:{type:'object',minProperties:12,maxProperties:12,additionalProperties:ref('rating')}})}),edits:{type:'array',items:ref('edit')}}),
   history:object({playerId:id,heroId:{anyOf:[hero,{type:'null'}]},matchId:id,timestamp:date,patchId:id,mu:{type:'number'},sigma:{type:'number',exclusiveMinimum:0}})
  }
 };

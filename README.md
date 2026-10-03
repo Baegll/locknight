@@ -1,37 +1,67 @@
 # Locknight
 
-A browser app for 6v6 Deadlock drafts, match records, and player ratings, implemented from [DESIGN.md](DESIGN.md). Data can be imported and exported as JSON.
+6v6 Deadlock drafts, hero preferences, match records, and player ratings.
 
-## Run
+## Run locally
 
-Use Node 24.19.0 (see `.node-version`). Normally run `npm ci`, then `npm run dev`. In this managed workspace, `node_modules` is a junction to the existing personal site's Astro installation because npm network access is blocked. Do not run `npm install` through that junction; use a regular installation when moving the project.
+Use Node 24.19.0 or newer. In a fresh clone:
 
-Open **http://127.0.0.1:4321/projects/locknight/**. The portfolio homepage and projects listing in this workspace are copies of `../Baegll.github.io`; the projects page links to Locknight. `localhost:4321` also currently reaches the preview; the numeric IPv4 URL avoids depending on local hostname resolution.
+```sh
+npm ci
+npm run dev
+```
 
-New browsers start with an empty roster and match history. Add players in **Players**, or import records in **Data & patches**. Download the configured [empty JSON](public/projects/locknight/initial-records.json) to prepare records yourself. **Start fresh** restores that file after confirmation. Existing saved browser records are preserved on upgrade. Mark at least 12 players Ready, draft teams, choose heroes, select a winner, and record the match. More players can be ready than will be drafted. Sit out skips one recorded match; Away lasts until changed. Export JSON before clearing browser data. An unrecorded draft is temporary; records persist in local storage.
+Open http://127.0.0.1:4321/projects/locknight/.
 
-See [PUBLISH.md](PUBLISH.md) for GitHub setup and deployment through the personal website. Synthetic data is kept only in `tests/fixtures/` and is not included in the app build.
+## Run a lobby
 
-The interface uses the personal site's `Portfolio.astro` layout and shared design tokens, fonts, and theme preference. [BRAND.md](BRAND.md) describes the visual and copy rules. The app uses direct labels and short instructions, with optional explanations on hover and keyboard focus. [CONFIG.md](CONFIG.md) lists the editable files. [JSON-FORMAT.md](JSON-FORMAT.md) explains both file formats using simplified technical English.
+1. Add players under **Players**, or import existing records under **Data & patches**.
+2. Mark players **Ready**, **Sit out**, or **Away**. More than 12 can be Ready; each match drafts 12.
+3. Choose **Balanced random**, **Random**, **Captains**, or **Manual teams**.
+4. Assign heroes, select the winning team, and record the match.
+5. Export JSON to keep a backup.
 
-## Draft rules
+Balanced random favors even teams. Random ignores ratings. Both give each player two hero choices. Captains use snake picks and optional hero bans. Manual teams support drag and drop.
 
-- Games are always 6v6. Substitutes become distinct roster players. Remakes and abandoned games are not recorded as completed results.
-- Pool availability edits preserve the current draft, hero choices, bans, and winner. Captain drafts update only their undrafted pick pool. Assigned players stay in the current match even when marked Away or Sit out; those statuses affect later drafts. Sit out returns to Ready after a match that the player did not play.
-- Captains are assigned to their own teams before picking. Choose them manually or use Random captains.
-- Simple Draft: Sapphire, Amber, Amber, Sapphire, Sapphire, Amber, Amber, Sapphire, Sapphire, Amber. The first-side selector defaults to Amber.
-- One Ban Draft: Amber hero ban, Sapphire hero ban, then the ten snake picks. The first-banning side receives the last player pick.
-- Two Ban Draft: first ban round, six player picks (three drafted players per side, in addition to the captains), second ban round, four remaining player picks. Each ban removes one hero. The First ban selector can reverse sides.
-- Balanced random draws 12 Ready players, then prefers estimates near 50%. Random draws 12 Ready players without that balance bias. Both offer two distinct heroes per player. Choose one option before recording. Random heroes rerolls all options; the per-player ↻ button rerolls only that player. Hero preferences are stored, not used to bias assignment.
-- Manual mode assigns exactly six distinct players per side. Drag Ready players into slots or use team selectors. Captain drafts also accept drops on the side whose turn it is. Heroes must be unique across both teams; banned and other players’ reserved heroes cannot be assigned.
+Changing availability keeps the current draft. Sit out returns to Ready after a recorded match the player did not play. Away stays until changed. Hero priorities are saved for reference; they do not bias random draws.
 
-## Data and ratings
+Share `/projects/locknight/preferences/` with players. They can export their preferences for the lobby leader to import under **Players**.
 
-The frozen [JSON schema](public/projects/locknight/schema-v1.json) is version 1. Runtime validation additionally checks unique and safe IDs, cross-record references, two distinct six-player teams, 12 catalog heroes, full draft rating snapshots, and ban constraints. Invalid imports preserve the current records. Valid imports require confirmation before replacement.
+## Records
 
-Match ordering is timestamp followed by ID. Corrections keep an edit trail; the original draft snapshot stays intact. Every replay starts with the declared priors and updates overall and player/hero ratings from team wins and losses. Ratings carry across patch boundaries. Reports show sample counts, μ and σ, conservative μ − 3σ, hero records, teammate pairs, and draft-time expectations versus outcomes. Sparse history does not measure individual contribution.
+Records stay in the current browser; there is no shared database. New browsers start with an empty roster and match history. **Start fresh** clears records after confirmation. Export a backup before clearing browser storage or replacing records.
 
-`src/lib/skill.mjs` specializes the MIT-licensed OpenSkill Plackett–Luce equations for two teams and equal participation. It follows the upstream tau update and uses a normal CDF approximation (error under 8e-8). This is a focused local implementation, not the npm OpenSkill package. Attribution and the license are in `src/vendor/`. Control feedback uses short CSS transitions. Placement and hero selection animate the affected slots. These effects are configured per hero and respect reduced motion. Ordinary row updates and section changes do not replay entrance animations.
+Imports validate records. Corrections keep an edit trail. Player and hero ratings carry across patches.
+
+- [Empty starting records](public/projects/locknight/initial-records.json)
+- [JSON format reference](docs/json-format.md)
+- [Records schema](public/projects/locknight/schema-v1.json)
+- [Player schema](public/projects/locknight/player-schema-v1.json)
+
+Synthetic records are kept in `tests/fixtures/`, outside the app bundle. Keep real backups in the ignored `records/` or `private/` folders.
+
+## Configuration
+
+| File | Settings |
+| --- | --- |
+| [draft.json](src/config/draft.json) | Modes, balance settings, hero choice count, priority labels. |
+| [heroes.json](src/config/heroes.json) | Stable hero IDs and names. |
+| [hero-random.json](src/config/hero-random.json) | Preference weights, duplicate heroes, default random bans, temporary Rat King roll. |
+| [hero-particles.json](src/config/hero-particles.json) | Case reveal colors, shapes, motion, size, distance, spin, and duration for each hero. |
+| [ratings.json](src/config/ratings.json) | Rating defaults for new records. |
+| [tooltips.json](src/config/tooltips.json) | Hover and keyboard explanations. |
+| [motion.json](src/config/motion.json) | Placement and hero effects. |
+| [patch-catalog.json](public/projects/locknight/patch-catalog.json) | Patch titles, UTC times, and BuildIDs. |
+
+Keep hero IDs stable. After editing the catalog, run `node scripts/schema.mjs`. After changing rating defaults or patches, run `npm run prepare:empty`. Existing records keep their own rating settings. The patch catalog is a saved snapshot; use `npm run sync:patches` to update it. Only titled patches are listed. New matches automatically use the latest titled patch; there is no draft patch selector.
+
+Use the website's layout and design tokens, direct labels, optional tooltips, and motion that respects reduced-motion settings.
+
+**Allow duplicate heroes** permits shared heroes; each player's options stay distinct. The **Random ban list** excludes heroes from normal rolls, with Rat King excluded by default. Manual selections remain available. **Random for Rat King** rolls one standalone hero with Rat King included and does not assign it to a player.
+
+`preferenceWeights` sets relative draw weights by preference value. Neutral is `1`; Avoid is `9/49` (about `0.184`), Comfortable is `1.125`, Preferred is `1.15`, and Favorite is `1.175`. With one rated hero and nine neutral heroes, the first draw gives Avoid a 1-in-50 chance and Comfortable a 1-in-9 chance. Each option is drawn without replacement, so later odds depend on remaining heroes and reservations. Players are shuffled before heroes are reserved. Set every weight to `1` for unweighted draws. The standalone case roll has no player preferences.
+
+Baba, Deadman Danny, Nurse Harrow, Solomon, and Violet have inactive catalog entries. Set `active` to `true` when you want to include them. Fetch wiki portraits with `npm run sync:portraits`, or use `node scripts/sync-wiki-portraits.mjs --html path/to/saved-heroes-page.html`. Existing portraits are preserved on failure; cards try wiki file links when local portraits are missing, then show initials if no image loads.
 
 ## Commands
 
@@ -39,33 +69,27 @@ Match ordering is timestamp followed by ID. Corrections keep an edit trail; the 
 npm run build
 npm test
 npm run test:browser
-npm run report -- tests/fixtures/demo-source.json --patch demo-patch-01 --json artifacts/report.json
-npm run report -- tests/fixtures/demo-source.json --rebuild artifacts/rebuilt.json
+npm run report -- records/locknight.json
 npm run sync:patches
-node scripts/sync-patches.mjs --html path/to/saved-steamdb-page.html
-node scripts/sync-heroes.mjs
-node scripts/schema.mjs
-node scripts/generate-demo.mjs
+npm run prepare:empty
 ```
 
-Patch sync attempts SteamDB and preserves the existing catalog if its request or parsing fails. A saved page with rendered patch rows can be supplied with `--html`. The UI loads that catalog; for a deployed static site, rebuild and deploy after syncing. Manual UTC patches work independently of SteamDB. The checked-in catalog contains the 24 SteamDB rows supplied by the user on 2026-10-03. It is a saved snapshot, not a verified live fetch; synthetic patches exist only in test fixtures. Fresh records load this catalog. Refresh catalog merges it into existing records. Hero sync accepts a saved Deadlock API JSON as its optional first argument and preserves existing IDs. Regenerate the schema after catalog changes.
+Browser checks require Chrome. Set `CHROME_PATH` for another Chromium installation. Results go in `artifacts/`. On Windows, use `npm.cmd` if PowerShell blocks `npm`.
 
-Browser tests use installed Chrome with an isolated profile in `artifacts/`, disabled GPU acceleration and no browser sandbox inside the already restricted execution environment. Set `CHROME_PATH` for another Chromium installation. They use Chrome's native DevTools protocol; no browser automation package download is required. Screenshots and test results are saved in `artifacts/`.
+## Website updates
 
-## Personal website integration
+The website uses this repository as the `tools/locknight` submodule and deploys at `/projects/locknight/`.
 
-The local portfolio integration is implemented and browser-tested in this workspace. The original sibling site directory is outside the writable workspace. The complete integration can be applied from a session with write access to that site:
+Pushes to `main` request a website build and update one **Update Locknight** PR on `automation/locknight`. Merge it to publish. A scheduled check runs about every 15 minutes. Start a sync manually under **Actions > Sync Locknight > Run workflow**.
+
+To install the website workflow, run this from the website directory and commit the resulting file:
 
 ```sh
-npm run integrate -- ../Baegll.github.io
+node ../locknight/scripts/install-website-automation.mjs .
 ```
 
-This copies the app route/modules, empty starting records, schemas, catalog and retained licenses, adds the Locknight project card once, and adjusts the project count. It needs only the site's existing Astro dependency. Run the site's build to produce `/projects/locknight/index.html`; publish through the site's normal GitHub Pages workflow. The app uses the root `/projects/locknight/` path and does not require Sites hosting.
+Merge the workflow into the website's `main`. In its **Settings > Actions > General**, allow GitHub Actions to create pull requests. For immediate notifications, save `WEBSITE_SYNC_TOKEN` in Locknight's Actions secrets: a fine-grained token restricted to `Baegll.github.io`, with **Actions: Read and write**. Without it, the scheduled check handles updates.
 
-The standalone app and portfolio preview build successfully. A full sibling-site copy was also staged under `integration-check/`; its existing Quartz blog bundler fails in this managed environment because esbuild cannot read parent directories while resolving imports. Full-site build verification and application to the original site remain pending in a session with the required filesystem access.
+For manual integration, update the submodule and run `node tools/locknight/scripts/integrate.mjs .` from the website directory.
 
-Sources: [OpenSkill equations](https://github.com/philihp/openskill.js), [SteamDB patch catalog](https://steamdb.info/app/1422450/patchnotes/), [Deadlock Labs draft reference](https://deadlocklabs.gg/draft-pick/), [Deadlock hero API](https://assets.deadlock-api.com/v2/heroes). The draft reference informed the flow; no source or assets were copied from it.
-
-## Player preferences
-
-Share `/projects/locknight/preferences/` with players. Each player fills in their name and preferences, then downloads a small JSON file. **Players → Import player** validates it and lets the leader choose a roster record to update or add it as a new player. This preserves match history and stable roster IDs. The profile page stores its own draft separately from the leader’s data. The optional player schema is `public/projects/locknight/player-schema-v1.json`.
+OpenSkill attribution and its MIT license are retained in [src/vendor/openskill/LICENSE](src/vendor/openskill/LICENSE).

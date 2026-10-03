@@ -12,7 +12,8 @@
     "report": "node scripts/report.mjs",
     "sync:patches": "node scripts/sync-patches.mjs",
     "integrate": "node scripts/integrate.mjs",
-    "prepare:empty": "node scripts/prepare-empty.mjs"
+    "prepare:empty": "node scripts/prepare-empty.mjs",
+    "sync:portraits": "node scripts/sync-wiki-portraits.mjs"
   },
   "dependencies": {
     "astro": "^7.3.5"

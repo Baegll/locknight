@@ -64,7 +64,12 @@
               "vyper",
               "warden",
               "wraith",
-              "yamato"
+              "yamato",
+              "baba",
+              "deadman-danny",
+              "nurse-harrow",
+              "solomon",
+              "violet"
             ]
           },
           "additionalProperties": {

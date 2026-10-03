@@ -1,6 +1,6 @@
 // Snapshot supplied by the lobby leader, 2026-10-03. All times are UTC.
 import {writeFile} from 'node:fs/promises';
-import {emptyData,validateData,patchSource} from '../src/lib/data.mjs';
+import {emptyData,validateData,patchSource,isTitledPatch} from '../src/lib/data.mjs';
 const rows=[
  ['2026-10-03','00:51','No title','25689475'],['2026-10-02','22:36','No title','25687758'],
  ['2026-10-02','21:34','No title','25686905'],['2026-10-02','21:23','No title','25686732'],
@@ -16,5 +16,6 @@ const rows=[
 ];
 const refreshedAt=new Date().toISOString();
 const patches=rows.map(([date,time,title,buildId])=>({id:`steamdb-${buildId}`,buildId,title,label:title==='No title'?`No title · ${buildId}`:title,effectiveAt:`${date}T${time}:00.000Z`,sourceUrl:`https://steamdb.info/patchnotes/${buildId}/`,refreshedAt}));
-validateData({...emptyData(),patches});
-await writeFile('public/projects/locknight/patch-catalog.json',JSON.stringify({schemaVersion:1,sourceUrl:patchSource,provenance:'User-supplied SteamDB table, 2026-10-03. Live synchronization not verified.',refreshedAt,patches},null,2)+'\n');
+const titled=patches.filter(isTitledPatch);
+validateData({...emptyData(),patches:titled});
+await writeFile('public/projects/locknight/patch-catalog.json',JSON.stringify({schemaVersion:1,sourceUrl:patchSource,provenance:'User-supplied SteamDB table, 2026-10-03. Live synchronization not verified.',refreshedAt,patches:titled},null,2)+'\n');

@@ -1,5 +1,5 @@
 import {readFile,writeFile,mkdir,rename} from 'node:fs/promises';
-import {emptyData,validateData,patchSource} from '../src/lib/data.mjs';
+import {emptyData,validateData,patchSource,isTitledPatch} from '../src/lib/data.mjs';
 export function parsePatches(html,refreshedAt=new Date().toISOString()){
  const result=[];
  for(const row of html.match(/<tr\b[^>]*>[\s\S]*?<\/tr>/gi)??[]){
@@ -19,11 +19,11 @@ async function main(){
  let html;
  if(index>=0)html=await readFile(args[index+1],'utf8');
  else{const response=await fetch(patchSource,{signal:AbortSignal.timeout(15000),headers:{'User-Agent':'Locknight local patch sync'}});if(!response.ok)throw Error(`SteamDB returned ${response.status}`);html=await response.text();}
- const patches=parsePatches(html);if(!patches.length)throw Error('SteamDB returned no parseable patch rows; existing catalog kept. Save the SteamDB page and use --html, or add patches manually.');
+ const patches=parsePatches(html).filter(isTitledPatch);if(!patches.length)throw Error('SteamDB returned no titled patch rows; existing catalog kept. Save the SteamDB page and use --html, or add patches manually.');
  validateData({...emptyData(),patches});
  const file='public/projects/locknight/patch-catalog.json';await mkdir('public/projects/locknight',{recursive:true});
  let prior=[];try{prior=JSON.parse(await readFile(file,'utf8')).patches;}catch{}
- const merged=[...new Map([...prior,...patches].map(p=>[p.id,p])).values()];
+ const merged=[...new Map([...prior,...patches].filter(isTitledPatch).map(p=>[p.id,p])).values()];
  const text=JSON.stringify({schemaVersion:1,sourceUrl:patchSource,refreshedAt:new Date().toISOString(),patches:merged},null,2);
  await writeFile(`${file}.tmp`,text);await rename(`${file}.tmp`,file);console.log(`Synchronized ${patches.length} SteamDB patches (${merged.length} retained). Rebuild the site when publishing.`);
 }

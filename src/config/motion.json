@@ -1,6 +1,8 @@
 {
   "placementMs": 340,
-  "heroMs": 420,
+  "heroMs": 900,
+  "groupHeroGlowMs": 1000,
+  "heroOptionsMs": 220,
   "staggerMs": 25,
   "defaultEffect": "pulse",
   "heroEffects": {

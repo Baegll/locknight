@@ -1,4 +1,4 @@
-import { heroes } from './catalog.mjs';
+import { allHeroes as heroes } from './catalog.mjs';
 import { parameters, rating, rateTeams, ordinal, probability } from './skill.mjs';
 export const teamIds=['amber','sapphire'];
 export const patchSource='https://steamdb.info/app/1422450/patchnotes/';
@@ -27,15 +27,18 @@ export function validateData(input){
     assert(object(m.teams)&&object(m.heroes),'Missing match teams or heroes');
     const all=teamIds.flatMap(t=>{assert(Array.isArray(m.teams[t])&&m.teams[t].length===6,'Matches must be 6v6');return m.teams[t];});
     assert(new Set(all).size===12&&all.every(p=>ps.has(p)),'Unknown or duplicate match player');
-    assert(Object.keys(m.heroes).length===12&&all.every(p=>hs.has(m.heroes[p]))&&new Set(all.map(p=>m.heroes[p])).size===12,'Each player needs a unique catalog hero');
+    const duplicates=m.draft?.settings?.allowDuplicateHeroes===true;
+    assert(Object.keys(m.heroes).length===12&&all.every(p=>hs.has(m.heroes[p]))&&(duplicates||new Set(all.map(p=>m.heroes[p])).size===12),'Each player needs a catalog hero; duplicates require duplicate-hero mode');
     assert(teamIds.includes(m.winner),'Invalid winner');
     assert(object(m.draft)&&['captains','random','manual'].includes(m.draft.mode)&&object(m.draft.settings),'Invalid draft mode or settings');
+    if(m.draft.settings.allowDuplicateHeroes!==undefined)assert(typeof m.draft.settings.allowDuplicateHeroes==='boolean','Invalid duplicate-hero setting');
+    if(m.draft.settings.excludedHeroes!==undefined){const excluded=m.draft.settings.excludedHeroes;assert(Array.isArray(excluded)&&new Set(excluded).size===excluded.length&&excluded.every(h=>hs.has(h)),'Invalid random exclusion list');}
     const s=m.draft.snapshot;assert(object(s)&&finite(s.amberProbability)&&s.amberProbability>=0&&s.amberProbability<=1&&object(s.ratings),'Invalid draft rating snapshot');
     assert(Object.keys(s.ratings).length===12&&all.every(pid=>object(s.ratings[pid])),'Snapshot must include all 12 match players');
     for(const r of Object.values(s.ratings))assert(object(r)&&finite(r.mu)&&finite(r.sigma)&&r.sigma>0,'Invalid snapshot rating');
     if(m.draft.settings.bannedHeroes!==undefined){assert(Array.isArray(m.draft.settings.bannedHeroes)&&m.draft.settings.bannedHeroes.every(h=>hs.has(h)),'Invalid banned heroes');assert(all.every(pid=>!m.draft.settings.bannedHeroes.includes(m.heroes[pid])),'Match assigns a banned hero');}
     if(m.draft.settings.readyPlayers!==undefined){const ready=m.draft.settings.readyPlayers;assert(Array.isArray(ready)&&new Set(ready).size===ready.length&&ready.every(pid=>ps.has(pid))&&all.every(pid=>ready.includes(pid)),'Invalid ready player pool');}
-    if(m.draft.settings.heroOptions!==undefined){const options=m.draft.settings.heroOptions;assert(object(options),'Invalid hero options');const seen=new Set();for(const [pid,values] of Object.entries(options)){assert(all.includes(pid)&&Array.isArray(values)&&values.length>0&&values.every(h=>hs.has(h)&&!seen.has(h)&&!m.draft.settings.bannedHeroes?.includes(h)),'Invalid or repeated hero option');for(const h of values){assert(!seen.has(h),'Repeated hero option');seen.add(h);}}}
+    if(m.draft.settings.heroOptions!==undefined){const options=m.draft.settings.heroOptions;assert(object(options),'Invalid hero options');const seen=new Set();for(const [pid,values] of Object.entries(options)){assert(all.includes(pid)&&Array.isArray(values)&&values.length>0&&new Set(values).size===values.length&&values.every(h=>hs.has(h)&&(duplicates||!seen.has(h))&&!m.draft.settings.bannedHeroes?.includes(h)),'Invalid or repeated hero option');for(const h of values){assert(duplicates||!seen.has(h),'Repeated hero option');seen.add(h);}}}
     assert(Array.isArray(m.edits)&&m.edits.every(e=>object(e)&&date(e.at)&&teamIds.includes(e.previousWinner)&&teamIds.includes(e.winner)),'Invalid result edit history');
   }
   // Derived records are always rebuilt from source matches.
@@ -78,4 +81,6 @@ export function report(d,patchId='all'){
 }
 export function correctWinner(d,matchId,winner){assert(teamIds.includes(winner),'Invalid winner');const m=d.matches.find(m=>m.id===matchId);assert(m,'Match not found');if(m.winner!==winner){m.edits.push({at:new Date().toISOString(),previousWinner:m.winner,winner});m.winner=winner;}return rebuild(d);}
 export function exportData(d){return {...d,ratingHistory:rebuild(d).history};}
-export function latestPatch(d,now=Date.now()){return [...d.patches].filter(p=>Date.parse(p.effectiveAt)<=now).sort((a,b)=>Date.parse(b.effectiveAt)-Date.parse(a.effectiveAt))[0];}
+export function isTitledPatch(p){const title=String(p.title??p.label??'').trim();return Boolean(title)&&!/^(?:no\s+title|untitled)\b/i.test(title)&&!/^\d+$/.test(title);}
+export function titledPatches(d){return d.patches.filter(isTitledPatch).sort((a,b)=>Date.parse(b.effectiveAt)-Date.parse(a.effectiveAt));}
+export function latestPatch(d,now=Date.now()){return titledPatches(d).find(p=>Date.parse(p.effectiveAt)<=now);}

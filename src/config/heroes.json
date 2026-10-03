@@ -154,5 +154,35 @@
   {
     "id": "yamato",
     "name": "Yamato"
+  },
+  {
+    "id": "baba",
+    "name": "Baba",
+    "active": false,
+    "wikiUrl": "https://deadlock.wiki/Baba"
+  },
+  {
+    "id": "deadman-danny",
+    "name": "Deadman Danny",
+    "active": false,
+    "wikiUrl": "https://deadlock.wiki/Deadman_Danny"
+  },
+  {
+    "id": "nurse-harrow",
+    "name": "Nurse Harrow",
+    "active": false,
+    "wikiUrl": "https://deadlock.wiki/Nurse_Harrow"
+  },
+  {
+    "id": "solomon",
+    "name": "Solomon",
+    "active": false,
+    "wikiUrl": "https://deadlock.wiki/Solomon"
+  },
+  {
+    "id": "violet",
+    "name": "Violet",
+    "active": false,
+    "wikiUrl": "https://deadlock.wiki/Violet"
   }
 ]

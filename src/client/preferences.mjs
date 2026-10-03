@@ -1,5 +1,5 @@
 import {heroes} from '../lib/catalog.mjs';
-import {playerProfile,validateProfile} from '../lib/profile.mjs';
+import {playerProfile,validateProfile,playerProfileFilename} from '../lib/profile.mjs';
 import tips from '../config/tooltips.json';
 import {installTooltips} from './tooltips.mjs';
 import {heroPreferenceButtons,highlightPreference} from './hero-preferences.mjs';
@@ -22,7 +22,7 @@ $('#profile-form').addEventListener('input',e=>{if(e.target.id==='profile-name')
 $('#profile-preferences').addEventListener('click',e=>{const button=e.target.closest('[data-profile-hero]');if(!button)return;p.preferences[button.dataset.profileHero]=Number(button.dataset.priority);highlightPreference(button);update();});
 $('#profile-form').addEventListener('submit',e=>{e.preventDefault();try{
  const profile=playerProfile(p),url=URL.createObjectURL(new Blob([JSON.stringify(profile,null,2)],{type:'application/json'}));
- const a=document.createElement('a');a.href=url;a.download=`locknight-player-${p.id}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notice('Send this JSON file to the lobby leader.');
+ const a=document.createElement('a');a.href=url;a.download=playerProfileFilename(profile.player);a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);notice('Send this JSON file to the lobby leader.');
 }catch(err){notice(err.message,true);}});
 $('#load-profile').addEventListener('click',()=>$('#profile-upload').click());
 $('#profile-upload').addEventListener('change',async e=>{try{const file=e.target.files[0];if(!file)return;if(file.size>1024*1024)throw Error('Player file must be smaller than 1 MB.');p=validateProfile(JSON.parse(await file.text())).player;render();notice('Preferences loaded.');}catch(err){notice(err.message,true);}finally{e.target.value='';}});

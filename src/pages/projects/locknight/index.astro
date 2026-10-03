@@ -6,12 +6,12 @@ import '../../../styles/locknight.css';
   <div class="locknight">
     <header class="ln-header">
       <div><a class="back-link" href="/projects/">Projects /</a><h1>Locknight<span class="title-period">.</span></h1><p class="project-description">6v6 Deadlock drafts and match records.</p></div>
-      <div class="actions"><span id="mode-badge" class="badge" hidden>Your data</span><button id="export-top" class="button">Export JSON</button></div>
+      <div class="header-actions"><span id="mode-badge" class="badge" hidden>Your data</span><button id="export-top" class="button">Export JSON</button><button id="stats-toggle" class="stats-toggle" type="button" role="switch" aria-checked="true" aria-label="Show draft statistics" data-action="statistics" data-tooltip="statistics"><span>Draft stats</span><span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span></button></div>
     </header>
     <nav class="ln-tabs" aria-label="Locknight sections">
       <button data-tab="draft" aria-current="page" class="active">Draft</button><button data-tab="roster">Players</button><button data-tab="history">Matches</button><button data-tab="reports">Stats</button><button data-tab="data">Data &amp; patches</button>
     </nav>
-    <div class="page-heading"><h2 id="page-title" tabindex="-1">Draft teams</h2><p id="page-description">Select 12 players, then choose a draft mode.</p></div>
+    <div class="page-heading"><h2 id="page-title" tabindex="-1">Draft teams</h2><p id="page-description">Mark players ready, then choose a draft mode.</p></div>
     <div id="notice" role="status" aria-live="polite" hidden></div>
     <section id="content" aria-labelledby="page-title"></section>
     <dialog id="confirm-dialog" aria-labelledby="confirm-title" aria-describedby="confirm-message"><form method="dialog"><h2 id="confirm-title">Replace data?</h2><p id="confirm-message"></p><div class="actions"><button class="button" value="cancel">Cancel</button><button class="button primary" value="confirm">Replace data</button></div></form></dialog>

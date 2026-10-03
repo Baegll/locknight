@@ -123,7 +123,12 @@
               "vyper",
               "warden",
               "wraith",
-              "yamato"
+              "yamato",
+              "baba",
+              "deadman-danny",
+              "nurse-harrow",
+              "solomon",
+              "violet"
             ]
           },
           "additionalProperties": {
@@ -334,7 +339,12 @@
               "vyper",
               "warden",
               "wraith",
-              "yamato"
+              "yamato",
+              "baba",
+              "deadman-danny",
+              "nurse-harrow",
+              "solomon",
+              "violet"
             ]
           }
         },
@@ -355,7 +365,64 @@
               ]
             },
             "settings": {
-              "type": "object"
+              "type": "object",
+              "properties": {
+                "allowDuplicateHeroes": {
+                  "type": "boolean"
+                },
+                "excludedHeroes": {
+                  "type": "array",
+                  "items": {
+                    "enum": [
+                      "abrams",
+                      "apollo",
+                      "bebop",
+                      "billy",
+                      "calico",
+                      "celeste",
+                      "drifter",
+                      "dynamo",
+                      "graves",
+                      "grey-talon",
+                      "haze",
+                      "holliday",
+                      "infernus",
+                      "ivy",
+                      "kelvin",
+                      "lady-geist",
+                      "lash",
+                      "mcginnis",
+                      "mina",
+                      "mirage",
+                      "mo-and-krill",
+                      "paige",
+                      "paradox",
+                      "pocket",
+                      "rat-king",
+                      "rem",
+                      "seven",
+                      "shiv",
+                      "silver",
+                      "sinclair",
+                      "doorman",
+                      "venator",
+                      "victor",
+                      "vindicta",
+                      "viscous",
+                      "vyper",
+                      "warden",
+                      "wraith",
+                      "yamato",
+                      "baba",
+                      "deadman-danny",
+                      "nurse-harrow",
+                      "solomon",
+                      "violet"
+                    ]
+                  },
+                  "uniqueItems": true
+                }
+              }
             },
             "snapshot": {
               "type": "object",
@@ -453,7 +520,12 @@
                 "vyper",
                 "warden",
                 "wraith",
-                "yamato"
+                "yamato",
+                "baba",
+                "deadman-danny",
+                "nurse-harrow",
+                "solomon",
+                "violet"
               ]
             },
             {

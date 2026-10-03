@@ -137,6 +137,11 @@ Their availability changes apply to later drafts.
 | `3` | Favorite |
 
 A missing hero preference means `0`.
+Random hero options use the player's preferences.
+Avoid reduces the chance. It does not exclude the hero.
+Positive preferences give small increases.
+The leader can change the weights in `src/config/hero-random.json`.
+The random ban list excludes heroes from random draws.
 Preferences do not change random hero draws.
 
 ### Patch record
@@ -163,9 +168,9 @@ Preferences do not change random hero draws.
 | `buildId` | Optional SteamDB BuildID. Store it as text. |
 | `title` | Optional original patch title. |
 
-The app selects the latest patch whose effective time is not in the future.
-The app keeps named patch titles.
-For an untitled build, the label includes `No title` and its BuildID.
+The app selects the latest titled patch whose effective time is not in the future.
+The patch list and selectors show titled patches only.
+Catalog updates exclude untitled builds. Old patch records remain valid in imported match history.
 Synthetic demo patches have synthetic labels.
 
 ### Match record
@@ -187,7 +192,7 @@ Synthetic demo patches have synthetic labels.
 
 All 12 player IDs must exist in the roster.
 A player cannot occur in both teams.
-All 12 heroes must be different.
+All 12 heroes must be different unless `draft.settings.allowDuplicateHeroes` is `true`.
 A match cannot contain a banned hero.
 Each snapshot must have a positive `sigma`.
 Balanced random uses `draft.mode: "random"` and `draft.settings.strategy: "balanced"`.
@@ -197,6 +202,10 @@ Only the 12 drafted players occur in the match teams.
 
 The settings can contain `bias`, `format`, `firstBan`, `strategy`, `bannedHeroes`, and `captains`.
 The settings can also contain `heroOptions` and `readyPlayers` for draft review.
+`allowDuplicateHeroes` is an optional Boolean. If it is absent, heroes must be different.
+`excludedHeroes` is an optional list of hero IDs excluded from normal random draws.
+It does not prohibit manual assignment. `bannedHeroes` prohibits assignment in the match.
+Each player's `heroOptions` must contain different heroes. Options can overlap between players only when duplicate heroes are allowed.
 These settings do not replace the final `heroes` record.
 
 A correction has this form:
@@ -284,7 +293,7 @@ The runtime validator also checks IDs and record references.
 The JSON schema alone cannot check all record references.
 The records schema is `public/projects/locknight/schema-v1.json`.
 The complete sample records are in `tests/fixtures/demo-source.json`.
-The single-match sample is [tests/fixtures/example-records.json](tests/fixtures/example-records.json).
+The single-match sample is [tests/fixtures/example-records.json](../tests/fixtures/example-records.json).
 Both sample files contain synthetic data.
 
 ## Local browser state

@@ -1,4 +1,4 @@
-import {heroes} from './catalog.mjs';
+import {allHeroes as heroes} from './catalog.mjs';
 const safeId = v => typeof v === 'string' && /^[a-zA-Z0-9_-]{1,100}$/.test(v) && !['__proto__','constructor','prototype'].includes(v);
 export function validateProfile(input) {
   if (!input || input.type !== 'locknight-player' || input.schemaVersion !== 1) throw Error('Use a Locknight player preference file.');
@@ -12,6 +12,10 @@ export function validateProfile(input) {
   return {type: 'locknight-player', schemaVersion: 1, player: {id: p.id, name: p.name.trim(), preferences: {...p.preferences}, notes: p.notes ?? ''}};
 }
 export function playerProfile(player) { return validateProfile({type:'locknight-player',schemaVersion:1,player}); }
+export function playerProfileFilename(player) {
+ const name=player.name.normalize('NFKC').trim().replace(/[^\p{L}\p{N}_-]+/gu,'-').replace(/-+/g,'-').replace(/^-|-$/g,'')||'Player';
+ return `locknight-player-${name}.json`;
+}
 export function mergeProfile(data, profile, targetId = '') {
   const {player: incoming} = validateProfile(profile);
   const next = structuredClone(data);

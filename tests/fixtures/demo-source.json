@@ -1,0 +1,5352 @@
+{
+  "schemaVersion": 1,
+  "calculationVersion": 1,
+  "players": [
+    {
+      "id": "demo-player-01",
+      "name": "Avery",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 2,
+        "doorman": -1,
+        "drifter": 0,
+        "dynamo": 0,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 1,
+        "infernus": 2,
+        "ivy": 0,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 3,
+        "mcginnis": 0,
+        "mina": 1,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": 0,
+        "paradox": 0,
+        "pocket": 1,
+        "seven": 0,
+        "shiv": 1,
+        "sinclair": 0,
+        "victor": 0,
+        "vindicta": 0,
+        "viscous": 3,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 3,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-02",
+      "name": "Blake",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 1,
+        "drifter": 0,
+        "dynamo": -1,
+        "grey-talon": 3,
+        "haze": 1,
+        "holliday": 3,
+        "infernus": 2,
+        "ivy": 0,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 0,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": -1,
+        "paige": 0,
+        "paradox": 0,
+        "pocket": 0,
+        "seven": -1,
+        "shiv": 0,
+        "sinclair": 0,
+        "victor": 1,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 1,
+        "yamato": 3
+      }
+    },
+    {
+      "id": "demo-player-03",
+      "name": "Casey",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 3,
+        "drifter": 0,
+        "dynamo": 0,
+        "grey-talon": 3,
+        "haze": 0,
+        "holliday": 1,
+        "infernus": 0,
+        "ivy": 1,
+        "kelvin": 1,
+        "lady-geist": 2,
+        "lash": 2,
+        "mcginnis": -1,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": 0,
+        "paradox": 0,
+        "pocket": 2,
+        "seven": 1,
+        "shiv": 0,
+        "sinclair": 0,
+        "victor": 1,
+        "vindicta": 0,
+        "viscous": 2,
+        "vyper": -1,
+        "warden": 0,
+        "wraith": 2,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-04",
+      "name": "Devon",
+      "enabled": true,
+      "preferences": {
+        "abrams": -1,
+        "bebop": -1,
+        "billy": 0,
+        "calico": 3,
+        "doorman": -1,
+        "drifter": 0,
+        "dynamo": 0,
+        "grey-talon": 2,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 0,
+        "ivy": -1,
+        "kelvin": 1,
+        "lady-geist": 0,
+        "lash": 1,
+        "mcginnis": 0,
+        "mina": 3,
+        "mirage": 2,
+        "mo-and-krill": 0,
+        "paige": 0,
+        "paradox": 3,
+        "pocket": 1,
+        "seven": 0,
+        "shiv": 0,
+        "sinclair": -1,
+        "victor": 0,
+        "vindicta": 2,
+        "viscous": 2,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 2,
+        "yamato": -1
+      }
+    },
+    {
+      "id": "demo-player-05",
+      "name": "Ellis",
+      "enabled": true,
+      "preferences": {
+        "abrams": -1,
+        "bebop": 1,
+        "billy": 2,
+        "calico": 3,
+        "doorman": 2,
+        "drifter": 2,
+        "dynamo": 3,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 1,
+        "infernus": 0,
+        "ivy": 0,
+        "kelvin": 1,
+        "lady-geist": 0,
+        "lash": 0,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": 0,
+        "paradox": 1,
+        "pocket": 1,
+        "seven": 0,
+        "shiv": 3,
+        "sinclair": 0,
+        "victor": 1,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 0,
+        "yamato": 3
+      }
+    },
+    {
+      "id": "demo-player-06",
+      "name": "Finley",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 1,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 0,
+        "drifter": 1,
+        "dynamo": 1,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": -1,
+        "infernus": 0,
+        "ivy": -1,
+        "kelvin": 3,
+        "lady-geist": 0,
+        "lash": 3,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": 0,
+        "paradox": 1,
+        "pocket": 0,
+        "seven": 3,
+        "shiv": 2,
+        "sinclair": 1,
+        "victor": -1,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 0,
+        "yamato": 2
+      }
+    },
+    {
+      "id": "demo-player-07",
+      "name": "Gray",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 3,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 2,
+        "drifter": 1,
+        "dynamo": 0,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 1,
+        "ivy": 2,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 3,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 1,
+        "mo-and-krill": 3,
+        "paige": 0,
+        "paradox": 3,
+        "pocket": 1,
+        "seven": 3,
+        "shiv": 0,
+        "sinclair": 1,
+        "victor": 1,
+        "vindicta": 1,
+        "viscous": 3,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 0,
+        "yamato": 2
+      }
+    },
+    {
+      "id": "demo-player-08",
+      "name": "Harper",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 1,
+        "billy": 1,
+        "calico": 0,
+        "doorman": 0,
+        "drifter": 0,
+        "dynamo": 1,
+        "grey-talon": 0,
+        "haze": 1,
+        "holliday": 0,
+        "infernus": 0,
+        "ivy": 0,
+        "kelvin": 0,
+        "lady-geist": 2,
+        "lash": -1,
+        "mcginnis": 0,
+        "mina": -1,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": -1,
+        "paradox": 0,
+        "pocket": -1,
+        "seven": 0,
+        "shiv": 0,
+        "sinclair": 1,
+        "victor": 0,
+        "vindicta": 2,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 1,
+        "wraith": 0,
+        "yamato": 2
+      }
+    },
+    {
+      "id": "demo-player-09",
+      "name": "Indigo",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 3,
+        "drifter": 1,
+        "dynamo": 0,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 0,
+        "ivy": 3,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 2,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 1,
+        "paige": 0,
+        "paradox": 2,
+        "pocket": 0,
+        "seven": 0,
+        "shiv": 0,
+        "sinclair": 0,
+        "victor": 2,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": -1,
+        "warden": 3,
+        "wraith": 2,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-10",
+      "name": "Jules",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 2,
+        "billy": 2,
+        "calico": 0,
+        "doorman": 1,
+        "drifter": -1,
+        "dynamo": 1,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 2,
+        "ivy": 0,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 0,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": -1,
+        "paradox": 0,
+        "pocket": 0,
+        "seven": 2,
+        "shiv": -1,
+        "sinclair": 0,
+        "victor": 0,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 0,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-11",
+      "name": "Kai",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 1,
+        "drifter": 1,
+        "dynamo": 0,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 1,
+        "infernus": 1,
+        "ivy": 3,
+        "kelvin": 0,
+        "lady-geist": 1,
+        "lash": 0,
+        "mcginnis": 3,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 3,
+        "paige": 0,
+        "paradox": 0,
+        "pocket": 2,
+        "seven": 0,
+        "shiv": 0,
+        "sinclair": 0,
+        "victor": 3,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": 1,
+        "warden": 1,
+        "wraith": 0,
+        "yamato": 1
+      }
+    },
+    {
+      "id": "demo-player-12",
+      "name": "Lane",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 1,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 3,
+        "drifter": 3,
+        "dynamo": 0,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 0,
+        "ivy": 1,
+        "kelvin": 3,
+        "lady-geist": 0,
+        "lash": 2,
+        "mcginnis": 2,
+        "mina": 2,
+        "mirage": 0,
+        "mo-and-krill": 2,
+        "paige": 1,
+        "paradox": 0,
+        "pocket": 1,
+        "seven": 0,
+        "shiv": 0,
+        "sinclair": 0,
+        "victor": 3,
+        "vindicta": 0,
+        "viscous": 2,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 0,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-13",
+      "name": "Morgan",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 2,
+        "calico": 0,
+        "doorman": 0,
+        "drifter": 3,
+        "dynamo": 0,
+        "grey-talon": 3,
+        "haze": 3,
+        "holliday": 1,
+        "infernus": 0,
+        "ivy": 2,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 0,
+        "mcginnis": 1,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": 3,
+        "paradox": 3,
+        "pocket": 2,
+        "seven": 2,
+        "shiv": 1,
+        "sinclair": 2,
+        "victor": 0,
+        "vindicta": 1,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 3,
+        "wraith": -1,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-14",
+      "name": "Noel",
+      "enabled": true,
+      "preferences": {
+        "abrams": 3,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 2,
+        "doorman": 1,
+        "drifter": 0,
+        "dynamo": 2,
+        "grey-talon": 2,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 0,
+        "ivy": 3,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 0,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 1,
+        "paige": 0,
+        "paradox": -1,
+        "pocket": 1,
+        "seven": 0,
+        "shiv": 3,
+        "sinclair": 2,
+        "victor": 2,
+        "vindicta": 0,
+        "viscous": 3,
+        "vyper": 0,
+        "warden": -1,
+        "wraith": 0,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-15",
+      "name": "Parker",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 1,
+        "calico": 0,
+        "doorman": 0,
+        "drifter": 0,
+        "dynamo": 2,
+        "grey-talon": -1,
+        "haze": 1,
+        "holliday": 0,
+        "infernus": -1,
+        "ivy": 0,
+        "kelvin": 0,
+        "lady-geist": -1,
+        "lash": 3,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": 0,
+        "paige": 2,
+        "paradox": 3,
+        "pocket": -1,
+        "seven": 0,
+        "shiv": 0,
+        "sinclair": 0,
+        "victor": 0,
+        "vindicta": 0,
+        "viscous": 2,
+        "vyper": 0,
+        "warden": 0,
+        "wraith": 0,
+        "yamato": 3
+      }
+    },
+    {
+      "id": "demo-player-16",
+      "name": "Quinn",
+      "enabled": true,
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 0,
+        "drifter": 2,
+        "dynamo": 0,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 3,
+        "ivy": 0,
+        "kelvin": 0,
+        "lady-geist": 3,
+        "lash": 0,
+        "mcginnis": 2,
+        "mina": 0,
+        "mirage": 0,
+        "mo-and-krill": -1,
+        "paige": 1,
+        "paradox": 1,
+        "pocket": 3,
+        "seven": 1,
+        "shiv": 0,
+        "sinclair": 3,
+        "victor": 0,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 1,
+        "wraith": 0,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-17",
+      "name": "Riley",
+      "enabled": true,
+      "preferences": {
+        "abrams": 2,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 0,
+        "doorman": 0,
+        "drifter": 1,
+        "dynamo": 0,
+        "grey-talon": 2,
+        "haze": 2,
+        "holliday": 0,
+        "infernus": 3,
+        "ivy": 2,
+        "kelvin": 0,
+        "lady-geist": 0,
+        "lash": 0,
+        "mcginnis": 0,
+        "mina": 0,
+        "mirage": 3,
+        "mo-and-krill": -1,
+        "paige": 0,
+        "paradox": 0,
+        "pocket": 1,
+        "seven": 1,
+        "shiv": 0,
+        "sinclair": 0,
+        "victor": 1,
+        "vindicta": 0,
+        "viscous": 0,
+        "vyper": 0,
+        "warden": 1,
+        "wraith": -1,
+        "yamato": 0
+      }
+    },
+    {
+      "id": "demo-player-18",
+      "name": "Sage",
+      "enabled": false,
+      "notes": "Synthetic demo reserve; disabled for drafting.",
+      "preferences": {
+        "abrams": 0,
+        "bebop": 0,
+        "billy": 0,
+        "calico": 1,
+        "doorman": 1,
+        "drifter": 1,
+        "dynamo": 0,
+        "grey-talon": 0,
+        "haze": 0,
+        "holliday": 0,
+        "infernus": 0,
+        "ivy": 1,
+        "kelvin": 2,
+        "lady-geist": 2,
+        "lash": 0,
+        "mcginnis": 3,
+        "mina": 0,
+        "mirage": 3,
+        "mo-and-krill": 0,
+        "paige": 2,
+        "paradox": 2,
+        "pocket": 0,
+        "seven": 0,
+        "shiv": 1,
+        "sinclair": 0,
+        "victor": 2,
+        "vindicta": 0,
+        "viscous": 1,
+        "vyper": 2,
+        "warden": 1,
+        "wraith": 0,
+        "yamato": 0
+      }
+    }
+  ],
+  "patches": [
+    {
+      "id": "demo-patch-01",
+      "label": "Synthetic demo patch A",
+      "effectiveAt": "2025-01-06T00:00:00.000Z",
+      "sourceUrl": "https://steamdb.info/app/1422450/patchnotes/",
+      "refreshedAt": "2025-01-06T00:00:00.000Z"
+    },
+    {
+      "id": "demo-patch-02",
+      "label": "Synthetic demo patch B",
+      "effectiveAt": "2025-02-03T00:00:00.000Z",
+      "sourceUrl": "https://steamdb.info/app/1422450/patchnotes/",
+      "refreshedAt": "2025-02-03T00:00:00.000Z"
+    },
+    {
+      "id": "demo-patch-03",
+      "label": "Synthetic demo patch C",
+      "effectiveAt": "2025-03-03T00:00:00.000Z",
+      "sourceUrl": "https://steamdb.info/app/1422450/patchnotes/",
+      "refreshedAt": "2025-03-03T00:00:00.000Z"
+    }
+  ],
+  "matches": [
+    {
+      "id": "demo-match-001",
+      "timestamp": "2025-01-07T18:00:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-08",
+          "demo-player-14",
+          "demo-player-03",
+          "demo-player-11",
+          "demo-player-17",
+          "demo-player-12"
+        ],
+        "sapphire": [
+          "demo-player-09",
+          "demo-player-07",
+          "demo-player-15",
+          "demo-player-01",
+          "demo-player-04",
+          "demo-player-05"
+        ]
+      },
+      "heroes": {
+        "demo-player-08": "drifter",
+        "demo-player-14": "paige",
+        "demo-player-03": "infernus",
+        "demo-player-11": "doorman",
+        "demo-player-17": "haze",
+        "demo-player-12": "warden",
+        "demo-player-09": "paradox",
+        "demo-player-07": "mirage",
+        "demo-player-15": "viscous",
+        "demo-player-01": "sinclair",
+        "demo-player-04": "dynamo",
+        "demo-player-05": "grey-talon"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.5,
+          "ratings": {
+            "demo-player-08": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-14": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-03": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-11": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-17": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-12": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-09": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-07": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-15": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-01": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-04": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-05": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-002",
+      "timestamp": "2025-01-08T19:13:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-15",
+          "demo-player-09",
+          "demo-player-01",
+          "demo-player-05",
+          "demo-player-10",
+          "demo-player-06"
+        ],
+        "sapphire": [
+          "demo-player-12",
+          "demo-player-14",
+          "demo-player-11",
+          "demo-player-17",
+          "demo-player-13",
+          "demo-player-08"
+        ]
+      },
+      "heroes": {
+        "demo-player-15": "doorman",
+        "demo-player-09": "pocket",
+        "demo-player-01": "lady-geist",
+        "demo-player-05": "mo-and-krill",
+        "demo-player-10": "infernus",
+        "demo-player-06": "mirage",
+        "demo-player-12": "bebop",
+        "demo-player-14": "billy",
+        "demo-player-11": "seven",
+        "demo-player-17": "wraith",
+        "demo-player-13": "mcginnis",
+        "demo-player-08": "drifter"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.358745,
+          "ratings": {
+            "demo-player-15": {
+              "mu": 23.821427417018555,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-09": {
+              "mu": 23.821427417018555,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-01": {
+              "mu": 23.821427417018555,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-05": {
+              "mu": 23.821427417018555,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-10": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-06": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-12": {
+              "mu": 26.178572582981445,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-14": {
+              "mu": 26.178572582981445,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-11": {
+              "mu": 26.178572582981445,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-17": {
+              "mu": 26.178572582981445,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-13": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-08": {
+              "mu": 26.178572582981445,
+              "sigma": 8.275810319338106
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-003",
+      "timestamp": "2025-01-09T20:26:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-13",
+          "demo-player-14",
+          "demo-player-05",
+          "demo-player-17",
+          "demo-player-10",
+          "demo-player-06"
+        ],
+        "sapphire": [
+          "demo-player-04",
+          "demo-player-15",
+          "demo-player-07",
+          "demo-player-09",
+          "demo-player-02",
+          "demo-player-12"
+        ]
+      },
+      "heroes": {
+        "demo-player-13": "sinclair",
+        "demo-player-14": "paradox",
+        "demo-player-05": "vindicta",
+        "demo-player-17": "mcginnis",
+        "demo-player-10": "warden",
+        "demo-player-06": "seven",
+        "demo-player-04": "victor",
+        "demo-player-15": "viscous",
+        "demo-player-07": "grey-talon",
+        "demo-player-09": "mo-and-krill",
+        "demo-player-02": "infernus",
+        "demo-player-12": "shiv"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.576869,
+          "ratings": {
+            "demo-player-13": {
+              "mu": 25.97249390674191,
+              "sigma": 8.277153886635853
+            },
+            "demo-player-14": {
+              "mu": 27.13768837769389,
+              "sigma": 8.220800196123932
+            },
+            "demo-player-05": {
+              "mu": 22.86231162230611,
+              "sigma": 8.220735736434502
+            },
+            "demo-player-17": {
+              "mu": 27.13768837769389,
+              "sigma": 8.220800196123932
+            },
+            "demo-player-10": {
+              "mu": 24.02750609325809,
+              "sigma": 8.27708806737696
+            },
+            "demo-player-06": {
+              "mu": 24.02750609325809,
+              "sigma": 8.27708806737696
+            },
+            "demo-player-04": {
+              "mu": 23.821427417018555,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-15": {
+              "mu": 22.86231162230611,
+              "sigma": 8.220735736434502
+            },
+            "demo-player-07": {
+              "mu": 23.821427417018555,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-09": {
+              "mu": 22.86231162230611,
+              "sigma": 8.220735736434502
+            },
+            "demo-player-02": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-12": {
+              "mu": 27.13768837769389,
+              "sigma": 8.220800196123932
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-004",
+      "timestamp": "2025-01-10T21:39:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-13",
+          "demo-player-01",
+          "demo-player-02",
+          "demo-player-09",
+          "demo-player-07",
+          "demo-player-17"
+        ],
+        "sapphire": [
+          "demo-player-14",
+          "demo-player-08",
+          "demo-player-15",
+          "demo-player-06",
+          "demo-player-03",
+          "demo-player-04"
+        ]
+      },
+      "heroes": {
+        "demo-player-13": "lash",
+        "demo-player-01": "vyper",
+        "demo-player-02": "paradox",
+        "demo-player-09": "warden",
+        "demo-player-07": "billy",
+        "demo-player-17": "paige",
+        "demo-player-14": "holliday",
+        "demo-player-08": "grey-talon",
+        "demo-player-15": "viscous",
+        "demo-player-06": "pocket",
+        "demo-player-03": "haze",
+        "demo-player-04": "infernus"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.437311,
+          "ratings": {
+            "demo-player-13": {
+              "mu": 27.032614731084863,
+              "sigma": 8.220333355394642
+            },
+            "demo-player-01": {
+              "mu": 22.86231162230611,
+              "sigma": 8.220735736434502
+            },
+            "demo-player-02": {
+              "mu": 23.925441106533494,
+              "sigma": 8.275270040611803
+            },
+            "demo-player-09": {
+              "mu": 21.81659192641495,
+              "sigma": 8.165021848409841
+            },
+            "demo-player-07": {
+              "mu": 22.761650692529553,
+              "sigma": 8.218955265845109
+            },
+            "demo-player-17": {
+              "mu": 28.18342447116973,
+              "sigma": 8.165146258995629
+            },
+            "demo-player-14": {
+              "mu": 28.18342447116973,
+              "sigma": 8.165146258995629
+            },
+            "demo-player-08": {
+              "mu": 27.13768837769389,
+              "sigma": 8.220800196123932
+            },
+            "demo-player-15": {
+              "mu": 21.81659192641495,
+              "sigma": 8.165021848409841
+            },
+            "demo-player-06": {
+              "mu": 25.08761005938659,
+              "sigma": 8.220268907995013
+            },
+            "demo-player-03": {
+              "mu": 26.178572582981445,
+              "sigma": 8.275810319338106
+            },
+            "demo-player-04": {
+              "mu": 22.761650692529553,
+              "sigma": 8.218955265845109
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-005",
+      "timestamp": "2025-01-11T18:52:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-01",
+          "demo-player-16",
+          "demo-player-13",
+          "demo-player-03",
+          "demo-player-05",
+          "demo-player-10"
+        ],
+        "sapphire": [
+          "demo-player-15",
+          "demo-player-14",
+          "demo-player-09",
+          "demo-player-06",
+          "demo-player-07",
+          "demo-player-02"
+        ]
+      },
+      "heroes": {
+        "demo-player-01": "wraith",
+        "demo-player-16": "mcginnis",
+        "demo-player-13": "lash",
+        "demo-player-03": "doorman",
+        "demo-player-05": "bebop",
+        "demo-player-10": "warden",
+        "demo-player-15": "mina",
+        "demo-player-14": "vyper",
+        "demo-player-09": "shiv",
+        "demo-player-06": "vindicta",
+        "demo-player-07": "paige",
+        "demo-player-02": "ivy"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.604684,
+          "ratings": {
+            "demo-player-01": {
+              "mu": 24.117222634182433,
+              "sigma": 8.164325092161446
+            },
+            "demo-player-16": {
+              "mu": 25,
+              "sigma": 8.333333333333334
+            },
+            "demo-player-13": {
+              "mu": 28.28740291012122,
+              "sigma": 8.163931095318182
+            },
+            "demo-player-03": {
+              "mu": 24.90679249992763,
+              "sigma": 8.218243703871806
+            },
+            "demo-player-05": {
+              "mu": 23.908031318197267,
+              "sigma": 8.165083124582075
+            },
+            "demo-player-10": {
+              "mu": 25.08761005938659,
+              "sigma": 8.220268907995013
+            },
+            "demo-player-15": {
+              "mu": 20.57863119632972,
+              "sigma": 8.109763667672723
+            },
+            "demo-player-14": {
+              "mu": 26.94542601906628,
+              "sigma": 8.109885520832387
+            },
+            "demo-player-09": {
+              "mu": 23.05455265650018,
+              "sigma": 8.109764285185966
+            },
+            "demo-player-06": {
+              "mu": 23.832841553325764,
+              "sigma": 8.163867360507185
+            },
+            "demo-player-07": {
+              "mu": 24.016018234644964,
+              "sigma": 8.162581714053026
+            },
+            "demo-player-02": {
+              "mu": 25.1970551578376,
+              "sigma": 8.217715477051026
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-006",
+      "timestamp": "2025-01-12T19:05:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-02",
+          "demo-player-06",
+          "demo-player-10",
+          "demo-player-15",
+          "demo-player-08",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-13",
+          "demo-player-16",
+          "demo-player-01",
+          "demo-player-17",
+          "demo-player-07",
+          "demo-player-09"
+        ]
+      },
+      "heroes": {
+        "demo-player-02": "warden",
+        "demo-player-06": "seven",
+        "demo-player-10": "pocket",
+        "demo-player-15": "bebop",
+        "demo-player-08": "abrams",
+        "demo-player-03": "grey-talon",
+        "demo-player-13": "sinclair",
+        "demo-player-16": "lash",
+        "demo-player-01": "billy",
+        "demo-player-17": "vindicta",
+        "demo-player-07": "calico",
+        "demo-player-09": "victor"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.358413,
+          "ratings": {
+            "demo-player-02": {
+              "mu": 24.18413543605338,
+              "sigma": 8.161815897052495
+            },
+            "demo-player-06": {
+              "mu": 22.833151670200742,
+              "sigma": 8.109072886948947
+            },
+            "demo-player-10": {
+              "mu": 26.101159288583997,
+              "sigma": 8.163862496510202
+            },
+            "demo-player-15": {
+              "mu": 19.59214634775711,
+              "sigma": 8.056064952455975
+            },
+            "demo-player-08": {
+              "mu": 25.88275768797305,
+              "sigma": 8.164387578349281
+            },
+            "demo-player-03": {
+              "mu": 25.919842431511572,
+              "sigma": 8.161879481418127
+            },
+            "demo-player-13": {
+              "mu": 29.287108400715972,
+              "sigma": 8.108690568902198
+            },
+            "demo-player-16": {
+              "mu": 26.041619503939838,
+              "sigma": 8.274538399387191
+            },
+            "demo-player-01": {
+              "mu": 25.117024609980454,
+              "sigma": 8.109076467817568
+            },
+            "demo-player-17": {
+              "mu": 29.42142292327318,
+              "sigma": 8.109886138373984
+            },
+            "demo-player-07": {
+              "mu": 23.016643156404633,
+              "sigma": 8.10781344787585
+            },
+            "demo-player-09": {
+              "mu": 22.0680676577128,
+              "sigma": 8.05606555754586
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-007",
+      "timestamp": "2025-01-13T20:18:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-16",
+          "demo-player-02",
+          "demo-player-01",
+          "demo-player-09",
+          "demo-player-08",
+          "demo-player-06"
+        ],
+        "sapphire": [
+          "demo-player-11",
+          "demo-player-13",
+          "demo-player-14",
+          "demo-player-12",
+          "demo-player-04",
+          "demo-player-17"
+        ]
+      },
+      "heroes": {
+        "demo-player-16": "billy",
+        "demo-player-02": "pocket",
+        "demo-player-01": "kelvin",
+        "demo-player-09": "yamato",
+        "demo-player-08": "mina",
+        "demo-player-06": "holliday",
+        "demo-player-11": "seven",
+        "demo-player-13": "dynamo",
+        "demo-player-14": "doorman",
+        "demo-player-12": "infernus",
+        "demo-player-04": "warden",
+        "demo-player-17": "lady-geist"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.356092,
+          "ratings": {
+            "demo-player-16": {
+              "mu": 24.63867653039922,
+              "sigma": 8.217513763923085
+            },
+            "demo-player-02": {
+              "mu": 25.549118555399502,
+              "sigma": 8.10706126772481
+            },
+            "demo-player-01": {
+              "mu": 23.76962296200542,
+              "sigma": 8.055445139058873
+            },
+            "demo-player-09": {
+              "mu": 20.738223126874377,
+              "sigma": 8.003492535564392
+            },
+            "demo-player-08": {
+              "mu": 27.2486010297671,
+              "sigma": 8.109580526048852
+            },
+            "demo-player-06": {
+              "mu": 24.180552128309643,
+              "sigma": 8.05538613594459
+            },
+            "demo-player-11": {
+              "mu": 27.13768837769389,
+              "sigma": 8.220800196123932
+            },
+            "demo-player-13": {
+              "mu": 27.939834977837805,
+              "sigma": 8.055066994432627
+            },
+            "demo-player-14": {
+              "mu": 25.958911528567597,
+              "sigma": 8.056184354092611
+            },
+            "demo-player-12": {
+              "mu": 26.091952284218053,
+              "sigma": 8.165084981375488
+            },
+            "demo-player-04": {
+              "mu": 21.507283150414143,
+              "sigma": 8.162581084165739
+            },
+            "demo-player-17": {
+              "mu": 28.073752221058868,
+              "sigma": 8.056238537619354
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-008",
+      "timestamp": "2025-01-14T21:31:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-16",
+          "demo-player-15",
+          "demo-player-13",
+          "demo-player-03",
+          "demo-player-06",
+          "demo-player-09"
+        ],
+        "sapphire": [
+          "demo-player-12",
+          "demo-player-05",
+          "demo-player-08",
+          "demo-player-04",
+          "demo-player-10",
+          "demo-player-01"
+        ]
+      },
+      "heroes": {
+        "demo-player-16": "mcginnis",
+        "demo-player-15": "holliday",
+        "demo-player-13": "mo-and-krill",
+        "demo-player-03": "dynamo",
+        "demo-player-06": "vyper",
+        "demo-player-09": "pocket",
+        "demo-player-12": "lash",
+        "demo-player-05": "haze",
+        "demo-player-08": "mina",
+        "demo-player-04": "drifter",
+        "demo-player-10": "ivy",
+        "demo-player-01": "abrams"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.400392,
+          "ratings": {
+            "demo-player-16": {
+              "mu": 23.676438095218714,
+              "sigma": 8.16146079833716
+            },
+            "demo-player-15": {
+              "mu": 20.921990678848065,
+              "sigma": 8.003437534110258
+            },
+            "demo-player-13": {
+              "mu": 28.864409566229906,
+              "sigma": 8.00212890538126
+            },
+            "demo-player-03": {
+              "mu": 27.284846816438304,
+              "sigma": 8.107123556340127
+            },
+            "demo-player-06": {
+              "mu": 23.255904283072017,
+              "sigma": 8.002625716375366
+            },
+            "demo-player-09": {
+              "mu": 19.825448984588753,
+              "sigma": 7.951758413588064
+            },
+            "demo-player-12": {
+              "mu": 27.041952739734473,
+              "sigma": 8.109919436991863
+            },
+            "demo-player-05": {
+              "mu": 24.90801894033664,
+              "sigma": 8.109818917984837
+            },
+            "demo-player-08": {
+              "mu": 26.31147112336833,
+              "sigma": 8.05573409653701
+            },
+            "demo-player-04": {
+              "mu": 22.45670110346814,
+              "sigma": 8.107466908182735
+            },
+            "demo-player-10": {
+              "mu": 27.466826969495198,
+              "sigma": 8.109066150534838
+            },
+            "demo-player-01": {
+              "mu": 22.844961572671142,
+              "sigma": 8.002683545028898
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-009",
+      "timestamp": "2025-01-15T18:44:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-08",
+          "demo-player-13",
+          "demo-player-14",
+          "demo-player-02",
+          "demo-player-03",
+          "demo-player-16"
+        ],
+        "sapphire": [
+          "demo-player-05",
+          "demo-player-01",
+          "demo-player-06",
+          "demo-player-15",
+          "demo-player-11",
+          "demo-player-17"
+        ]
+      },
+      "heroes": {
+        "demo-player-08": "doorman",
+        "demo-player-13": "lady-geist",
+        "demo-player-14": "infernus",
+        "demo-player-02": "holliday",
+        "demo-player-03": "kelvin",
+        "demo-player-16": "sinclair",
+        "demo-player-05": "warden",
+        "demo-player-01": "wraith",
+        "demo-player-06": "viscous",
+        "demo-player-15": "calico",
+        "demo-player-11": "ivy",
+        "demo-player-17": "pocket"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.591373,
+          "ratings": {
+            "demo-player-08": {
+              "mu": 27.305851255237442,
+              "sigma": 8.001182940670274
+            },
+            "demo-player-13": {
+              "mu": 27.883217779949,
+              "sigma": 7.948968535447892
+            },
+            "demo-player-14": {
+              "mu": 26.883742612265195,
+              "sigma": 8.003223945842542
+            },
+            "demo-player-02": {
+              "mu": 24.61257073986846,
+              "sigma": 8.053265645203606
+            },
+            "demo-player-03": {
+              "mu": 26.27774080168763,
+              "sigma": 8.05181543127289
+            },
+            "demo-player-16": {
+              "mu": 22.655788201127642,
+              "sigma": 8.10501906209162
+            },
+            "demo-player-05": {
+              "mu": 25.91579465731201,
+              "sigma": 8.05414753644302
+            },
+            "demo-player-01": {
+              "mu": 23.826289364687124,
+              "sigma": 7.949216669540386
+            },
+            "demo-player-06": {
+              "mu": 22.274590671925914,
+              "sigma": 7.949455315355396
+            },
+            "demo-player-15": {
+              "mu": 19.94047798258948,
+              "sigma": 7.950250739036783
+            },
+            "demo-player-11": {
+              "mu": 28.10069654410538,
+              "sigma": 8.164483457366774
+            },
+            "demo-player-17": {
+              "mu": 28.99859574375112,
+              "sigma": 8.003277046898843
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-010",
+      "timestamp": "2025-01-16T19:57:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-10",
+          "demo-player-14",
+          "demo-player-06",
+          "demo-player-16",
+          "demo-player-01",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-08",
+          "demo-player-12",
+          "demo-player-11",
+          "demo-player-09",
+          "demo-player-05",
+          "demo-player-07"
+        ]
+      },
+      "heroes": {
+        "demo-player-10": "paradox",
+        "demo-player-14": "lash",
+        "demo-player-06": "seven",
+        "demo-player-16": "calico",
+        "demo-player-01": "mcginnis",
+        "demo-player-03": "vyper",
+        "demo-player-08": "mina",
+        "demo-player-12": "mo-and-krill",
+        "demo-player-11": "infernus",
+        "demo-player-09": "shiv",
+        "demo-player-05": "grey-talon",
+        "demo-player-07": "abrams"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.536715,
+          "ratings": {
+            "demo-player-10": {
+              "mu": 28.474415627926632,
+              "sigma": 8.053410463654831
+            },
+            "demo-player-14": {
+              "mu": 27.881781953891206,
+              "sigma": 7.949188800224655
+            },
+            "demo-player-06": {
+              "mu": 21.289915231218867,
+              "sigma": 7.896617376865085
+            },
+            "demo-player-16": {
+              "mu": 23.679374886644016,
+              "sigma": 8.048868770997199
+            },
+            "demo-player-01": {
+              "mu": 22.84167303729453,
+              "sigma": 7.896383552262689
+            },
+            "demo-player-03": {
+              "mu": 27.28793478580333,
+              "sigma": 7.996777302232246
+            },
+            "demo-player-08": {
+              "mu": 28.303381671227474,
+              "sigma": 7.9471896581707275
+            },
+            "demo-player-12": {
+              "mu": 28.04975343644074,
+              "sigma": 8.054245959480118
+            },
+            "demo-player-11": {
+              "mu": 27.06203678155105,
+              "sigma": 8.107182689777343
+            },
+            "demo-player-09": {
+              "mu": 18.85656947687509,
+              "sigma": 7.89960861985673
+            },
+            "demo-player-05": {
+              "mu": 24.905015471647886,
+              "sigma": 7.999166517482792
+            },
+            "demo-player-07": {
+              "mu": 21.669661157433463,
+              "sigma": 8.054207495612857
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-011",
+      "timestamp": "2025-01-17T20:10:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-02",
+          "demo-player-17",
+          "demo-player-10",
+          "demo-player-14",
+          "demo-player-09",
+          "demo-player-08"
+        ],
+        "sapphire": [
+          "demo-player-07",
+          "demo-player-16",
+          "demo-player-13",
+          "demo-player-06",
+          "demo-player-05",
+          "demo-player-03"
+        ]
+      },
+      "heroes": {
+        "demo-player-02": "shiv",
+        "demo-player-17": "victor",
+        "demo-player-10": "pocket",
+        "demo-player-14": "mina",
+        "demo-player-09": "paige",
+        "demo-player-08": "vyper",
+        "demo-player-07": "infernus",
+        "demo-player-16": "lash",
+        "demo-player-13": "drifter",
+        "demo-player-06": "bebop",
+        "demo-player-05": "lady-geist",
+        "demo-player-03": "grey-talon"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.617929,
+          "ratings": {
+            "demo-player-02": {
+              "mu": 25.623128610218533,
+              "sigma": 7.998197395204882
+            },
+            "demo-player-17": {
+              "mu": 28.000543159618303,
+              "sigma": 7.949344368779017
+            },
+            "demo-player-10": {
+              "mu": 29.567373952268284,
+              "sigma": 7.9975320721723016
+            },
+            "demo-player-14": {
+              "mu": 28.946637712997628,
+              "sigma": 7.8954787195632266
+            },
+            "demo-player-09": {
+              "mu": 17.804954140494683,
+              "sigma": 7.846664437256046
+            },
+            "demo-player-08": {
+              "mu": 27.239061387224353,
+              "sigma": 7.893270271999559
+            },
+            "demo-player-07": {
+              "mu": 20.576486509198705,
+              "sigma": 7.998051659712043
+            },
+            "demo-player-16": {
+              "mu": 24.77110095047956,
+              "sigma": 7.993086048677537
+            },
+            "demo-player-13": {
+              "mu": 28.867772645633018,
+              "sigma": 7.896038976891344
+            },
+            "demo-player-06": {
+              "mu": 22.340734403726216,
+              "sigma": 7.84397968698531
+            },
+            "demo-player-05": {
+              "mu": 23.826729287632475,
+              "sigma": 7.944168399577969
+            },
+            "demo-player-03": {
+              "mu": 28.365577004345734,
+              "sigma": 7.94208416225236
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-012",
+      "timestamp": "2025-01-18T21:23:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-14",
+          "demo-player-05",
+          "demo-player-09",
+          "demo-player-08",
+          "demo-player-10",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-01",
+          "demo-player-04",
+          "demo-player-11",
+          "demo-player-12",
+          "demo-player-02",
+          "demo-player-06"
+        ]
+      },
+      "heroes": {
+        "demo-player-14": "paradox",
+        "demo-player-05": "viscous",
+        "demo-player-09": "paige",
+        "demo-player-08": "sinclair",
+        "demo-player-10": "calico",
+        "demo-player-03": "grey-talon",
+        "demo-player-01": "shiv",
+        "demo-player-04": "mirage",
+        "demo-player-11": "infernus",
+        "demo-player-12": "doorman",
+        "demo-player-02": "ivy",
+        "demo-player-06": "bebop"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.571305,
+          "ratings": {
+            "demo-player-14": {
+              "mu": 27.67246842200246,
+              "sigma": 7.8431065503074535
+            },
+            "demo-player-05": {
+              "mu": 25.11666032171738,
+              "sigma": 7.890766575009539
+            },
+            "demo-player-09": {
+              "mu": 16.546489655932838,
+              "sigma": 7.795270541928527
+            },
+            "demo-player-08": {
+              "mu": 25.96560471397722,
+              "sigma": 7.840942623947639
+            },
+            "demo-player-10": {
+              "mu": 28.260056817998336,
+              "sigma": 7.943075263410351
+            },
+            "demo-player-03": {
+              "mu": 29.654831347347226,
+              "sigma": 7.888724908498523
+            },
+            "demo-player-01": {
+              "mu": 23.89242998660794,
+              "sigma": 7.84375060035083
+            },
+            "demo-player-04": {
+              "mu": 23.46389241665869,
+              "sigma": 8.051844554683099
+            },
+            "demo-player-11": {
+              "mu": 25.954436040996438,
+              "sigma": 8.049897530205302
+            },
+            "demo-player-12": {
+              "mu": 26.956568348116328,
+              "sigma": 7.9980893089780665
+            },
+            "demo-player-02": {
+              "mu": 24.31559397636452,
+              "sigma": 7.94372681980761
+            },
+            "demo-player-06": {
+              "mu": 23.598337960968813,
+              "sigma": 7.792599057878104
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-013",
+      "timestamp": "2025-01-19T18:36:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-02",
+          "demo-player-16",
+          "demo-player-03",
+          "demo-player-06",
+          "demo-player-15",
+          "demo-player-08"
+        ],
+        "sapphire": [
+          "demo-player-04",
+          "demo-player-17",
+          "demo-player-01",
+          "demo-player-14",
+          "demo-player-10",
+          "demo-player-12"
+        ]
+      },
+      "heroes": {
+        "demo-player-02": "bebop",
+        "demo-player-16": "haze",
+        "demo-player-03": "mina",
+        "demo-player-06": "lady-geist",
+        "demo-player-15": "lash",
+        "demo-player-08": "shiv",
+        "demo-player-04": "billy",
+        "demo-player-17": "kelvin",
+        "demo-player-01": "calico",
+        "demo-player-14": "doorman",
+        "demo-player-10": "victor",
+        "demo-player-12": "ivy"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.364448,
+          "ratings": {
+            "demo-player-02": {
+              "mu": 25.542665333843185,
+              "sigma": 7.888957778558777
+            },
+            "demo-player-16": {
+              "mu": 26.076965107456687,
+              "sigma": 7.9386786439636845
+            },
+            "demo-player-03": {
+              "mu": 28.44469164368323,
+              "sigma": 7.835647239430118
+            },
+            "demo-player-06": {
+              "mu": 24.779168978547908,
+              "sigma": 7.7409363173195285
+            },
+            "demo-player-15": {
+              "mu": 18.95560550013483,
+              "sigma": 7.897396729007043
+            },
+            "demo-player-08": {
+              "mu": 24.770078699957775,
+              "sigma": 7.78883629569571
+            },
+            "demo-player-04": {
+              "mu": 24.72458938035511,
+              "sigma": 7.994779423590773
+            },
+            "demo-player-17": {
+              "mu": 26.70893087126248,
+              "sigma": 7.895878562880741
+            },
+            "demo-player-01": {
+              "mu": 25.088812334077844,
+              "sigma": 7.7910498313041545
+            },
+            "demo-player-14": {
+              "mu": 26.47628251410574,
+              "sigma": 7.790956487667715
+            },
+            "demo-player-10": {
+              "mu": 27.033186722584823,
+              "sigma": 7.8888783366897535
+            },
+            "demo-player-12": {
+              "mu": 28.20049011884143,
+              "sigma": 7.942173540265877
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-014",
+      "timestamp": "2025-01-20T19:49:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-13",
+          "demo-player-01",
+          "demo-player-04",
+          "demo-player-02",
+          "demo-player-17",
+          "demo-player-16"
+        ],
+        "sapphire": [
+          "demo-player-09",
+          "demo-player-05",
+          "demo-player-12",
+          "demo-player-06",
+          "demo-player-10",
+          "demo-player-11"
+        ]
+      },
+      "heroes": {
+        "demo-player-13": "paradox",
+        "demo-player-01": "vyper",
+        "demo-player-04": "doorman",
+        "demo-player-02": "pocket",
+        "demo-player-17": "viscous",
+        "demo-player-16": "warden",
+        "demo-player-09": "paige",
+        "demo-player-05": "mo-and-krill",
+        "demo-player-12": "infernus",
+        "demo-player-06": "seven",
+        "demo-player-10": "drifter",
+        "demo-player-11": "dynamo"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.665265,
+          "ratings": {
+            "demo-player-13": {
+              "mu": 30.14212275112166,
+              "sigma": 7.843614513606629
+            },
+            "demo-player-01": {
+              "mu": 23.813368531561323,
+              "sigma": 7.7401938056733695
+            },
+            "demo-player-04": {
+              "mu": 23.38157755699213,
+              "sigma": 7.939772139811787
+            },
+            "demo-player-02": {
+              "mu": 26.850363159659196,
+              "sigma": 7.836374802762889
+            },
+            "demo-player-17": {
+              "mu": 25.398937874278595,
+              "sigma": 7.84291328503387
+            },
+            "demo-player-16": {
+              "mu": 27.401196799730453,
+              "sigma": 7.885081832791391
+            },
+            "demo-player-09": {
+              "mu": 15.364848959539223,
+              "sigma": 7.744081657787608
+            },
+            "demo-player-05": {
+              "mu": 23.905894218795062,
+              "sigma": 7.837647138733408
+            },
+            "demo-player-12": {
+              "mu": 26.875092348092597,
+              "sigma": 7.888258740138708
+            },
+            "demo-player-06": {
+              "mu": 26.038259626847882,
+              "sigma": 7.691296716790473
+            },
+            "demo-player-10": {
+              "mu": 25.725515230753274,
+              "sigma": 7.836055670091198
+            },
+            "demo-player-11": {
+              "mu": 27.214523442947858,
+              "sigma": 7.992874298498294
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-015",
+      "timestamp": "2025-01-21T20:02:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-10",
+          "demo-player-01",
+          "demo-player-03",
+          "demo-player-08",
+          "demo-player-15",
+          "demo-player-17"
+        ],
+        "sapphire": [
+          "demo-player-04",
+          "demo-player-05",
+          "demo-player-11",
+          "demo-player-09",
+          "demo-player-06",
+          "demo-player-07"
+        ]
+      },
+      "heroes": {
+        "demo-player-10": "victor",
+        "demo-player-01": "ivy",
+        "demo-player-03": "paige",
+        "demo-player-08": "paradox",
+        "demo-player-15": "pocket",
+        "demo-player-17": "lady-geist",
+        "demo-player-04": "mirage",
+        "demo-player-05": "drifter",
+        "demo-player-11": "wraith",
+        "demo-player-09": "billy",
+        "demo-player-06": "kelvin",
+        "demo-player-07": "calico"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.613025,
+          "ratings": {
+            "demo-player-10": {
+              "mu": 27.062583626517128,
+              "sigma": 7.784944660493925
+            },
+            "demo-player-01": {
+              "mu": 22.508810231666367,
+              "sigma": 7.690859797921498
+            },
+            "demo-player-03": {
+              "mu": 29.73477731441904,
+              "sigma": 7.784137187777708
+            },
+            "demo-player-08": {
+              "mu": 26.044797948950684,
+              "sigma": 7.738256399664626
+            },
+            "demo-player-15": {
+              "mu": 20.26610224262352,
+              "sigma": 7.844642575577495
+            },
+            "demo-player-17": {
+              "mu": 24.059528485702067,
+              "sigma": 7.791560756899996
+            },
+            "demo-player-04": {
+              "mu": 22.00888461282012,
+              "sigma": 7.886467204684681
+            },
+            "demo-player-05": {
+              "mu": 25.24350571377769,
+              "sigma": 7.786504555722003
+            },
+            "demo-player-11": {
+              "mu": 28.60563723344309,
+              "sigma": 7.9385901058906585
+            },
+            "demo-player-09": {
+              "mu": 16.670717979989,
+              "sigma": 7.69477364478078
+            },
+            "demo-player-06": {
+              "mu": 27.32638933396156,
+              "sigma": 7.6430043284358895
+            },
+            "demo-player-07": {
+              "mu": 21.88397349937116,
+              "sigma": 7.943541487610736
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-016",
+      "timestamp": "2025-01-22T21:15:00.000Z",
+      "patchId": "demo-patch-01",
+      "teams": {
+        "amber": [
+          "demo-player-16",
+          "demo-player-14",
+          "demo-player-08",
+          "demo-player-03",
+          "demo-player-04",
+          "demo-player-12"
+        ],
+        "sapphire": [
+          "demo-player-15",
+          "demo-player-10",
+          "demo-player-13",
+          "demo-player-11",
+          "demo-player-17",
+          "demo-player-02"
+        ]
+      },
+      "heroes": {
+        "demo-player-16": "ivy",
+        "demo-player-14": "warden",
+        "demo-player-08": "dynamo",
+        "demo-player-03": "holliday",
+        "demo-player-04": "billy",
+        "demo-player-12": "mirage",
+        "demo-player-15": "paradox",
+        "demo-player-10": "yamato",
+        "demo-player-13": "drifter",
+        "demo-player-11": "lady-geist",
+        "demo-player-17": "victor",
+        "demo-player-02": "kelvin"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.56091,
+          "ratings": {
+            "demo-player-16": {
+              "mu": 26.047347268131453,
+              "sigma": 7.832885192518036
+            },
+            "demo-player-14": {
+              "mu": 25.200869269789507,
+              "sigma": 7.740102315134096
+            },
+            "demo-player-08": {
+              "mu": 24.806847427784096,
+              "sigma": 7.687350041606457
+            },
+            "demo-player-03": {
+              "mu": 28.482105151209797,
+              "sigma": 7.732307323168163
+            },
+            "demo-player-04": {
+              "mu": 23.29470463525692,
+              "sigma": 7.832230604827252
+            },
+            "demo-player-12": {
+              "mu": 28.230032912257915,
+              "sigma": 7.836105363019104
+            },
+            "demo-player-15": {
+              "mu": 18.99388282285667,
+              "sigma": 7.791578081993292
+            },
+            "demo-player-10": {
+              "mu": 25.80965159246704,
+              "sigma": 7.733098444898665
+            },
+            "demo-player-13": {
+              "mu": 28.802473867842483,
+              "sigma": 7.792248022520141
+            },
+            "demo-player-11": {
+              "mu": 29.90850789118673,
+              "sigma": 7.883256871495769
+            },
+            "demo-player-17": {
+              "mu": 22.804466162536453,
+              "sigma": 7.739580440321707
+            },
+            "demo-player-02": {
+              "mu": 25.51318586659726,
+              "sigma": 7.785152349602506
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-017",
+      "timestamp": "2025-02-07T18:28:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-09",
+          "demo-player-01",
+          "demo-player-07",
+          "demo-player-08",
+          "demo-player-15",
+          "demo-player-14"
+        ],
+        "sapphire": [
+          "demo-player-06",
+          "demo-player-03",
+          "demo-player-16",
+          "demo-player-04",
+          "demo-player-17",
+          "demo-player-13"
+        ]
+      },
+      "heroes": {
+        "demo-player-09": "calico",
+        "demo-player-01": "billy",
+        "demo-player-07": "doorman",
+        "demo-player-08": "drifter",
+        "demo-player-15": "lash",
+        "demo-player-14": "lady-geist",
+        "demo-player-06": "dynamo",
+        "demo-player-03": "mo-and-krill",
+        "demo-player-16": "mina",
+        "demo-player-04": "shiv",
+        "demo-player-17": "paradox",
+        "demo-player-13": "ivy"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.164844,
+          "ratings": {
+            "demo-player-09": {
+              "mu": 17.894796633203935,
+              "sigma": 7.644446999491576
+            },
+            "demo-player-01": {
+              "mu": 21.285976339251125,
+              "sigma": 7.640896029457772
+            },
+            "demo-player-07": {
+              "mu": 23.188469712952642,
+              "sigma": 7.8881033262809215
+            },
+            "demo-player-08": {
+              "mu": 25.795762822176638,
+              "sigma": 7.63644946661489
+            },
+            "demo-player-15": {
+              "mu": 17.977972620166742,
+              "sigma": 7.738476576453512
+            },
+            "demo-player-14": {
+              "mu": 26.203401938523125,
+              "sigma": 7.688131918465341
+            },
+            "demo-player-06": {
+              "mu": 28.534054473190377,
+              "sigma": 7.593700834872464
+            },
+            "demo-player-03": {
+              "mu": 29.482619786224802,
+              "sigma": 7.680495931709253
+            },
+            "demo-player-16": {
+              "mu": 27.07405650002817,
+              "sigma": 7.7789974652706935
+            },
+            "demo-player-04": {
+              "mu": 24.32124229127349,
+              "sigma": 7.778356564833946
+            },
+            "demo-player-17": {
+              "mu": 21.802068664696197,
+              "sigma": 7.687549135148342
+            },
+            "demo-player-13": {
+              "mu": 27.786388976322854,
+              "sigma": 7.739132634825022
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-018",
+      "timestamp": "2025-02-08T19:41:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-02",
+          "demo-player-06",
+          "demo-player-10",
+          "demo-player-04",
+          "demo-player-17",
+          "demo-player-12"
+        ],
+        "sapphire": [
+          "demo-player-15",
+          "demo-player-09",
+          "demo-player-01",
+          "demo-player-16",
+          "demo-player-13",
+          "demo-player-05"
+        ]
+      },
+      "heroes": {
+        "demo-player-02": "paradox",
+        "demo-player-06": "holliday",
+        "demo-player-10": "lash",
+        "demo-player-04": "kelvin",
+        "demo-player-17": "mcginnis",
+        "demo-player-12": "mo-and-krill",
+        "demo-player-15": "grey-talon",
+        "demo-player-09": "seven",
+        "demo-player-01": "yamato",
+        "demo-player-16": "abrams",
+        "demo-player-13": "wraith",
+        "demo-player-05": "bebop"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.622471,
+          "ratings": {
+            "demo-player-02": {
+              "mu": 24.498950428344962,
+              "sigma": 7.732183873470488
+            },
+            "demo-player-06": {
+              "mu": 27.00286286204548,
+              "sigma": 7.55382519958136
+            },
+            "demo-player-10": {
+              "mu": 24.808932237851945,
+              "sigma": 7.681199546984089
+            },
+            "demo-player-04": {
+              "mu": 22.714686485621364,
+              "sigma": 7.735450298669455
+            },
+            "demo-player-17": {
+              "mu": 20.232800681036426,
+              "sigma": 7.646151380031025
+            },
+            "demo-player-12": {
+              "mu": 29.257586401168943,
+              "sigma": 7.782150269538922
+            },
+            "demo-player-15": {
+              "mu": 19.56809877290342,
+              "sigma": 7.696255927322822
+            },
+            "demo-player-09": {
+              "mu": 19.446519035364638,
+              "sigma": 7.603771036604421
+            },
+            "demo-player-01": {
+              "mu": 22.83625764687239,
+              "sigma": 7.600277664271019
+            },
+            "demo-player-16": {
+              "mu": 25.467235968387893,
+              "sigma": 7.736080426485325
+            },
+            "demo-player-13": {
+              "mu": 26.19599322560582,
+              "sigma": 7.696882301460826
+            },
+            "demo-player-05": {
+              "mu": 26.496939848908628,
+              "sigma": 7.734330886193532
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-019",
+      "timestamp": "2025-02-09T20:54:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-08",
+          "demo-player-11",
+          "demo-player-05",
+          "demo-player-14",
+          "demo-player-16",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-15",
+          "demo-player-10",
+          "demo-player-09",
+          "demo-player-04",
+          "demo-player-07",
+          "demo-player-02"
+        ]
+      },
+      "heroes": {
+        "demo-player-08": "billy",
+        "demo-player-11": "kelvin",
+        "demo-player-05": "pocket",
+        "demo-player-14": "paradox",
+        "demo-player-16": "haze",
+        "demo-player-03": "calico",
+        "demo-player-15": "yamato",
+        "demo-player-10": "mo-and-krill",
+        "demo-player-09": "mirage",
+        "demo-player-04": "lady-geist",
+        "demo-player-07": "warden",
+        "demo-player-02": "mcginnis"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.878702,
+          "ratings": {
+            "demo-player-08": {
+              "mu": 27.344240519897625,
+              "sigma": 7.595903150653415
+            },
+            "demo-player-11": {
+              "mu": 28.86855258567452,
+              "sigma": 7.828233363745769
+            },
+            "demo-player-05": {
+              "mu": 27.763952962070793,
+              "sigma": 7.68219339393056
+            },
+            "demo-player-14": {
+              "mu": 27.772907831663204,
+              "sigma": 7.646742998588612
+            },
+            "demo-player-16": {
+              "mu": 26.734822287921446,
+              "sigma": 7.683907061443951
+            },
+            "demo-player-03": {
+              "mu": 27.91622969999765,
+              "sigma": 7.639213870113988
+            },
+            "demo-player-15": {
+              "mu": 20.822669402234382,
+              "sigma": 7.644895116102954
+            },
+            "demo-player-10": {
+              "mu": 23.559264928723874,
+              "sigma": 7.630071655976965
+            },
+            "demo-player-09": {
+              "mu": 20.671122325482713,
+              "sigma": 7.554265037563372
+            },
+            "demo-player-04": {
+              "mu": 21.447306631418083,
+              "sigma": 7.683216211037476
+            },
+            "demo-player-07": {
+              "mu": 24.84067468594842,
+              "sigma": 7.843346315566968
+            },
+            "demo-player-02": {
+              "mu": 23.232640569291732,
+              "sigma": 7.68001683062941
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-020",
+      "timestamp": "2025-02-10T21:07:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-03",
+          "demo-player-02",
+          "demo-player-04",
+          "demo-player-05",
+          "demo-player-14",
+          "demo-player-11"
+        ],
+        "sapphire": [
+          "demo-player-06",
+          "demo-player-17",
+          "demo-player-08",
+          "demo-player-13",
+          "demo-player-10",
+          "demo-player-01"
+        ]
+      },
+      "heroes": {
+        "demo-player-03": "lash",
+        "demo-player-02": "mirage",
+        "demo-player-04": "calico",
+        "demo-player-05": "vyper",
+        "demo-player-14": "shiv",
+        "demo-player-11": "sinclair",
+        "demo-player-06": "grey-talon",
+        "demo-player-17": "mcginnis",
+        "demo-player-08": "billy",
+        "demo-player-13": "mina",
+        "demo-player-10": "kelvin",
+        "demo-player-01": "lady-geist"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.655805,
+          "ratings": {
+            "demo-player-03": {
+              "mu": 28.42434180465306,
+              "sigma": 7.6020323732481785
+            },
+            "demo-player-02": {
+              "mu": 22.71908670747032,
+              "sigma": 7.642258512293166
+            },
+            "demo-player-04": {
+              "mu": 20.933324853103706,
+              "sigma": 7.645409856820063
+            },
+            "demo-player-05": {
+              "mu": 28.27779791941948,
+              "sigma": 7.644369540993568
+            },
+            "demo-player-14": {
+              "mu": 28.28202189050448,
+              "sigma": 7.609449492558002
+            },
+            "demo-player-11": {
+              "mu": 29.402117502040714,
+              "sigma": 7.788172799438876
+            },
+            "demo-player-06": {
+              "mu": 25.794292573304997,
+              "sigma": 7.505233761265162
+            },
+            "demo-player-17": {
+              "mu": 18.994510106060766,
+              "sigma": 7.595729881522655
+            },
+            "demo-player-08": {
+              "mu": 27.84660813136511,
+              "sigma": 7.559361717644309
+            },
+            "demo-player-13": {
+              "mu": 27.45076805044634,
+              "sigma": 7.6455087749611454
+            },
+            "demo-player-10": {
+              "mu": 23.052368116048683,
+              "sigma": 7.5930580638015535
+            },
+            "demo-player-01": {
+              "mu": 24.05973610067697,
+              "sigma": 7.5508408491947705
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-021",
+      "timestamp": "2025-02-11T18:20:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-03",
+          "demo-player-16",
+          "demo-player-11",
+          "demo-player-10",
+          "demo-player-17",
+          "demo-player-05"
+        ],
+        "sapphire": [
+          "demo-player-15",
+          "demo-player-08",
+          "demo-player-01",
+          "demo-player-14",
+          "demo-player-09",
+          "demo-player-02"
+        ]
+      },
+      "heroes": {
+        "demo-player-03": "mo-and-krill",
+        "demo-player-16": "mina",
+        "demo-player-11": "holliday",
+        "demo-player-10": "kelvin",
+        "demo-player-17": "drifter",
+        "demo-player-05": "doorman",
+        "demo-player-15": "billy",
+        "demo-player-08": "vyper",
+        "demo-player-01": "pocket",
+        "demo-player-14": "mirage",
+        "demo-player-09": "lash",
+        "demo-player-02": "viscous"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.684057,
+          "ratings": {
+            "demo-player-03": {
+              "mu": 29.281869062440187,
+              "sigma": 7.552219707181433
+            },
+            "demo-player-16": {
+              "mu": 27.24889649073775,
+              "sigma": 7.646057447662331
+            },
+            "demo-player-11": {
+              "mu": 30.302147940769004,
+              "sigma": 7.734556972865884
+            },
+            "demo-player-10": {
+              "mu": 22.19686406680429,
+              "sigma": 7.54395219973427
+            },
+            "demo-player-17": {
+              "mu": 18.138403960091004,
+              "sigma": 7.546571409508583
+            },
+            "demo-player-05": {
+              "mu": 29.144902088965317,
+              "sigma": 7.593707981521479
+            },
+            "demo-player-15": {
+              "mu": 20.31380134553425,
+              "sigma": 7.607661502901537
+            },
+            "demo-player-08": {
+              "mu": 26.998679404590057,
+              "sigma": 7.510916162802037
+            },
+            "demo-player-01": {
+              "mu": 23.21371762504089,
+              "sigma": 7.502561339553947
+            },
+            "demo-player-14": {
+              "mu": 29.14122310071094,
+              "sigma": 7.559488787954977
+            },
+            "demo-player-09": {
+              "mu": 20.174246568492567,
+              "sigma": 7.518363375576502
+            },
+            "demo-player-02": {
+              "mu": 23.58571209022912,
+              "sigma": 7.591639504050473
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-022",
+      "timestamp": "2025-02-12T19:33:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-07",
+          "demo-player-01",
+          "demo-player-15",
+          "demo-player-08",
+          "demo-player-17",
+          "demo-player-13"
+        ],
+        "sapphire": [
+          "demo-player-02",
+          "demo-player-03",
+          "demo-player-16",
+          "demo-player-09",
+          "demo-player-14",
+          "demo-player-04"
+        ]
+      },
+      "heroes": {
+        "demo-player-07": "abrams",
+        "demo-player-01": "viscous",
+        "demo-player-15": "infernus",
+        "demo-player-08": "grey-talon",
+        "demo-player-17": "seven",
+        "demo-player-13": "drifter",
+        "demo-player-02": "billy",
+        "demo-player-03": "yamato",
+        "demo-player-16": "lady-geist",
+        "demo-player-09": "bebop",
+        "demo-player-14": "shiv",
+        "demo-player-04": "doorman"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.320494,
+          "ratings": {
+            "demo-player-07": {
+              "mu": 24.305047845840676,
+              "sigma": 7.803084451323197
+            },
+            "demo-player-01": {
+              "mu": 22.413242262965657,
+              "sigma": 7.4554807344368825
+            },
+            "demo-player-15": {
+              "mu": 19.490744652123094,
+              "sigma": 7.558544131403371
+            },
+            "demo-player-08": {
+              "mu": 26.19642045736818,
+              "sigma": 7.463675714285035
+            },
+            "demo-player-17": {
+              "mu": 18.948296891255076,
+              "sigma": 7.498293666908518
+            },
+            "demo-player-13": {
+              "mu": 26.58340544474317,
+              "sigma": 7.595363378881157
+            },
+            "demo-player-02": {
+              "mu": 22.766118102623064,
+              "sigma": 7.542836290924491
+            },
+            "demo-player-03": {
+              "mu": 30.09297464239048,
+              "sigma": 7.503831879450048
+            },
+            "demo-player-16": {
+              "mu": 28.080281101019228,
+              "sigma": 7.59581653952176
+            },
+            "demo-player-09": {
+              "mu": 19.37039611920225,
+              "sigma": 7.470980148215908
+            },
+            "demo-player-14": {
+              "mu": 28.328555566381286,
+              "sigma": 7.511311998284949
+            },
+            "demo-player-04": {
+              "mu": 21.80066501761888,
+              "sigma": 7.594727319440874
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-023",
+      "timestamp": "2025-02-13T20:46:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-10",
+          "demo-player-07",
+          "demo-player-14",
+          "demo-player-05",
+          "demo-player-11",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-09",
+          "demo-player-06",
+          "demo-player-13",
+          "demo-player-08",
+          "demo-player-04",
+          "demo-player-16"
+        ]
+      },
+      "heroes": {
+        "demo-player-10": "lady-geist",
+        "demo-player-07": "drifter",
+        "demo-player-14": "paradox",
+        "demo-player-05": "mirage",
+        "demo-player-11": "mina",
+        "demo-player-03": "grey-talon",
+        "demo-player-09": "wraith",
+        "demo-player-06": "yamato",
+        "demo-player-13": "sinclair",
+        "demo-player-08": "paige",
+        "demo-player-04": "mo-and-krill",
+        "demo-player-16": "vindicta"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.770253,
+          "ratings": {
+            "demo-player-10": {
+              "mu": 23.006194980421707,
+              "sigma": 7.495725449604099
+            },
+            "demo-player-07": {
+              "mu": 23.429493092943222,
+              "sigma": 7.749233814333453
+            },
+            "demo-player-14": {
+              "mu": 29.139864430989476,
+              "sigma": 7.463527054682265
+            },
+            "demo-player-05": {
+              "mu": 29.964942709575542,
+              "sigma": 7.544506494284993
+            },
+            "demo-player-11": {
+              "mu": 31.152887405446986,
+              "sigma": 7.682526238155553
+            },
+            "demo-player-03": {
+              "mu": 30.902668631068508,
+              "sigma": 7.456191685372084
+            },
+            "demo-player-09": {
+              "mu": 20.173016828590615,
+              "sigma": 7.423972269769439
+            },
+            "demo-player-06": {
+              "mu": 24.958461897923332,
+              "sigma": 7.457836644595005
+            },
+            "demo-player-13": {
+              "mu": 25.753840189738224,
+              "sigma": 7.545755350700808
+            },
+            "demo-player-08": {
+              "mu": 25.395368242301426,
+              "sigma": 7.416640047991488
+            },
+            "demo-player-04": {
+              "mu": 22.63009135439561,
+              "sigma": 7.545308585549659
+            },
+            "demo-player-16": {
+              "mu": 28.909945335432948,
+              "sigma": 7.546376232982511
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-024",
+      "timestamp": "2025-02-14T21:59:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-10",
+          "demo-player-09",
+          "demo-player-11",
+          "demo-player-02",
+          "demo-player-03",
+          "demo-player-16"
+        ],
+        "sapphire": [
+          "demo-player-01",
+          "demo-player-06",
+          "demo-player-04",
+          "demo-player-12",
+          "demo-player-07",
+          "demo-player-15"
+        ]
+      },
+      "heroes": {
+        "demo-player-10": "drifter",
+        "demo-player-09": "holliday",
+        "demo-player-11": "lash",
+        "demo-player-02": "abrams",
+        "demo-player-03": "seven",
+        "demo-player-16": "calico",
+        "demo-player-01": "billy",
+        "demo-player-06": "mina",
+        "demo-player-04": "warden",
+        "demo-player-12": "vyper",
+        "demo-player-07": "ivy",
+        "demo-player-15": "wraith"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.721066,
+          "ratings": {
+            "demo-player-10": {
+              "mu": 21.583501190151807,
+              "sigma": 7.451386224047322
+            },
+            "demo-player-09": {
+              "mu": 21.568606730750787,
+              "sigma": 7.381355939430101
+            },
+            "demo-player-11": {
+              "mu": 29.658409082946967,
+              "sigma": 7.634735131617769
+            },
+            "demo-player-02": {
+              "mu": 23.58425039668778,
+              "sigma": 7.49443814223649
+            },
+            "demo-player-03": {
+              "mu": 29.494940486823495,
+              "sigma": 7.4125613786299445
+            },
+            "demo-player-16": {
+              "mu": 30.351928809394703,
+              "sigma": 7.501581807370001
+            },
+            "demo-player-01": {
+              "mu": 21.613947944490295,
+              "sigma": 7.4086021862189995
+            },
+            "demo-player-06": {
+              "mu": 26.366811169328024,
+              "sigma": 7.41462482463307
+            },
+            "demo-player-04": {
+              "mu": 24.071666888625394,
+              "sigma": 7.500533466161462
+            },
+            "demo-player-12": {
+              "mu": 27.97485944501051,
+              "sigma": 7.728951438566931
+            },
+            "demo-player-07": {
+              "mu": 21.908951972196203,
+              "sigma": 7.700168608407508
+            },
+            "demo-player-15": {
+              "mu": 18.66920173050587,
+              "sigma": 7.509664388909917
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-025",
+      "timestamp": "2025-02-15T18:12:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-05",
+          "demo-player-14",
+          "demo-player-15",
+          "demo-player-10",
+          "demo-player-12",
+          "demo-player-16"
+        ],
+        "sapphire": [
+          "demo-player-09",
+          "demo-player-03",
+          "demo-player-11",
+          "demo-player-04",
+          "demo-player-08",
+          "demo-player-06"
+        ]
+      },
+      "heroes": {
+        "demo-player-05": "calico",
+        "demo-player-14": "paige",
+        "demo-player-15": "lady-geist",
+        "demo-player-10": "dynamo",
+        "demo-player-12": "pocket",
+        "demo-player-16": "wraith",
+        "demo-player-09": "billy",
+        "demo-player-03": "ivy",
+        "demo-player-11": "viscous",
+        "demo-player-04": "mirage",
+        "demo-player-08": "holliday",
+        "demo-player-06": "warden"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.440982,
+          "ratings": {
+            "demo-player-05": {
+              "mu": 28.52367361017377,
+              "sigma": 7.499282182567722
+            },
+            "demo-player-14": {
+              "mu": 27.729365436593955,
+              "sigma": 7.419765775276395
+            },
+            "demo-player-15": {
+              "mu": 17.91342951621112,
+              "sigma": 7.4626515647465785
+            },
+            "demo-player-10": {
+              "mu": 22.327590136191354,
+              "sigma": 7.405876868970623
+            },
+            "demo-player-12": {
+              "mu": 27.17431024097477,
+              "sigma": 7.6776347319091975
+            },
+            "demo-player-16": {
+              "mu": 31.10607523824492,
+              "sigma": 7.4551320848619484
+            },
+            "demo-player-09": {
+              "mu": 22.29877681483745,
+              "sigma": 7.337137563368532
+            },
+            "demo-player-03": {
+              "mu": 30.23129657033374,
+              "sigma": 7.3677707488915924
+            },
+            "demo-player-11": {
+              "mu": 30.439562031126677,
+              "sigma": 7.585729377417682
+            },
+            "demo-player-04": {
+              "mu": 23.3177312019921,
+              "sigma": 7.453694512396612
+            },
+            "demo-player-08": {
+              "mu": 26.7882031683833,
+              "sigma": 7.3741519400459214
+            },
+            "demo-player-06": {
+              "mu": 25.63004511944183,
+              "sigma": 7.3694011334756295
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-026",
+      "timestamp": "2025-02-16T19:25:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-14",
+          "demo-player-08",
+          "demo-player-09",
+          "demo-player-17",
+          "demo-player-02",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-05",
+          "demo-player-13",
+          "demo-player-01",
+          "demo-player-07",
+          "demo-player-11",
+          "demo-player-10"
+        ]
+      },
+      "heroes": {
+        "demo-player-14": "wraith",
+        "demo-player-08": "shiv",
+        "demo-player-09": "calico",
+        "demo-player-17": "drifter",
+        "demo-player-02": "paradox",
+        "demo-player-03": "billy",
+        "demo-player-05": "vyper",
+        "demo-player-13": "lash",
+        "demo-player-01": "doorman",
+        "demo-player-07": "paige",
+        "demo-player-11": "seven",
+        "demo-player-10": "sinclair"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.436437,
+          "ratings": {
+            "demo-player-14": {
+              "mu": 28.8461525269327,
+              "sigma": 7.369879522821339
+            },
+            "demo-player-08": {
+              "mu": 25.685103290313986,
+              "sigma": 7.32567132399899
+            },
+            "demo-player-09": {
+              "mu": 21.206721699653897,
+              "sigma": 7.28939428024718
+            },
+            "demo-player-17": {
+              "mu": 18.139797505519788,
+              "sigma": 7.450590477321475
+            },
+            "demo-player-02": {
+              "mu": 24.336961357633758,
+              "sigma": 7.44812301975371
+            },
+            "demo-player-03": {
+              "mu": 29.130104748182685,
+              "sigma": 7.319417776466495
+            },
+            "demo-player-05": {
+              "mu": 29.664522775390363,
+              "sigma": 7.447751023943909
+            },
+            "demo-player-13": {
+              "mu": 27.195586422414312,
+              "sigma": 7.500972153140436
+            },
+            "demo-player-01": {
+              "mu": 20.878378155587324,
+              "sigma": 7.363490342614153
+            },
+            "demo-player-07": {
+              "mu": 21.11435350906896,
+              "sigma": 7.649430979114058
+            },
+            "demo-player-11": {
+              "mu": 29.272262494968967,
+              "sigma": 7.532890264191819
+            },
+            "demo-player-10": {
+              "mu": 23.440200685134343,
+              "sigma": 7.356274340208529
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-027",
+      "timestamp": "2025-02-17T20:38:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-05",
+          "demo-player-07",
+          "demo-player-03",
+          "demo-player-14",
+          "demo-player-15",
+          "demo-player-01"
+        ],
+        "sapphire": [
+          "demo-player-06",
+          "demo-player-12",
+          "demo-player-08",
+          "demo-player-13",
+          "demo-player-17",
+          "demo-player-10"
+        ]
+      },
+      "heroes": {
+        "demo-player-05": "vindicta",
+        "demo-player-07": "vyper",
+        "demo-player-03": "abrams",
+        "demo-player-14": "lash",
+        "demo-player-15": "ivy",
+        "demo-player-01": "grey-talon",
+        "demo-player-06": "infernus",
+        "demo-player-12": "haze",
+        "demo-player-08": "dynamo",
+        "demo-player-13": "victor",
+        "demo-player-17": "calico",
+        "demo-player-10": "mo-and-krill"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.535615,
+          "ratings": {
+            "demo-player-05": {
+              "mu": 30.63212830784057,
+              "sigma": 7.396834391739152
+            },
+            "demo-player-07": {
+              "mu": 22.135066106677545,
+              "sigma": 7.594203693266099
+            },
+            "demo-player-03": {
+              "mu": 28.195553678153896,
+              "sigma": 7.271834645794457
+            },
+            "demo-player-14": {
+              "mu": 27.89867269397682,
+              "sigma": 7.321290205044239
+            },
+            "demo-player-15": {
+              "mu": 19.043162204131733,
+              "sigma": 7.41188251634111
+            },
+            "demo-player-01": {
+              "mu": 21.824216110466125,
+              "sigma": 7.314307023848763
+            },
+            "demo-player-06": {
+              "mu": 24.528365949026742,
+              "sigma": 7.321015569299953
+            },
+            "demo-player-12": {
+              "mu": 28.370062661138387,
+              "sigma": 7.622285321688773
+            },
+            "demo-player-08": {
+              "mu": 24.748954825918833,
+              "sigma": 7.277964249220159
+            },
+            "demo-player-13": {
+              "mu": 28.177068516191323,
+              "sigma": 7.448940312815051
+            },
+            "demo-player-17": {
+              "mu": 17.171454126024894,
+              "sigma": 7.400362958189734
+            },
+            "demo-player-10": {
+              "mu": 24.384185999267007,
+              "sigma": 7.30723763228351
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-028",
+      "timestamp": "2025-02-18T21:51:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-12",
+          "demo-player-06",
+          "demo-player-08",
+          "demo-player-05",
+          "demo-player-10",
+          "demo-player-11"
+        ],
+        "sapphire": [
+          "demo-player-16",
+          "demo-player-14",
+          "demo-player-01",
+          "demo-player-03",
+          "demo-player-15",
+          "demo-player-09"
+        ]
+      },
+      "heroes": {
+        "demo-player-12": "mirage",
+        "demo-player-06": "seven",
+        "demo-player-08": "mo-and-krill",
+        "demo-player-05": "lash",
+        "demo-player-10": "drifter",
+        "demo-player-11": "calico",
+        "demo-player-16": "paige",
+        "demo-player-14": "haze",
+        "demo-player-01": "mcginnis",
+        "demo-player-03": "ivy",
+        "demo-player-15": "viscous",
+        "demo-player-09": "shiv"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.599575,
+          "ratings": {
+            "demo-player-12": {
+              "mu": 27.313750978835007,
+              "sigma": 7.567347315252656
+            },
+            "demo-player-06": {
+              "mu": 23.553895439615268,
+              "sigma": 7.2724215532700525
+            },
+            "demo-player-08": {
+              "mu": 23.785909909619274,
+              "sigma": 7.23023539342924
+            },
+            "demo-player-05": {
+              "mu": 31.62688457240258,
+              "sigma": 7.34677014090214
+            },
+            "demo-player-10": {
+              "mu": 23.413379413690528,
+              "sigma": 7.25892160769051
+            },
+            "demo-player-11": {
+              "mu": 30.262114125634625,
+              "sigma": 7.480181966484156
+            },
+            "demo-player-16": {
+              "mu": 32.233532685608374,
+              "sigma": 7.404518559367723
+            },
+            "demo-player-14": {
+              "mu": 28.87321630657442,
+              "sigma": 7.272766575806637
+            },
+            "demo-player-01": {
+              "mu": 22.79690177515642,
+              "sigma": 7.265924214533489
+            },
+            "demo-player-03": {
+              "mu": 29.156977310288642,
+              "sigma": 7.224302546116228
+            },
+            "demo-player-15": {
+              "mu": 20.041969537154397,
+              "sigma": 7.361507594719235
+            },
+            "demo-player-09": {
+              "mu": 20.279820777694557,
+              "sigma": 7.242403269270611
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-029",
+      "timestamp": "2025-02-19T18:04:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-02",
+          "demo-player-06",
+          "demo-player-17",
+          "demo-player-04",
+          "demo-player-12",
+          "demo-player-07"
+        ],
+        "sapphire": [
+          "demo-player-13",
+          "demo-player-08",
+          "demo-player-05",
+          "demo-player-03",
+          "demo-player-11",
+          "demo-player-15"
+        ]
+      },
+      "heroes": {
+        "demo-player-02": "lash",
+        "demo-player-06": "mo-and-krill",
+        "demo-player-17": "mcginnis",
+        "demo-player-04": "kelvin",
+        "demo-player-12": "viscous",
+        "demo-player-07": "pocket",
+        "demo-player-13": "drifter",
+        "demo-player-08": "abrams",
+        "demo-player-05": "seven",
+        "demo-player-03": "ivy",
+        "demo-player-11": "shiv",
+        "demo-player-15": "grey-talon"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.147062,
+          "ratings": {
+            "demo-player-02": {
+              "mu": 23.36925917610579,
+              "sigma": 7.39794611234408
+            },
+            "demo-player-06": {
+              "mu": 22.411775268705117,
+              "sigma": 7.224527118956827
+            },
+            "demo-player-17": {
+              "mu": 16.175748683734025,
+              "sigma": 7.350147535825044
+            },
+            "demo-player-04": {
+              "mu": 22.1907084734302,
+              "sigma": 7.403604195304722
+            },
+            "demo-player-12": {
+              "mu": 26.07712977902174,
+              "sigma": 7.513293085649765
+            },
+            "demo-player-07": {
+              "mu": 23.18360983725049,
+              "sigma": 7.539963547690614
+            },
+            "demo-player-13": {
+              "mu": 27.168249842929093,
+              "sigma": 7.397714935914164
+            },
+            "demo-player-08": {
+              "mu": 22.657000086696968,
+              "sigma": 7.183182394439574
+            },
+            "demo-player-05": {
+              "mu": 30.461295499370255,
+              "sigma": 7.297368854014381
+            },
+            "demo-player-03": {
+              "mu": 30.28403546114474,
+              "sigma": 7.17778605160587
+            },
+            "demo-player-11": {
+              "mu": 29.05381374162492,
+              "sigma": 7.427999362120125
+            },
+            "demo-player-15": {
+              "mu": 21.212238988617475,
+              "sigma": 7.312247360051812
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-030",
+      "timestamp": "2025-02-20T19:17:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-16",
+          "demo-player-10",
+          "demo-player-02",
+          "demo-player-14",
+          "demo-player-03",
+          "demo-player-11"
+        ],
+        "sapphire": [
+          "demo-player-09",
+          "demo-player-15",
+          "demo-player-12",
+          "demo-player-06",
+          "demo-player-04",
+          "demo-player-07"
+        ]
+      },
+      "heroes": {
+        "demo-player-16": "lash",
+        "demo-player-10": "bebop",
+        "demo-player-02": "doorman",
+        "demo-player-14": "yamato",
+        "demo-player-03": "wraith",
+        "demo-player-11": "sinclair",
+        "demo-player-09": "lady-geist",
+        "demo-player-15": "grey-talon",
+        "demo-player-12": "mina",
+        "demo-player-06": "holliday",
+        "demo-player-04": "ivy",
+        "demo-player-07": "calico"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.838908,
+          "ratings": {
+            "demo-player-16": {
+              "mu": 33.417515359060374,
+              "sigma": 7.354376874748812
+            },
+            "demo-player-10": {
+              "mu": 22.27549503322897,
+              "sigma": 7.211297504532838
+            },
+            "demo-player-02": {
+              "mu": 24.919693021955602,
+              "sigma": 7.358827163545529
+            },
+            "demo-player-14": {
+              "mu": 30.01544483611236,
+              "sigma": 7.2252926971570535
+            },
+            "demo-player-03": {
+              "mu": 28.824497605783108,
+              "sigma": 7.14263397947189
+            },
+            "demo-player-11": {
+              "mu": 27.490759015404606,
+              "sigma": 7.388966386490601
+            },
+            "demo-player-09": {
+              "mu": 21.41253301267862,
+              "sigma": 7.195530698967566
+            },
+            "demo-player-15": {
+              "mu": 19.697513403275096,
+              "sigma": 7.275042671790794
+            },
+            "demo-player-12": {
+              "mu": 27.676282331576353,
+              "sigma": 7.472282891981216
+            },
+            "demo-player-06": {
+              "mu": 23.890381191820982,
+              "sigma": 7.188142962871087
+            },
+            "demo-player-04": {
+              "mu": 23.74351452488276,
+              "sigma": 7.364393833088412
+            },
+            "demo-player-07": {
+              "mu": 24.794134388887837,
+              "sigma": 7.498507725641608
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-031",
+      "timestamp": "2025-02-21T20:30:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-06",
+          "demo-player-17",
+          "demo-player-09",
+          "demo-player-13",
+          "demo-player-01",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-16",
+          "demo-player-15",
+          "demo-player-04",
+          "demo-player-11",
+          "demo-player-07",
+          "demo-player-12"
+        ]
+      },
+      "heroes": {
+        "demo-player-06": "vindicta",
+        "demo-player-17": "pocket",
+        "demo-player-09": "mina",
+        "demo-player-13": "wraith",
+        "demo-player-01": "warden",
+        "demo-player-03": "ivy",
+        "demo-player-16": "victor",
+        "demo-player-15": "mirage",
+        "demo-player-04": "lady-geist",
+        "demo-player-11": "holliday",
+        "demo-player-07": "yamato",
+        "demo-player-12": "infernus"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.283646,
+          "ratings": {
+            "demo-player-06": {
+              "mu": 23.35171239063138,
+              "sigma": 7.1509898622789185
+            },
+            "demo-player-17": {
+              "mu": 17.706214893147767,
+              "sigma": 7.31179528712115
+            },
+            "demo-player-09": {
+              "mu": 20.87275653933248,
+              "sigma": 7.158260750970114
+            },
+            "demo-player-13": {
+              "mu": 25.617912881453154,
+              "sigma": 7.359165831837944
+            },
+            "demo-player-01": {
+              "mu": 23.93698233578403,
+              "sigma": 7.218586279317458
+            },
+            "demo-player-03": {
+              "mu": 29.356368160359157,
+              "sigma": 7.106460624256356
+            },
+            "demo-player-16": {
+              "mu": 33.98138351001024,
+              "sigma": 7.314825868377403
+            },
+            "demo-player-15": {
+              "mu": 19.145743364371498,
+              "sigma": 7.236499937840078
+            },
+            "demo-player-04": {
+              "mu": 23.178109502804748,
+              "sigma": 7.32438735784627
+            },
+            "demo-player-11": {
+              "mu": 28.0599429886378,
+              "sigma": 7.348844819222855
+            },
+            "demo-player-07": {
+              "mu": 24.207951191140562,
+              "sigma": 7.456236805174209
+            },
+            "demo-player-12": {
+              "mu": 27.09419162285149,
+              "sigma": 7.430461186789334
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-032",
+      "timestamp": "2025-02-22T21:43:00.000Z",
+      "patchId": "demo-patch-02",
+      "teams": {
+        "amber": [
+          "demo-player-04",
+          "demo-player-01",
+          "demo-player-15",
+          "demo-player-02",
+          "demo-player-12",
+          "demo-player-07"
+        ],
+        "sapphire": [
+          "demo-player-10",
+          "demo-player-11",
+          "demo-player-17",
+          "demo-player-03",
+          "demo-player-13",
+          "demo-player-14"
+        ]
+      },
+      "heroes": {
+        "demo-player-04": "calico",
+        "demo-player-01": "sinclair",
+        "demo-player-15": "mina",
+        "demo-player-02": "vyper",
+        "demo-player-12": "doorman",
+        "demo-player-07": "lash",
+        "demo-player-10": "ivy",
+        "demo-player-11": "mo-and-krill",
+        "demo-player-17": "mcginnis",
+        "demo-player-03": "infernus",
+        "demo-player-13": "wraith",
+        "demo-player-14": "paige"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.388259,
+          "ratings": {
+            "demo-player-04": {
+              "mu": 23.924955064485232,
+              "sigma": 7.277831900727882
+            },
+            "demo-player-01": {
+              "mu": 23.211554595497798,
+              "sigma": 7.174874116963434
+            },
+            "demo-player-15": {
+              "mu": 19.874775537668672,
+              "sigma": 7.191626245729484
+            },
+            "demo-player-02": {
+              "mu": 25.484243708802197,
+              "sigma": 7.31920304775311
+            },
+            "demo-player-12": {
+              "mu": 27.862823058286363,
+              "sigma": 7.381821586638337
+            },
+            "demo-player-07": {
+              "mu": 24.981923834098417,
+              "sigma": 7.407081690221349
+            },
+            "demo-player-10": {
+              "mu": 22.817639290860868,
+              "sigma": 7.174050347521831
+            },
+            "demo-player-11": {
+              "mu": 28.811783937403874,
+              "sigma": 7.301814124092132
+            },
+            "demo-player-17": {
+              "mu": 16.961934742485006,
+              "sigma": 7.266339435407584
+            },
+            "demo-player-03": {
+              "mu": 28.65329842393282,
+              "sigma": 7.064787307119422
+            },
+            "demo-player-13": {
+              "mu": 24.86395889021984,
+              "sigma": 7.312806614082773
+            },
+            "demo-player-14": {
+              "mu": 30.559695167389886,
+              "sigma": 7.187824159294306
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-033",
+      "timestamp": "2025-03-07T18:56:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-10",
+          "demo-player-02",
+          "demo-player-12",
+          "demo-player-08",
+          "demo-player-17",
+          "demo-player-07"
+        ],
+        "sapphire": [
+          "demo-player-05",
+          "demo-player-06",
+          "demo-player-16",
+          "demo-player-15",
+          "demo-player-13",
+          "demo-player-01"
+        ]
+      },
+      "heroes": {
+        "demo-player-10": "lash",
+        "demo-player-02": "seven",
+        "demo-player-12": "haze",
+        "demo-player-08": "mo-and-krill",
+        "demo-player-17": "yamato",
+        "demo-player-07": "billy",
+        "demo-player-05": "mcginnis",
+        "demo-player-06": "vindicta",
+        "demo-player-16": "lady-geist",
+        "demo-player-15": "kelvin",
+        "demo-player-13": "calico",
+        "demo-player-01": "abrams"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.278179,
+          "ratings": {
+            "demo-player-10": {
+              "mu": 23.673990198869433,
+              "sigma": 7.127889622943294
+            },
+            "demo-player-02": {
+              "mu": 24.59289382532981,
+              "sigma": 7.2696269832417535
+            },
+            "demo-player-12": {
+              "mu": 26.95615825025737,
+              "sigma": 7.330943006718065
+            },
+            "demo-player-08": {
+              "mu": 21.19526710726648,
+              "sigma": 7.147949401104243
+            },
+            "demo-player-17": {
+              "mu": 17.84045707496279,
+              "sigma": 7.21834529468734
+            },
+            "demo-player-07": {
+              "mu": 24.069044107791314,
+              "sigma": 7.3556713845187955
+            },
+            "demo-player-05": {
+              "mu": 28.95272698193849,
+              "sigma": 7.260395034420935
+            },
+            "demo-player-06": {
+              "mu": 22.639805364007465,
+              "sigma": 7.10851446276166
+            },
+            "demo-player-16": {
+              "mu": 34.72628068448794,
+              "sigma": 7.268455343060832
+            },
+            "demo-player-15": {
+              "mu": 19.014224062424983,
+              "sigma": 7.144635759177347
+            },
+            "demo-player-13": {
+              "mu": 25.753751710614083,
+              "sigma": 7.263871559469364
+            },
+            "demo-player-01": {
+              "mu": 22.355007039570886,
+              "sigma": 7.128216421629709
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-034",
+      "timestamp": "2025-03-08T19:09:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-05",
+          "demo-player-16",
+          "demo-player-14",
+          "demo-player-07",
+          "demo-player-08",
+          "demo-player-17"
+        ],
+        "sapphire": [
+          "demo-player-11",
+          "demo-player-01",
+          "demo-player-03",
+          "demo-player-02",
+          "demo-player-09",
+          "demo-player-13"
+        ]
+      },
+      "heroes": {
+        "demo-player-05": "lash",
+        "demo-player-16": "bebop",
+        "demo-player-14": "calico",
+        "demo-player-07": "sinclair",
+        "demo-player-08": "doorman",
+        "demo-player-17": "billy",
+        "demo-player-11": "vindicta",
+        "demo-player-01": "drifter",
+        "demo-player-03": "dynamo",
+        "demo-player-02": "haze",
+        "demo-player-09": "pocket",
+        "demo-player-13": "ivy"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.633669,
+          "ratings": {
+            "demo-player-05": {
+              "mu": 27.633495145901612,
+              "sigma": 7.21507039575394
+            },
+            "demo-player-16": {
+              "mu": 33.404118452307486,
+              "sigma": 7.222977153216587
+            },
+            "demo-player-14": {
+              "mu": 31.4193370884,
+              "sigma": 7.1413927712158705
+            },
+            "demo-player-07": {
+              "mu": 25.423122433124657,
+              "sigma": 7.308202888257941
+            },
+            "demo-player-08": {
+              "mu": 22.47395741767713,
+              "sigma": 7.1044500162394915
+            },
+            "demo-player-17": {
+              "mu": 19.144454084862026,
+              "sigma": 7.173526186074883
+            },
+            "demo-player-11": {
+              "mu": 29.698904071697875,
+              "sigma": 7.25310273928795
+            },
+            "demo-player-01": {
+              "mu": 21.083366056194524,
+              "sigma": 7.085361608331535
+            },
+            "demo-player-03": {
+              "mu": 29.48376647891156,
+              "sigma": 7.0207371365870905
+            },
+            "demo-player-02": {
+              "mu": 25.91548228827381,
+              "sigma": 7.223830168693804
+            },
+            "demo-player-09": {
+              "mu": 20.15940128661875,
+              "sigma": 7.115653434170721
+            },
+            "demo-player-13": {
+              "mu": 24.43325635206067,
+              "sigma": 7.21848073372764
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-035",
+      "timestamp": "2025-03-09T20:22:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-10",
+          "demo-player-11",
+          "demo-player-15",
+          "demo-player-09",
+          "demo-player-02",
+          "demo-player-17"
+        ],
+        "sapphire": [
+          "demo-player-08",
+          "demo-player-16",
+          "demo-player-14",
+          "demo-player-12",
+          "demo-player-04",
+          "demo-player-07"
+        ]
+      },
+      "heroes": {
+        "demo-player-10": "mina",
+        "demo-player-11": "vyper",
+        "demo-player-15": "lash",
+        "demo-player-09": "paige",
+        "demo-player-02": "sinclair",
+        "demo-player-17": "seven",
+        "demo-player-08": "drifter",
+        "demo-player-16": "mirage",
+        "demo-player-14": "ivy",
+        "demo-player-12": "calico",
+        "demo-player-04": "holliday",
+        "demo-player-07": "warden"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.223839,
+          "ratings": {
+            "demo-player-10": {
+              "mu": 24.945514602090256,
+              "sigma": 7.08476158869463
+            },
+            "demo-player-11": {
+              "mu": 30.90306706892093,
+              "sigma": 7.20468553181166
+            },
+            "demo-player-15": {
+              "mu": 17.736718865052794,
+              "sigma": 7.101479056671273
+            },
+            "demo-player-09": {
+              "mu": 21.318363910938366,
+              "sigma": 7.069978443773715
+            },
+            "demo-player-02": {
+              "mu": 27.1099464918859,
+              "sigma": 7.176005769852851
+            },
+            "demo-player-17": {
+              "mu": 17.966565334700178,
+              "sigma": 7.126436012211697
+            },
+            "demo-player-08": {
+              "mu": 21.318640935429958,
+              "sigma": 7.058728450808627
+            },
+            "demo-player-16": {
+              "mu": 32.209936287643146,
+              "sigma": 7.17489089624782
+            },
+            "demo-player-14": {
+              "mu": 30.25197585808026,
+              "sigma": 7.09494254796437
+            },
+            "demo-player-12": {
+              "mu": 28.301148734371488,
+              "sigma": 7.28395896289743
+            },
+            "demo-player-04": {
+              "mu": 23.04365195277964,
+              "sigma": 7.229104261658156
+            },
+            "demo-player-07": {
+              "mu": 24.200596869284286,
+              "sigma": 7.258367690836946
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-036",
+      "timestamp": "2025-03-10T21:35:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-05",
+          "demo-player-15",
+          "demo-player-06",
+          "demo-player-07",
+          "demo-player-09",
+          "demo-player-10"
+        ],
+        "sapphire": [
+          "demo-player-03",
+          "demo-player-02",
+          "demo-player-01",
+          "demo-player-17",
+          "demo-player-08",
+          "demo-player-04"
+        ]
+      },
+      "heroes": {
+        "demo-player-05": "wraith",
+        "demo-player-15": "lady-geist",
+        "demo-player-06": "dynamo",
+        "demo-player-07": "grey-talon",
+        "demo-player-09": "billy",
+        "demo-player-10": "pocket",
+        "demo-player-03": "mirage",
+        "demo-player-02": "infernus",
+        "demo-player-01": "ivy",
+        "demo-player-17": "mo-and-krill",
+        "demo-player-08": "haze",
+        "demo-player-04": "mina"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.442485,
+          "ratings": {
+            "demo-player-05": {
+              "mu": 26.441925667001108,
+              "sigma": 7.167144322258087
+            },
+            "demo-player-15": {
+              "mu": 19.08512463807177,
+              "sigma": 7.0607972396436995
+            },
+            "demo-player-06": {
+              "mu": 21.375183184304994,
+              "sigma": 7.0660200669190205
+            },
+            "demo-player-07": {
+              "mu": 22.791962260234012,
+              "sigma": 7.214531504079885
+            },
+            "demo-player-09": {
+              "mu": 22.65483539069759,
+              "sigma": 7.029845225004557
+            },
+            "demo-player-10": {
+              "mu": 26.28758020360918,
+              "sigma": 7.044371519835587
+            },
+            "demo-player-03": {
+              "mu": 30.612020531412938,
+              "sigma": 6.976895111429427
+            },
+            "demo-player-02": {
+              "mu": 28.486798635158344,
+              "sigma": 7.134006589658762
+            },
+            "demo-player-01": {
+              "mu": 22.232483467148015,
+              "sigma": 7.040276937734752
+            },
+            "demo-player-17": {
+              "mu": 19.324463945346167,
+              "sigma": 7.085316098925344
+            },
+            "demo-player-08": {
+              "mu": 19.986418760134267,
+              "sigma": 7.018469042375095
+            },
+            "demo-player-04": {
+              "mu": 21.646351286305094,
+              "sigma": 7.185804851201369
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-037",
+      "timestamp": "2025-03-11T18:48:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-12",
+          "demo-player-09",
+          "demo-player-03",
+          "demo-player-17",
+          "demo-player-08",
+          "demo-player-06"
+        ],
+        "sapphire": [
+          "demo-player-05",
+          "demo-player-16",
+          "demo-player-14",
+          "demo-player-01",
+          "demo-player-04",
+          "demo-player-02"
+        ]
+      },
+      "heroes": {
+        "demo-player-12": "yamato",
+        "demo-player-09": "doorman",
+        "demo-player-03": "vyper",
+        "demo-player-17": "kelvin",
+        "demo-player-08": "pocket",
+        "demo-player-06": "wraith",
+        "demo-player-05": "mirage",
+        "demo-player-16": "infernus",
+        "demo-player-14": "holliday",
+        "demo-player-01": "grey-talon",
+        "demo-player-04": "lash",
+        "demo-player-02": "dynamo"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.229019,
+          "ratings": {
+            "demo-player-12": {
+              "mu": 26.882564907193707,
+              "sigma": 7.239649804083948
+            },
+            "demo-player-09": {
+              "mu": 21.746578361209288,
+              "sigma": 6.983487009149457
+            },
+            "demo-player-03": {
+              "mu": 31.506648680175143,
+              "sigma": 6.9317465530791305
+            },
+            "demo-player-17": {
+              "mu": 20.24710919489223,
+              "sigma": 7.037994037833153
+            },
+            "demo-player-08": {
+              "mu": 20.89173897193756,
+              "sigma": 6.972494963010821
+            },
+            "demo-player-06": {
+              "mu": 20.45755583098872,
+              "sigma": 7.018930761728266
+            },
+            "demo-player-05": {
+              "mu": 25.497849084539286,
+              "sigma": 7.117971316843502
+            },
+            "demo-player-16": {
+              "mu": 30.833511872540882,
+              "sigma": 7.132574519153227
+            },
+            "demo-player-14": {
+              "mu": 28.906050863139537,
+              "sigma": 7.05404904668038
+            },
+            "demo-player-01": {
+              "mu": 23.143437675230675,
+              "sigma": 6.9938659017737725
+            },
+            "demo-player-04": {
+              "mu": 22.595349638759355,
+              "sigma": 7.136408086006778
+            },
+            "demo-player-02": {
+              "mu": 29.42216658447861,
+              "sigma": 7.085686548197247
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-038",
+      "timestamp": "2025-03-12T19:01:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-17",
+          "demo-player-05",
+          "demo-player-16",
+          "demo-player-08",
+          "demo-player-09",
+          "demo-player-01"
+        ],
+        "sapphire": [
+          "demo-player-02",
+          "demo-player-13",
+          "demo-player-03",
+          "demo-player-12",
+          "demo-player-11",
+          "demo-player-07"
+        ]
+      },
+      "heroes": {
+        "demo-player-17": "warden",
+        "demo-player-05": "mina",
+        "demo-player-16": "infernus",
+        "demo-player-08": "mo-and-krill",
+        "demo-player-09": "doorman",
+        "demo-player-01": "shiv",
+        "demo-player-02": "billy",
+        "demo-player-13": "holliday",
+        "demo-player-03": "seven",
+        "demo-player-12": "mcginnis",
+        "demo-player-11": "kelvin",
+        "demo-player-07": "sinclair"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.164674,
+          "ratings": {
+            "demo-player-17": {
+              "mu": 19.61187127684044,
+              "sigma": 6.997142909063487
+            },
+            "demo-player-05": {
+              "mu": 26.14760423593036,
+              "sigma": 7.075347701733995
+            },
+            "demo-player-16": {
+              "mu": 31.48593546332363,
+              "sigma": 7.089683512792473
+            },
+            "demo-player-08": {
+              "mu": 20.26826806601132,
+              "sigma": 6.93279411572413
+            },
+            "demo-player-09": {
+              "mu": 21.121140399462888,
+              "sigma": 6.943594617290868
+            },
+            "demo-player-01": {
+              "mu": 23.77073581149816,
+              "sigma": 6.953470864914891
+            },
+            "demo-player-02": {
+              "mu": 30.066041758927796,
+              "sigma": 7.043650208757159
+            },
+            "demo-player-13": {
+              "mu": 25.625952382097193,
+              "sigma": 7.170764150923965
+            },
+            "demo-player-03": {
+              "mu": 30.890442775798338,
+              "sigma": 6.892750542097924
+            },
+            "demo-player-12": {
+              "mu": 26.210408414017017,
+              "sigma": 7.195121065181864
+            },
+            "demo-player-11": {
+              "mu": 32.290945224912484,
+              "sigma": 7.162172065644291
+            },
+            "demo-player-07": {
+              "mu": 21.835362152576433,
+              "sigma": 7.164361616693192
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-039",
+      "timestamp": "2025-03-13T20:14:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-12",
+          "demo-player-11",
+          "demo-player-02",
+          "demo-player-14",
+          "demo-player-08",
+          "demo-player-15"
+        ],
+        "sapphire": [
+          "demo-player-10",
+          "demo-player-09",
+          "demo-player-06",
+          "demo-player-03",
+          "demo-player-01",
+          "demo-player-07"
+        ]
+      },
+      "heroes": {
+        "demo-player-12": "bebop",
+        "demo-player-11": "calico",
+        "demo-player-02": "mo-and-krill",
+        "demo-player-14": "kelvin",
+        "demo-player-08": "warden",
+        "demo-player-15": "billy",
+        "demo-player-10": "grey-talon",
+        "demo-player-09": "drifter",
+        "demo-player-06": "pocket",
+        "demo-player-03": "paradox",
+        "demo-player-01": "paige",
+        "demo-player-07": "victor"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.724041,
+          "ratings": {
+            "demo-player-12": {
+              "mu": 26.774497531183105,
+              "sigma": 7.154875832562528
+            },
+            "demo-player-11": {
+              "mu": 32.84988053620185,
+              "sigma": 7.1224869854336745
+            },
+            "demo-player-02": {
+              "mu": 30.606633744374385,
+              "sigma": 7.0059379686384
+            },
+            "demo-player-14": {
+              "mu": 29.544189878214365,
+              "sigma": 7.012583054232921
+            },
+            "demo-player-08": {
+              "mu": 19.744555967138677,
+              "sigma": 6.8974163172213085
+            },
+            "demo-player-15": {
+              "mu": 18.168853117784657,
+              "sigma": 7.0138139503894745
+            },
+            "demo-player-10": {
+              "mu": 25.375566225059664,
+              "sigma": 6.99772062961178
+            },
+            "demo-player-09": {
+              "mu": 20.5957954981579,
+              "sigma": 6.90804782606294
+            },
+            "demo-player-06": {
+              "mu": 19.825754011409266,
+              "sigma": 6.978416631799126
+            },
+            "demo-player-03": {
+              "mu": 31.408123332972984,
+              "sigma": 6.8574561340433595
+            },
+            "demo-player-01": {
+              "mu": 23.243895610201225,
+              "sigma": 6.917769083941926
+            },
+            "demo-player-07": {
+              "mu": 22.394639214600623,
+              "sigma": 7.1246394716901635
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-040",
+      "timestamp": "2025-03-14T21:27:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-09",
+          "demo-player-11",
+          "demo-player-05",
+          "demo-player-16",
+          "demo-player-10",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-01",
+          "demo-player-17",
+          "demo-player-12",
+          "demo-player-06",
+          "demo-player-13",
+          "demo-player-08"
+        ]
+      },
+      "heroes": {
+        "demo-player-09": "wraith",
+        "demo-player-11": "yamato",
+        "demo-player-05": "billy",
+        "demo-player-16": "mcginnis",
+        "demo-player-10": "grey-talon",
+        "demo-player-03": "lady-geist",
+        "demo-player-01": "vyper",
+        "demo-player-17": "sinclair",
+        "demo-player-12": "pocket",
+        "demo-player-06": "seven",
+        "demo-player-13": "shiv",
+        "demo-player-08": "lash"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.890465,
+          "ratings": {
+            "demo-player-09": {
+              "mu": 19.915851629664854,
+              "sigma": 6.866958575353599
+            },
+            "demo-player-11": {
+              "mu": 33.572686906629,
+              "sigma": 7.0769167984630075
+            },
+            "demo-player-05": {
+              "mu": 25.60213649357289,
+              "sigma": 7.037696969360613
+            },
+            "demo-player-16": {
+              "mu": 30.93825537490671,
+              "sigma": 7.051799086094276
+            },
+            "demo-player-10": {
+              "mu": 24.677857776835463,
+              "sigma": 6.95498093960728
+            },
+            "demo-player-03": {
+              "mu": 30.73810080866511,
+              "sigma": 6.817279386343211
+            },
+            "demo-player-01": {
+              "mu": 22.56203699001888,
+              "sigma": 6.876502960369188
+            },
+            "demo-player-17": {
+              "mu": 19.078393490592653,
+              "sigma": 6.960750506297198
+            },
+            "demo-player-12": {
+              "mu": 27.503891736132324,
+              "sigma": 7.1086709502410566
+            },
+            "demo-player-06": {
+              "mu": 19.131889122724267,
+              "sigma": 6.936035824709429
+            },
+            "demo-player-13": {
+              "mu": 26.186229367386918,
+              "sigma": 7.13093349400034
+            },
+            "demo-player-08": {
+              "mu": 20.422408878577457,
+              "sigma": 6.856099676553688
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-041",
+      "timestamp": "2025-03-15T18:40:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-14",
+          "demo-player-10",
+          "demo-player-09",
+          "demo-player-08",
+          "demo-player-16",
+          "demo-player-01"
+        ],
+        "sapphire": [
+          "demo-player-17",
+          "demo-player-07",
+          "demo-player-11",
+          "demo-player-02",
+          "demo-player-04",
+          "demo-player-06"
+        ]
+      },
+      "heroes": {
+        "demo-player-14": "vyper",
+        "demo-player-10": "holliday",
+        "demo-player-09": "warden",
+        "demo-player-08": "grey-talon",
+        "demo-player-16": "victor",
+        "demo-player-01": "lady-geist",
+        "demo-player-17": "billy",
+        "demo-player-07": "mo-and-krill",
+        "demo-player-11": "abrams",
+        "demo-player-02": "kelvin",
+        "demo-player-04": "mcginnis",
+        "demo-player-06": "paige"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.526361,
+          "ratings": {
+            "demo-player-14": {
+              "mu": 30.244864772186,
+              "sigma": 6.969123956985093
+            },
+            "demo-player-10": {
+              "mu": 25.118254254345086,
+              "sigma": 6.922695299650377
+            },
+            "demo-player-09": {
+              "mu": 20.345172906059364,
+              "sigma": 6.835910127764171
+            },
+            "demo-player-08": {
+              "mu": 19.994444122480097,
+              "sigma": 6.825153416184525
+            },
+            "demo-player-16": {
+              "mu": 31.390996669978414,
+              "sigma": 7.018116212440386
+            },
+            "demo-player-01": {
+              "mu": 22.13152163290663,
+              "sigma": 6.845273163764772
+            },
+            "demo-player-17": {
+              "mu": 18.63726614526308,
+              "sigma": 6.928332149346315
+            },
+            "demo-player-07": {
+              "mu": 21.6713959594467,
+              "sigma": 7.079490639294837
+            },
+            "demo-player-11": {
+              "mu": 34.028658721288146,
+              "sigma": 7.042865141139725
+            },
+            "demo-player-02": {
+              "mu": 31.305981543468974,
+              "sigma": 6.962604419120262
+            },
+            "demo-player-04": {
+              "mu": 23.24847464251121,
+              "sigma": 7.093446704018879
+            },
+            "demo-player-06": {
+              "mu": 18.693888281501465,
+              "sigma": 6.9039691247298585
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-042",
+      "timestamp": "2025-03-16T19:53:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-04",
+          "demo-player-03",
+          "demo-player-01",
+          "demo-player-11",
+          "demo-player-08",
+          "demo-player-05"
+        ],
+        "sapphire": [
+          "demo-player-17",
+          "demo-player-09",
+          "demo-player-15",
+          "demo-player-12",
+          "demo-player-10",
+          "demo-player-02"
+        ]
+      },
+      "heroes": {
+        "demo-player-04": "warden",
+        "demo-player-03": "grey-talon",
+        "demo-player-01": "sinclair",
+        "demo-player-11": "holliday",
+        "demo-player-08": "mina",
+        "demo-player-05": "kelvin",
+        "demo-player-17": "ivy",
+        "demo-player-09": "vindicta",
+        "demo-player-15": "paradox",
+        "demo-player-12": "seven",
+        "demo-player-10": "lash",
+        "demo-player-02": "infernus"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.731308,
+          "ratings": {
+            "demo-player-04": {
+              "mu": 22.267301452532887,
+              "sigma": 7.043613014287871
+            },
+            "demo-player-03": {
+              "mu": 31.16123359469503,
+              "sigma": 6.78691544410394
+            },
+            "demo-player-01": {
+              "mu": 23.04524986555718,
+              "sigma": 6.801208600057976
+            },
+            "demo-player-11": {
+              "mu": 33.061426709538644,
+              "sigma": 6.994106186344866
+            },
+            "demo-player-08": {
+              "mu": 20.902809751316248,
+              "sigma": 6.781483003745015
+            },
+            "demo-player-05": {
+              "mu": 26.05306907685709,
+              "sigma": 7.004220004319491
+            },
+            "demo-player-17": {
+              "mu": 17.701232750971062,
+              "sigma": 6.8819503214366335
+            },
+            "demo-player-09": {
+              "mu": 21.256403604344285,
+              "sigma": 6.792029276479013
+            },
+            "demo-player-15": {
+              "mu": 18.869773973033006,
+              "sigma": 6.970331571349475
+            },
+            "demo-player-12": {
+              "mu": 27.04381941544573,
+              "sigma": 7.074095502955931
+            },
+            "demo-player-10": {
+              "mu": 26.052765386088424,
+              "sigma": 6.877092323618625
+            },
+            "demo-player-02": {
+              "mu": 30.36066606475538,
+              "sigma": 6.91551942560046
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-043",
+      "timestamp": "2025-03-17T20:06:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-13",
+          "demo-player-15",
+          "demo-player-17",
+          "demo-player-14",
+          "demo-player-08",
+          "demo-player-11"
+        ],
+        "sapphire": [
+          "demo-player-03",
+          "demo-player-02",
+          "demo-player-16",
+          "demo-player-04",
+          "demo-player-05",
+          "demo-player-07"
+        ]
+      },
+      "heroes": {
+        "demo-player-13": "warden",
+        "demo-player-15": "bebop",
+        "demo-player-17": "calico",
+        "demo-player-14": "holliday",
+        "demo-player-08": "mo-and-krill",
+        "demo-player-11": "wraith",
+        "demo-player-03": "viscous",
+        "demo-player-02": "paige",
+        "demo-player-16": "pocket",
+        "demo-player-04": "mirage",
+        "demo-player-05": "yamato",
+        "demo-player-07": "billy"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.247755,
+          "ratings": {
+            "demo-player-13": {
+              "mu": 25.723271272706487,
+              "sigma": 7.096025551050618
+            },
+            "demo-player-15": {
+              "mu": 18.178966374234275,
+              "sigma": 6.927094571380781
+            },
+            "demo-player-17": {
+              "mu": 17.027829975561932,
+              "sigma": 6.8403654631898085
+            },
+            "demo-player-14": {
+              "mu": 31.191951146376592,
+              "sigma": 6.922581786301773
+            },
+            "demo-player-08": {
+              "mu": 21.55669733554933,
+              "sigma": 6.741820085744518
+            },
+            "demo-player-11": {
+              "mu": 33.75695412477142,
+              "sigma": 6.950521346017898
+            },
+            "demo-player-03": {
+              "mu": 31.816169059325993,
+              "sigma": 6.747155312544008
+            },
+            "demo-player-02": {
+              "mu": 29.680678720196184,
+              "sigma": 6.8733119986363524
+            },
+            "demo-player-16": {
+              "mu": 32.35144378635476,
+              "sigma": 6.970569346370276
+            },
+            "demo-player-04": {
+              "mu": 22.97270870550975,
+              "sigma": 6.99908007967231
+            },
+            "demo-player-05": {
+              "mu": 26.750609193742058,
+              "sigma": 6.96044256048662
+            },
+            "demo-player-07": {
+              "mu": 20.694079275014495,
+              "sigma": 7.029955018254843
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-044",
+      "timestamp": "2025-03-18T21:19:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-09",
+          "demo-player-07",
+          "demo-player-06",
+          "demo-player-02",
+          "demo-player-13",
+          "demo-player-17"
+        ],
+        "sapphire": [
+          "demo-player-10",
+          "demo-player-01",
+          "demo-player-15",
+          "demo-player-11",
+          "demo-player-04",
+          "demo-player-14"
+        ]
+      },
+      "heroes": {
+        "demo-player-09": "shiv",
+        "demo-player-07": "calico",
+        "demo-player-06": "ivy",
+        "demo-player-02": "mina",
+        "demo-player-13": "paige",
+        "demo-player-17": "victor",
+        "demo-player-10": "billy",
+        "demo-player-01": "doorman",
+        "demo-player-15": "seven",
+        "demo-player-11": "sinclair",
+        "demo-player-04": "lady-geist",
+        "demo-player-14": "infernus"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.142447,
+          "ratings": {
+            "demo-player-09": {
+              "mu": 20.60048094989069,
+              "sigma": 6.752082474141578
+            },
+            "demo-player-07": {
+              "mu": 19.364906100837807,
+              "sigma": 6.986615369911128
+            },
+            "demo-player-06": {
+              "mu": 17.764425362126698,
+              "sigma": 6.858082948668933
+            },
+            "demo-player-02": {
+              "mu": 28.410071249376973,
+              "sigma": 6.832854190436399
+            },
+            "demo-player-13": {
+              "mu": 27.077542605916058,
+              "sigma": 7.051541040219912
+            },
+            "demo-player-17": {
+              "mu": 18.286287366408285,
+              "sigma": 6.800595691100013
+            },
+            "demo-player-10": {
+              "mu": 25.380312851521555,
+              "sigma": 6.835597061332534
+            },
+            "demo-player-01": {
+              "mu": 23.70294638988077,
+              "sigma": 6.761191950672619
+            },
+            "demo-player-15": {
+              "mu": 19.469533310592034,
+              "sigma": 6.885763976568888
+            },
+            "demo-player-11": {
+              "mu": 35.056263705578935,
+              "sigma": 6.908762403319498
+            },
+            "demo-player-04": {
+              "mu": 21.65518347757037,
+              "sigma": 6.956318724810107
+            },
+            "demo-player-14": {
+              "mu": 32.48083734585768,
+              "sigma": 6.881333374683987
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-045",
+      "timestamp": "2025-03-19T18:32:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-14",
+          "demo-player-01",
+          "demo-player-10",
+          "demo-player-08",
+          "demo-player-15",
+          "demo-player-03"
+        ],
+        "sapphire": [
+          "demo-player-04",
+          "demo-player-09",
+          "demo-player-02",
+          "demo-player-13",
+          "demo-player-07",
+          "demo-player-06"
+        ]
+      },
+      "heroes": {
+        "demo-player-14": "paradox",
+        "demo-player-01": "doorman",
+        "demo-player-10": "abrams",
+        "demo-player-08": "mo-and-krill",
+        "demo-player-15": "wraith",
+        "demo-player-03": "ivy",
+        "demo-player-04": "mirage",
+        "demo-player-09": "lash",
+        "demo-player-02": "infernus",
+        "demo-player-13": "seven",
+        "demo-player-07": "pocket",
+        "demo-player-06": "shiv"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.630314,
+          "ratings": {
+            "demo-player-14": {
+              "mu": 31.04411434648892,
+              "sigma": 6.846435948380638
+            },
+            "demo-player-01": {
+              "mu": 22.315945747270558,
+              "sigma": 6.728128297394949
+            },
+            "demo-player-10": {
+              "mu": 23.96262175676036,
+              "sigma": 6.8014053062370925
+            },
+            "demo-player-08": {
+              "mu": 22.779161450966704,
+              "sigma": 6.703776548780639
+            },
+            "demo-player-15": {
+              "mu": 18.030959895658796,
+              "sigma": 6.850797691939227
+            },
+            "demo-player-03": {
+              "mu": 30.59176964834149,
+              "sigma": 6.70892527556139
+            },
+            "demo-player-04": {
+              "mu": 20.18698277815726,
+              "sigma": 6.920243985316363
+            },
+            "demo-player-09": {
+              "mu": 21.98374721533271,
+              "sigma": 6.7191097361173995
+            },
+            "demo-player-02": {
+              "mu": 29.82662500800751,
+              "sigma": 6.798657283490725
+            },
+            "demo-player-13": {
+              "mu": 28.586207852456788,
+              "sigma": 7.013882549551758
+            },
+            "demo-player-07": {
+              "mu": 20.84592163102589,
+              "sigma": 6.950007286045002
+            },
+            "demo-player-06": {
+              "mu": 19.191457478285425,
+              "sigma": 6.823497724836996
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-046",
+      "timestamp": "2025-03-20T19:45:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-16",
+          "demo-player-01",
+          "demo-player-12",
+          "demo-player-03",
+          "demo-player-15",
+          "demo-player-11"
+        ],
+        "sapphire": [
+          "demo-player-07",
+          "demo-player-06",
+          "demo-player-14",
+          "demo-player-04",
+          "demo-player-08",
+          "demo-player-10"
+        ]
+      },
+      "heroes": {
+        "demo-player-16": "seven",
+        "demo-player-01": "paige",
+        "demo-player-12": "ivy",
+        "demo-player-03": "drifter",
+        "demo-player-15": "mina",
+        "demo-player-11": "pocket",
+        "demo-player-07": "wraith",
+        "demo-player-06": "doorman",
+        "demo-player-14": "mcginnis",
+        "demo-player-04": "haze",
+        "demo-player-08": "mo-and-krill",
+        "demo-player-10": "dynamo"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "random",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.860552,
+          "ratings": {
+            "demo-player-16": {
+              "mu": 31.044629048620656,
+              "sigma": 6.928337502612233
+            },
+            "demo-player-01": {
+              "mu": 23.092072489624773,
+              "sigma": 6.685985607390137
+            },
+            "demo-player-12": {
+              "mu": 26.332294256569682,
+              "sigma": 7.02886474225217
+            },
+            "demo-player-03": {
+              "mu": 31.363473042532075,
+              "sigma": 6.667148996334461
+            },
+            "demo-player-15": {
+              "mu": 18.835641439337564,
+              "sigma": 6.806264739061579
+            },
+            "demo-player-11": {
+              "mu": 33.60806599215726,
+              "sigma": 6.873437269332341
+            },
+            "demo-player-07": {
+              "mu": 20.017768871277013,
+              "sigma": 6.902794335684507
+            },
+            "demo-player-06": {
+              "mu": 18.3931754130666,
+              "sigma": 6.778857663876444
+            },
+            "demo-player-14": {
+              "mu": 31.84777172384257,
+              "sigma": 6.801989467514701
+            },
+            "demo-player-04": {
+              "mu": 19.36590691616332,
+              "sigma": 6.873644850134753
+            },
+            "demo-player-08": {
+              "mu": 23.549681003504716,
+              "sigma": 6.662098157047704
+            },
+            "demo-player-10": {
+              "mu": 24.755743768729385,
+              "sigma": 6.7578451524227745
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-047",
+      "timestamp": "2025-03-21T20:58:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-09",
+          "demo-player-17",
+          "demo-player-13",
+          "demo-player-04",
+          "demo-player-08",
+          "demo-player-16"
+        ],
+        "sapphire": [
+          "demo-player-07",
+          "demo-player-11",
+          "demo-player-03",
+          "demo-player-15",
+          "demo-player-05",
+          "demo-player-14"
+        ]
+      },
+      "heroes": {
+        "demo-player-09": "haze",
+        "demo-player-17": "drifter",
+        "demo-player-13": "paradox",
+        "demo-player-04": "victor",
+        "demo-player-08": "vindicta",
+        "demo-player-16": "pocket",
+        "demo-player-07": "doorman",
+        "demo-player-11": "kelvin",
+        "demo-player-03": "dynamo",
+        "demo-player-15": "mo-and-krill",
+        "demo-player-05": "sinclair",
+        "demo-player-14": "warden"
+      },
+      "winner": "sapphire",
+      "draft": {
+        "mode": "manual",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.211738,
+          "ratings": {
+            "demo-player-09": {
+              "mu": 21.209699441209352,
+              "sigma": 6.676522203066756
+            },
+            "demo-player-17": {
+              "mu": 19.68949933543952,
+              "sigma": 6.766891164061367
+            },
+            "demo-player-13": {
+              "mu": 27.742764771160353,
+              "sigma": 6.965334453047614
+            },
+            "demo-player-04": {
+              "mu": 18.874610130297114,
+              "sigma": 6.838587609649349
+            },
+            "demo-player-08": {
+              "mu": 23.088155274829155,
+              "sigma": 6.630245033617306
+            },
+            "demo-player-16": {
+              "mu": 31.543774148484268,
+              "sigma": 6.892224657077681
+            },
+            "demo-player-07": {
+              "mu": 19.522296919000514,
+              "sigma": 6.867279877345203
+            },
+            "demo-player-11": {
+              "mu": 34.099333108974214,
+              "sigma": 6.838193310898275
+            },
+            "demo-player-03": {
+              "mu": 31.825698734212292,
+              "sigma": 6.635048366712919
+            },
+            "demo-player-15": {
+              "mu": 19.317354797614293,
+              "sigma": 6.7720652721708445
+            },
+            "demo-player-05": {
+              "mu": 25.44758821505673,
+              "sigma": 6.918397758419859
+            },
+            "demo-player-14": {
+              "mu": 31.36666324947807,
+              "sigma": 6.768039867733929
+            }
+          }
+        }
+      },
+      "edits": []
+    },
+    {
+      "id": "demo-match-048",
+      "timestamp": "2025-03-22T21:11:00.000Z",
+      "patchId": "demo-patch-03",
+      "teams": {
+        "amber": [
+          "demo-player-11",
+          "demo-player-06",
+          "demo-player-10",
+          "demo-player-07",
+          "demo-player-05",
+          "demo-player-16"
+        ],
+        "sapphire": [
+          "demo-player-08",
+          "demo-player-09",
+          "demo-player-12",
+          "demo-player-04",
+          "demo-player-14",
+          "demo-player-01"
+        ]
+      },
+      "heroes": {
+        "demo-player-11": "mo-and-krill",
+        "demo-player-06": "victor",
+        "demo-player-10": "kelvin",
+        "demo-player-07": "haze",
+        "demo-player-05": "lash",
+        "demo-player-16": "vyper",
+        "demo-player-08": "shiv",
+        "demo-player-09": "mcginnis",
+        "demo-player-12": "paradox",
+        "demo-player-04": "lady-geist",
+        "demo-player-14": "vindicta",
+        "demo-player-01": "drifter"
+      },
+      "winner": "amber",
+      "draft": {
+        "mode": "captains",
+        "settings": {},
+        "snapshot": {
+          "amberProbability": 0.663623,
+          "ratings": {
+            "demo-player-11": {
+              "mu": 34.69641964538067,
+              "sigma": 6.7987644660488336
+            },
+            "demo-player-06": {
+              "mu": 17.915333134936706,
+              "sigma": 6.745260717698977
+            },
+            "demo-player-10": {
+              "mu": 24.280858800068085,
+              "sigma": 6.724566483224218
+            },
+            "demo-player-07": {
+              "mu": 20.12447297195264,
+              "sigma": 6.827336158416598
+            },
+            "demo-player-05": {
+              "mu": 26.05876112879958,
+              "sigma": 6.877538591290135
+            },
+            "demo-player-16": {
+              "mu": 30.937216094175064,
+              "sigma": 6.851862803350473
+            },
+            "demo-player-08": {
+              "mu": 22.526825864684803,
+              "sigma": 6.594395656703928
+            },
+            "demo-player-09": {
+              "mu": 20.640508097198417,
+              "sigma": 6.639900935553918
+            },
+            "demo-player-12": {
+              "mu": 26.846027097474227,
+              "sigma": 6.991125000130364
+            },
+            "demo-player-04": {
+              "mu": 18.277454744622155,
+              "sigma": 6.799178088627215
+            },
+            "demo-player-14": {
+              "mu": 31.9515633435047,
+              "sigma": 6.729834995847262
+            },
+            "demo-player-01": {
+              "mu": 23.556913303058458,
+              "sigma": 6.653605820061255
+            }
+          }
+        }
+      },
+      "edits": []
+    }
+  ],
+  "ratingMetadata": {
+    "model": "PlackettLuce",
+    "parameters": {
+      "mu": 25,
+      "sigma": 8.333333333333334,
+      "beta": 4.166666666666667,
+      "tau": 0.08333333333333333
+    },
+    "calculationVersion": 1
+  }
+}

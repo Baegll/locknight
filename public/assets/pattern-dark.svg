@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+  <defs>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 0.45 0 0 0  0 0 0.71 0 0  0 0 0 0.6 0" result="gl"/>
+      <feMerge><feMergeNode in="gl"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="bg" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="b"/>
+      <feColorMatrix in="b" type="matrix" values="1 0 0 0 0  0 0.45 0 0 0  0 0 0.71 0 0  0 0 0 0.4 0" result="gl"/>
+      <feMerge><feMergeNode in="gl"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="80" height="80" fill="#050507"/>
+  <line x1="0" y1="40" x2="80" y2="40" stroke="#A1A1AA" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="40" y1="0" x2="40" y2="80" stroke="#A1A1AA" stroke-opacity="0.04" stroke-width="0.5"/>
+  <line x1="0" y1="0" x2="80" y2="80" stroke="#FAFAFA" stroke-opacity="0.05" stroke-width="0.6"/>
+  <line x1="80" y1="0" x2="0" y2="80" stroke="#FAFAFA" stroke-opacity="0.05" stroke-width="0.6"/>
+  <path d="M40 6 L74 40 L40 74 L6 40 Z" fill="none" stroke="#F472B6" stroke-width="0.6" opacity="0.18" filter="url(#g)"/>
+  <path d="M40 18 L62 40 L40 62 L18 40 Z" fill="none" stroke="#F472B6" stroke-width="0.5" opacity="0.3" filter="url(#g)"/>
+  <circle cx="40" cy="40" r="8" fill="#F472B6" opacity="0.04" filter="url(#bg)"/>
+  <circle cx="40" cy="40" r="3" fill="#F472B6" opacity="0.5" filter="url(#g)"/>
+  <circle cx="40" cy="40" r="1.2" fill="#FAFAFA" opacity="0.7"/>
+  <circle cx="0" cy="0" r="1.8" fill="#F472B6" opacity="0.45" filter="url(#g)"/>
+  <circle cx="80" cy="0" r="1.8" fill="#F472B6" opacity="0.45" filter="url(#g)"/>
+  <circle cx="0" cy="80" r="1.8" fill="#F472B6" opacity="0.45" filter="url(#g)"/>
+  <circle cx="80" cy="80" r="1.8" fill="#F472B6" opacity="0.45" filter="url(#g)"/>
+  <line x1="36" y1="0" x2="44" y2="0" stroke="#F472B6" stroke-width="0.8" opacity="0.25"/>
+  <line x1="36" y1="80" x2="44" y2="80" stroke="#F472B6" stroke-width="0.8" opacity="0.25"/>
+  <line x1="0" y1="36" x2="0" y2="44" stroke="#F472B6" stroke-width="0.8" opacity="0.25"/>
+  <line x1="80" y1="36" x2="80" y2="44" stroke="#F472B6" stroke-width="0.8" opacity="0.25"/>
+  <line x1="40" y1="6" x2="40" y2="0" stroke="#FAFAFA" stroke-opacity="0.08" stroke-width="0.4" stroke-dasharray="1.5 2"/>
+  <line x1="40" y1="74" x2="40" y2="80" stroke="#FAFAFA" stroke-opacity="0.08" stroke-width="0.4" stroke-dasharray="1.5 2"/>
+  <line x1="6" y1="40" x2="0" y2="40" stroke="#FAFAFA" stroke-opacity="0.08" stroke-width="0.4" stroke-dasharray="1.5 2"/>
+  <line x1="74" y1="40" x2="80" y2="40" stroke="#FAFAFA" stroke-opacity="0.08" stroke-width="0.4" stroke-dasharray="1.5 2"/>
+  <path d="M17 17 L21 13 L21 21 Z" fill="#F472B6" opacity="0.1"/>
+  <path d="M63 17 L59 13 L59 21 Z" fill="#F472B6" opacity="0.1"/>
+  <path d="M17 63 L21 59 L21 67 Z" fill="#F472B6" opacity="0.1"/>
+  <path d="M63 63 L59 59 L59 67 Z" fill="#F472B6" opacity="0.1"/>
+  <circle cx="0" cy="0" r="5" fill="none" stroke="#F472B6" stroke-width="0.3" opacity="0.08"/>
+  <circle cx="80" cy="0" r="5" fill="none" stroke="#F472B6" stroke-width="0.3" opacity="0.08"/>
+  <circle cx="0" cy="80" r="5" fill="none" stroke="#F472B6" stroke-width="0.3" opacity="0.08"/>
+  <circle cx="80" cy="80" r="5" fill="none" stroke="#F472B6" stroke-width="0.3" opacity="0.08"/>
+</svg>

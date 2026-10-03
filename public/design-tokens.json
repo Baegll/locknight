@@ -1,0 +1,45 @@
+{
+  "fonts": {
+    "heading": "Archivo",
+    "body": "Space Grotesk",
+    "code": "IBM Plex Mono",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+  },
+  "colors": {
+    "lightMode": {
+      "primary": "#18181B",
+      "secondary": "#27272A",
+      "cta": "#BE185D",
+      "ctaHover": "#9F1239",
+      "ctaText": "#FFFFFF",
+      "background": "#F4F4F5",
+      "text": "#09090B",
+      "border": "#D4D4D8",
+      "muted": "#52525B",
+      "highlight": "rgba(190, 24, 93, 0.12)",
+      "textHighlight": "#BE185D22"
+    },
+    "darkMode": {
+      "primary": "#FAFAFA",
+      "secondary": "#D4D4D8",
+      "cta": "#F472B6",
+      "ctaHover": "#F9A8D4",
+      "ctaText": "#09090B",
+      "background": "#050507",
+      "text": "#FAFAFA",
+      "border": "#27272A",
+      "muted": "#A1A1AA",
+      "highlight": "rgba(244, 114, 182, 0.18)",
+      "textHighlight": "#F472B633"
+    }
+  },
+  "site": {
+    "name": "Natalie Johanek",
+    "title": "Natalie Johanek — SDE2",
+    "blogTitle": "Natalie's Blog",
+    "baseUrl": "baegll.github.io",
+    "github": "https://github.com/Baegll",
+    "linkedin": "https://www.linkedin.com/in/natlj/",
+    "email": "nat.johanek@gmail.com"
+  }
+}

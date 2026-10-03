@@ -1,0 +1,18 @@
+---
+import Portfolio from '../../../../layouts/Portfolio.astro';
+import '../../../../styles/locknight.css';
+---
+<Portfolio title="Locknight preferences - Natalie Johanek" description="Choose your hero preferences and share them with your lobby leader." page="projects" stripPath="/ projects / locknight / preferences">
+  <div class="locknight profile-page">
+    <header class="ln-header"><div><a class="back-link" href="/projects/locknight/">Locknight /</a><h1>Preferences<span class="title-period">.</span></h1></div></header>
+    <form id="profile-form">
+      <div class="toolbar"><label class="field"><span>Name</span><input id="profile-name" required maxlength="80" autocomplete="nickname" /></label><div class="actions"><button type="button" class="button" id="load-profile">Load JSON</button><button class="button primary">Download JSON</button></div></div>
+      <input type="file" id="profile-upload" accept=".json,application/json" hidden />
+      <div id="profile-notice" role="status" aria-live="polite" hidden></div>
+      <div id="profile-preferences" class="preferences"></div>
+      <label class="field notes-field"><span>Notes</span><textarea id="profile-notes" maxlength="2000" rows="3"></textarea></label>
+      <details class="profile-json"><summary>View JSON</summary><textarea id="profile-json" rows="12" readonly aria-label="Player preference JSON"></textarea></details>
+    </form>
+  </div>
+  <script>import '../../../../client/preferences.mjs';</script>
+</Portfolio>

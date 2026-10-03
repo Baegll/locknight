@@ -1,0 +1,24 @@
+name: Check Locknight
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      - name: Verify app output
+        run: |
+          test -f dist/projects/locknight/index.html
+          test -f dist/projects/locknight/preferences/index.html
+          node --input-type=module -e "import fs from 'node:fs'; const d=JSON.parse(fs.readFileSync('dist/projects/locknight/initial-records.json')); if(d.players.length || d.matches.length) throw Error('Starting records must be empty');"

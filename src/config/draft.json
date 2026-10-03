@@ -1,0 +1,19 @@
+{
+  "defaultMode": "balanced",
+  "balanceBias": 0.35,
+  "balanceAttempts": 1000,
+  "heroChoices": 2,
+  "modes": [
+    {"id": "balanced", "label": "Balanced random"},
+    {"id": "random", "label": "Random"},
+    {"id": "captains", "label": "Captains"},
+    {"id": "manual", "label": "Manual teams"}
+  ],
+  "preferences": [
+    {"value": -1, "label": "Avoid"},
+    {"value": 0, "label": "Neutral"},
+    {"value": 1, "label": "Comfortable"},
+    {"value": 2, "label": "Preferred"},
+    {"value": 3, "label": "Favorite"}
+  ]
+}

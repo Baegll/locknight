@@ -1,0 +1,495 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baegll.github.io/projects/locknight/schema-v1.json",
+  "title": "Locknight records v1",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "calculationVersion": {
+      "const": 1
+    },
+    "players": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/player"
+      }
+    },
+    "patches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/patch"
+      }
+    },
+    "matches": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/match"
+      }
+    },
+    "ratingMetadata": {
+      "$ref": "#/$defs/metadata"
+    },
+    "ratingHistory": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/history"
+      }
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "calculationVersion",
+    "players",
+    "patches",
+    "matches",
+    "ratingMetadata"
+  ],
+  "$defs": {
+    "rating": {
+      "type": "object",
+      "properties": {
+        "mu": {
+          "type": "number"
+        },
+        "sigma": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "mu",
+        "sigma"
+      ]
+    },
+    "player": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "preferences": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "abrams",
+              "apollo",
+              "bebop",
+              "billy",
+              "calico",
+              "celeste",
+              "drifter",
+              "dynamo",
+              "graves",
+              "grey-talon",
+              "haze",
+              "holliday",
+              "infernus",
+              "ivy",
+              "kelvin",
+              "lady-geist",
+              "lash",
+              "mcginnis",
+              "mina",
+              "mirage",
+              "mo-and-krill",
+              "paige",
+              "paradox",
+              "pocket",
+              "rat-king",
+              "rem",
+              "seven",
+              "shiv",
+              "silver",
+              "sinclair",
+              "doorman",
+              "venator",
+              "victor",
+              "vindicta",
+              "viscous",
+              "vyper",
+              "warden",
+              "wraith",
+              "yamato"
+            ]
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": -1,
+            "maximum": 3
+          }
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "enabled",
+        "preferences"
+      ]
+    },
+    "patch": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "label": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 500
+        },
+        "effectiveAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "refreshedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "sourceUrl": {
+          "type": "string",
+          "pattern": "^https://steamdb\\.info/(app/1422450/patchnotes/|patchnotes/[0-9]+/?)$"
+        }
+      },
+      "required": [
+        "id",
+        "label",
+        "effectiveAt",
+        "refreshedAt",
+        "sourceUrl"
+      ]
+    },
+    "edit": {
+      "type": "object",
+      "properties": {
+        "at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "previousWinner": {
+          "enum": [
+            "amber",
+            "sapphire"
+          ]
+        },
+        "winner": {
+          "enum": [
+            "amber",
+            "sapphire"
+          ]
+        }
+      },
+      "required": [
+        "at",
+        "previousWinner",
+        "winner"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "model": {
+          "const": "PlackettLuce"
+        },
+        "calculationVersion": {
+          "const": 1
+        },
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "mu": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1000
+            },
+            "sigma": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1000
+            },
+            "beta": {
+              "type": "number",
+              "exclusiveMinimum": 0,
+              "maximum": 1000
+            },
+            "tau": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 1000
+            }
+          },
+          "required": [
+            "mu",
+            "sigma",
+            "beta",
+            "tau"
+          ]
+        }
+      },
+      "required": [
+        "model",
+        "calculationVersion",
+        "parameters"
+      ]
+    },
+    "match": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "patchId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "teams": {
+          "type": "object",
+          "properties": {
+            "amber": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+              },
+              "minItems": 6,
+              "maxItems": 6,
+              "uniqueItems": true
+            },
+            "sapphire": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+              },
+              "minItems": 6,
+              "maxItems": 6,
+              "uniqueItems": true
+            }
+          },
+          "required": [
+            "amber",
+            "sapphire"
+          ]
+        },
+        "heroes": {
+          "type": "object",
+          "minProperties": 12,
+          "maxProperties": 12,
+          "additionalProperties": {
+            "enum": [
+              "abrams",
+              "apollo",
+              "bebop",
+              "billy",
+              "calico",
+              "celeste",
+              "drifter",
+              "dynamo",
+              "graves",
+              "grey-talon",
+              "haze",
+              "holliday",
+              "infernus",
+              "ivy",
+              "kelvin",
+              "lady-geist",
+              "lash",
+              "mcginnis",
+              "mina",
+              "mirage",
+              "mo-and-krill",
+              "paige",
+              "paradox",
+              "pocket",
+              "rat-king",
+              "rem",
+              "seven",
+              "shiv",
+              "silver",
+              "sinclair",
+              "doorman",
+              "venator",
+              "victor",
+              "vindicta",
+              "viscous",
+              "vyper",
+              "warden",
+              "wraith",
+              "yamato"
+            ]
+          }
+        },
+        "winner": {
+          "enum": [
+            "amber",
+            "sapphire"
+          ]
+        },
+        "draft": {
+          "type": "object",
+          "properties": {
+            "mode": {
+              "enum": [
+                "random",
+                "manual",
+                "captains"
+              ]
+            },
+            "settings": {
+              "type": "object"
+            },
+            "snapshot": {
+              "type": "object",
+              "properties": {
+                "amberProbability": {
+                  "type": "number",
+                  "minimum": 0,
+                  "maximum": 1
+                },
+                "ratings": {
+                  "type": "object",
+                  "minProperties": 12,
+                  "maxProperties": 12,
+                  "additionalProperties": {
+                    "$ref": "#/$defs/rating"
+                  }
+                }
+              },
+              "required": [
+                "amberProbability",
+                "ratings"
+              ]
+            }
+          },
+          "required": [
+            "mode",
+            "settings",
+            "snapshot"
+          ]
+        },
+        "edits": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/edit"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "timestamp",
+        "patchId",
+        "teams",
+        "heroes",
+        "winner",
+        "draft",
+        "edits"
+      ]
+    },
+    "history": {
+      "type": "object",
+      "properties": {
+        "playerId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "heroId": {
+          "anyOf": [
+            {
+              "enum": [
+                "abrams",
+                "apollo",
+                "bebop",
+                "billy",
+                "calico",
+                "celeste",
+                "drifter",
+                "dynamo",
+                "graves",
+                "grey-talon",
+                "haze",
+                "holliday",
+                "infernus",
+                "ivy",
+                "kelvin",
+                "lady-geist",
+                "lash",
+                "mcginnis",
+                "mina",
+                "mirage",
+                "mo-and-krill",
+                "paige",
+                "paradox",
+                "pocket",
+                "rat-king",
+                "rem",
+                "seven",
+                "shiv",
+                "silver",
+                "sinclair",
+                "doorman",
+                "venator",
+                "victor",
+                "vindicta",
+                "viscous",
+                "vyper",
+                "warden",
+                "wraith",
+                "yamato"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "matchId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "patchId": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "mu": {
+          "type": "number"
+        },
+        "sigma": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "required": [
+        "playerId",
+        "heroId",
+        "matchId",
+        "timestamp",
+        "patchId",
+        "mu",
+        "sigma"
+      ]
+    }
+  }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LinkedIn Banner Generator</title>
+  <style>
+    body { margin: 0; background: #1a1a1a; color: #fff; font-family: system-ui, sans-serif; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+    h1 { font-size: 18px; margin-bottom: 8px; }
+    p { color: #888; font-size: 13px; margin-bottom: 24px; }
+    canvas { border: 1px solid #333; max-width: 100%; }
+    button { margin-top: 20px; padding: 12px 32px; background: #F472B6; color: #050507; border: none; border-radius: 6px; font-weight: 700; font-size: 14px; cursor: pointer; }
+    button:hover { background: #F9A8D4; }
+  </style>
+</head>
+<body>
+  <h1>LinkedIn Banner — 1584 × 396</h1>
+  <p>Pattern drawn natively to canvas. Click to download as PNG.</p>
+  <canvas id="c" width="1584" height="396"></canvas>
+  <button onclick="download()">Download PNG</button>
+
+  <script>
+    const W = 1584, H = 396, T = 140;
+    const canvas = document.getElementById('c');
+    const ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = '#050507';
+    ctx.fillRect(0, 0, W, H);
+
+    function line(x1, y1, x2, y2, color, width, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width;
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function diamond(cx, cy, r, color, width, alpha, glow) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width;
+      if (glow) {
+        ctx.shadowColor = '#F472B6';
+        ctx.shadowBlur = glow;
+      }
+      ctx.beginPath();
+      ctx.moveTo(cx, cy - r);
+      ctx.lineTo(cx + r, cy);
+      ctx.lineTo(cx, cy + r);
+      ctx.lineTo(cx - r, cy);
+      ctx.closePath();
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function dot(cx, cy, r, color, alpha, glow) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = color;
+      if (glow) {
+        ctx.shadowColor = '#F472B6';
+        ctx.shadowBlur = glow;
+      }
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function ring(cx, cy, r, color, width, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width;
+      ctx.beginPath();
+      ctx.arc(cx, cy, r, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.restore();
+    }
+
+    function tri(x1, y1, x2, y2, x3, y3, color, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.lineTo(x3, y3);
+      ctx.closePath();
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function dashedLine(x1, y1, x2, y2, color, width, alpha) {
+      ctx.save();
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = color;
+      ctx.lineWidth = width;
+      ctx.setLineDash([2.5, 3.5]);
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      ctx.restore();
+    }
+
+    const half = T / 2;
+    const outerR = T * 0.425;
+    const innerR = T * 0.275;
+
+    for (let ty = -T; ty < H + T; ty += T) {
+      for (let tx = -T; tx < W + T; tx += T) {
+        const cx = tx + half, cy = ty + half;
+
+        // Subtle grid
+        line(tx, cy, tx + T, cy, '#A1A1AA', 0.5, 0.04);
+        line(cx, ty, cx, ty + T, '#A1A1AA', 0.5, 0.04);
+
+        // Diagonal cross
+        line(tx, ty, tx + T, ty + T, '#FAFAFA', 0.7, 0.05);
+        line(tx + T, ty, tx, ty + T, '#FAFAFA', 0.7, 0.05);
+
+        // Outer diamond with glow
+        diamond(cx, cy, outerR, '#F472B6', 0.8, 0.18, 12);
+
+        // Inner diamond with glow
+        diamond(cx, cy, innerR, '#F472B6', 0.6, 0.3, 9);
+
+        // Center bloom
+        dot(cx, cy, 14, '#F472B6', 0.04, 22);
+        dot(cx, cy, 5, '#F472B6', 0.5, 12);
+        dot(cx, cy, 2, '#FAFAFA', 0.7, 0);
+
+        // Corner dots with glow
+        dot(tx, ty, 3, '#F472B6', 0.45, 10);
+
+        // Edge midpoint dashes
+        line(cx - 7, ty, cx + 7, ty, '#F472B6', 1, 0.25);
+        line(tx, cy - 7, tx, cy + 7, '#F472B6', 1, 0.25);
+
+        // Dashed connectors from diamond tip to edge
+        dashedLine(cx, ty + outerR * 0.18, cx, ty, '#FAFAFA', 0.5, 0.08);
+        dashedLine(cx, ty + T - outerR * 0.18, cx, ty + T, '#FAFAFA', 0.5, 0.08);
+        dashedLine(tx + outerR * 0.18, cy, tx, cy, '#FAFAFA', 0.5, 0.08);
+        dashedLine(tx + T - outerR * 0.18, cy, tx + T, cy, '#FAFAFA', 0.5, 0.08);
+
+        // Quadrant triangles (scaled)
+        const tOff = T * 0.29, tSz = T * 0.035;
+        tri(cx - tOff, cy - tOff, cx - tOff + tSz, cy - tOff - tSz, cx - tOff + tSz, cy - tOff + tSz, '#F472B6', 0.1);
+        tri(cx + tOff, cy - tOff, cx + tOff - tSz, cy - tOff - tSz, cx + tOff - tSz, cy - tOff + tSz, '#F472B6', 0.1);
+        tri(cx - tOff, cy + tOff, cx - tOff + tSz, cy + tOff - tSz, cx - tOff + tSz, cy + tOff + tSz, '#F472B6', 0.1);
+        tri(cx + tOff, cy + tOff, cx + tOff - tSz, cy + tOff - tSz, cx + tOff - tSz, cy + tOff + tSz, '#F472B6', 0.1);
+
+        // Corner ring halos
+        ring(tx, ty, T * 0.065, '#F472B6', 0.4, 0.08);
+      }
+    }
+
+    // Hexagonal overlay (280px period — 2 tiles)
+    const OP = T * 2;
+    for (let oy = 0; oy < H + OP; oy += OP) {
+      for (let ox = 0; ox < W + OP; ox += OP) {
+        const cx = ox + OP / 2, cy = oy + OP / 2;
+        const s = OP * 0.44;
+
+        ctx.save();
+        ctx.globalAlpha = 0.06;
+        ctx.strokeStyle = '#F472B6';
+        ctx.lineWidth = 0.5;
+        ctx.beginPath();
+        for (let i = 0; i < 6; i++) {
+          const a = Math.PI / 3 * i - Math.PI / 2;
+          const px = cx + s * Math.cos(a), py = cy + s * Math.sin(a);
+          i === 0 ? ctx.moveTo(px, py) : ctx.lineTo(px, py);
+        }
+        ctx.closePath();
+        ctx.stroke();
+        ctx.restore();
+
+        ring(cx, cy, OP * 0.18, '#F472B6', 0.4, 0.05);
+
+        for (let i = 0; i < 3; i++) {
+          const a = Math.PI / 3 * i - Math.PI / 2;
+          const x1 = cx + s * Math.cos(a), y1 = cy + s * Math.sin(a);
+          const x2 = cx - s * Math.cos(a), y2 = cy - s * Math.sin(a);
+          line(x1, y1, x2, y2, '#FAFAFA', 0.25, 0.025);
+        }
+      }
+    }
+
+    function download() {
+      const a = document.createElement('a');
+      a.download = 'linkedin-banner-1584x396.png';
+      a.href = canvas.toDataURL('image/png');
+      a.click();
+    }
+  </script>
+</body>
+</html>

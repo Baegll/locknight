@@ -1,0 +1,51 @@
+---
+import Sidebar from "../components/Sidebar.astro"
+import MobileNav from "../components/MobileNav.astro"
+import Footer from "../components/Footer.astro"
+
+export type Page = "home" | "projects" | "privacy"
+
+interface Props {
+  title: string
+  description: string
+  page: Page
+  /** path shown in the top strip, e.g. "/ projects" */
+  stripPath: string
+}
+
+const { title, description, page, stripPath } = Astro.props
+const isHome = page === "home"
+const codeFont = "font-family:var(--t-font-code,'IBM Plex Mono',monospace);font-size:10px"
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/blog/static/icon.png" type="image/png" />
+    <script is:inline src="/assets/theme.js?v=2026-05-02-1" data-base=""></script>
+    <link rel="stylesheet" href="/assets/portfolio.css?v=2026-05-25-1" />
+  </head>
+  <body>
+    <Sidebar page={page} />
+
+    <MobileNav page={page} />
+
+    <main class="main" id={isHome ? "main" : undefined}>
+      <div class="top-strip">
+        <span>baegll.github.io</span>
+        <span id={isHome ? "strip-path" : undefined} style={codeFont}>{stripPath}</span>
+        <span>SDE2 - Amazon</span>
+      </div>
+
+      <slot />
+
+      <Footer />
+    </main>
+
+    <slot name="after-main" />
+  </body>
+</html>

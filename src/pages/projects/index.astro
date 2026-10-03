@@ -1,0 +1,37 @@
+---
+import Portfolio from "../../layouts/Portfolio.astro"
+---
+
+<Portfolio
+  title="Projects - Natalie Johanek"
+  description="Projects by Natalie Johanek - explore the code, demos, and documentation."
+  page="projects"
+  stripPath="/ projects"
+>
+  <div class="section-header" style="padding-top:56px">
+    <h1 class="section-title">Projects</h1>
+    <span class="section-count">2 total</span>
+  </div>
+
+  <a href="https://github.com/Baegll/HemaScoreCardScripts" class="project-row" target="_blank" rel="noopener">
+    <span class="project-num">01</span>
+    <div>
+      <div class="project-info">
+        <span class="project-name">HEMA Scorecard Scripts</span>
+        <span class="project-desc">Scrapers and analysis tools for HEMA tournament data. 837 events, 314,000 exchanges, 34,000 matches.</span>
+      </div>
+      <div class="project-tags">
+        <span class="tag">Python</span>
+        <span class="tag">Data Analysis</span>
+        <span class="tag">Web Scraping</span>
+        <span class="tag">HEMA</span>
+      </div>
+    </div>
+    <span class="project-arrow">-></span>
+  </a>
+  <a href="/projects/locknight/" class="project-row">
+    <span class="project-num">02</span>
+    <div><div class="project-info"><span class="project-name">Locknight</span><span class="project-desc">6v6 Deadlock drafts, match records, and player ratings.</span></div><div class="project-tags"><span class="tag">Astro</span><span class="tag">OpenSkill</span><span class="tag">Deadlock</span></div></div>
+    <span class="project-arrow">→</span>
+  </a>
+</Portfolio>

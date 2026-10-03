@@ -1,0 +1,985 @@
+/* Extends the portfolio tokens. Scope rules to .locknight; the host layout owns fonts and theme. */
+.locknight .rating-help summary { font-size: 12px; }
+.locknight .rating-help p { margin-top: 10px; }
+.locknight .no-results { grid-column: 1 / -1; padding: 12px 0; }
+.locknight {
+  --bg: var(--t-surface);
+  --panel: var(--t-surface);
+  --panel2: color-mix(in srgb,var(--t-text) 4%,var(--t-surface));
+  --line: var(--t-border);
+  --text: var(--t-text);
+  --muted: var(--t-muted);
+  --gold: var(--t-cta);
+  --blue: var(--t-secondary);
+  --green: var(--t-text);
+  --red: #b91c1c;
+  width: 100%;
+  max-width: none;
+  color: var(--text);
+  font: 400 14px/1.5 var(--t-font-body, sans-serif);
+  font-variant-numeric: tabular-nums;
+  margin-inline: auto;
+  padding: 48px 32px;
+}
+
+.dark .locknight {
+  --red: #fca5a5;
+  color-scheme: dark;
+}
+
+html:not(.dark) .locknight {
+  color-scheme: light;
+}
+
+.locknight [hidden] {
+  display: none !important;
+}
+
+.locknight h1, .locknight h2, .locknight h3 {
+  font-family: var(--t-font-heading, sans-serif);
+  text-wrap: balance;
+}
+
+.locknight p {
+  text-wrap: pretty;
+}
+
+.locknight .ln-header {
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+  display: flex;
+}
+
+.locknight .back-link {
+  color: var(--muted);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.locknight .back-link:hover {
+  color: var(--t-cta);
+}
+
+.locknight h1 {
+  letter-spacing: -.04em;
+  margin: 12px 0;
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+.locknight .title-period {
+  color: var(--t-cta);
+}
+
+.locknight .project-description {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.locknight .badge {
+  color: var(--muted);
+  font: 400 11px var(--t-font-code, monospace);
+  padding: 6px 0;
+}
+
+.locknight .ln-tabs {
+  border-bottom: 1px solid var(--line);
+  gap: 28px;
+  display: flex;
+}
+
+.locknight .ln-tabs button {
+  appearance: none;
+  color: var(--muted);
+  cursor: pointer;
+  white-space: nowrap;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 14px 0;
+  font-size: 13px;
+  font-weight: 500;
+  position: relative;
+}
+
+.locknight .ln-tabs button.active {
+  color: var(--text);
+}
+
+.locknight .ln-tabs button.active:after {
+  content: "";
+  background: var(--t-cta);
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+}
+
+.locknight .ln-tabs button:hover {
+  color: var(--t-cta);
+}
+
+.locknight .page-heading {
+  padding: 30px 0 24px;
+}
+
+.locknight .page-heading h2 {
+  letter-spacing: -.02em;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.locknight .page-heading p {
+  color: var(--muted);
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.locknight h2 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.locknight h3 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.locknight button, .locknight input, .locknight select, .locknight textarea {
+  font: inherit;
+}
+
+.locknight button {
+  cursor: pointer;
+}
+
+.locknight .button {
+  border: 1px solid var(--line);
+  min-height: 40px;
+  color: var(--text);
+  white-space: nowrap;
+  background: none;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: border-color .15s, box-shadow .15s, transform .12s;
+  display: inline-flex;
+}
+
+.locknight .button:hover {
+  border-color: var(--muted);
+}
+
+.locknight .button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.locknight .button.primary {
+  background: var(--t-cta);
+  color: var(--t-cta-text);
+  border-color: #0000;
+}
+
+.locknight .button.primary:hover {
+  background: var(--t-cta-hover);
+}
+
+.locknight .button.small {
+  min-height: 32px;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.locknight button:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+  transform: none;
+}
+
+.locknight .button.danger {
+  color: var(--red);
+}
+
+.locknight :is(button, a, input, select, textarea):focus-visible {
+  outline: 2px solid var(--t-cta);
+  outline-offset: 3px;
+}
+
+.locknight .actions {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.locknight .draft-status {
+  color: var(--muted);
+  font: 400 11px var(--t-font-code, monospace);
+  margin-bottom: 18px;
+}
+
+.locknight .draft-layout {
+  grid-template-columns: clamp(300px, 20vw, 380px) minmax(0, 1fr);
+  gap: 40px;
+  display: grid;
+}
+
+.locknight .draft-main {
+  align-content: start;
+  gap: 24px;
+  display: grid;
+}
+
+.locknight .panel {
+  border-top: 1px solid var(--line);
+  min-width: 0;
+}
+
+.locknight .panel-head {
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 0;
+  display: flex;
+}
+
+.locknight .panel-body {
+  padding: 4px 0 20px;
+}
+
+.locknight .count, .locknight .tag {
+  color: var(--muted);
+  font: 400 11px var(--t-font-code, monospace);
+  white-space: nowrap;
+}
+
+.locknight .pool-tools {
+  gap: 8px;
+  margin: 4px 0 12px;
+  display: flex;
+}
+
+.locknight .pool-tools input {
+  width: 100%;
+}
+
+.locknight .players-pool {
+  scrollbar-width: thin;
+  max-height: 595px;
+  overflow-y: auto;
+}
+
+.locknight .pool-player {
+  cursor: pointer;
+  align-items: center;
+  gap: 10px;
+  min-height: 56px;
+  padding: 8px 4px;
+  display: flex;
+}
+
+.locknight .pool-player:hover {
+  background: var(--panel2);
+}
+
+.locknight .pool-player input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--t-cta);
+}
+
+.locknight .avatar {
+  background: var(--panel2);
+  width: 30px;
+  height: 30px;
+  color: var(--muted);
+  font: 400 11px var(--t-font-code, monospace);
+  border-radius: 3px;
+  flex-shrink: 0;
+  place-items: center;
+  display: grid;
+}
+
+.locknight .player-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.locknight .player-sub {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.locknight .pool-player .rating {
+  color: var(--muted);
+  font: 400 12px var(--t-font-code, monospace);
+  margin-left: auto;
+}
+
+.locknight .pool-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  padding: 14px 0;
+  font-size: 12px;
+}
+
+.locknight .draft-controls {
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 12px;
+  padding: 16px 0;
+  display: flex;
+}
+
+.locknight .field {
+  flex: 1;
+  gap: 7px;
+  min-width: 120px;
+  display: grid;
+}
+
+.locknight .field :is(label, span) {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.locknight :is(input, select, textarea) {
+  color: var(--text);
+  background: var(--bg);
+  min-width: 0;
+  max-width: 100%;
+  box-shadow: 0 0 0 1px var(--line),0 1px 2px #0000000a;
+  border: 0;
+  border-radius: 6px;
+  padding: 10px 12px;
+}
+
+.locknight :is(input, select, textarea):focus {
+  box-shadow: 0 0 0 1px var(--t-cta);
+}
+
+.locknight select {
+  width: 100%;
+  min-height: 40px;
+  font-size: 13px;
+}
+
+.locknight input[type="checkbox"] {
+  accent-color: var(--t-cta);
+  box-shadow: none;
+  width: auto;
+}
+
+.locknight input[type="range"] {
+  accent-color: var(--t-cta);
+  box-shadow: none;
+  padding: 0;
+}
+
+.locknight .controls-bottom {
+  color: var(--muted);
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 14px;
+  font-size: 12px;
+  display: flex;
+}
+
+.locknight .controls-bottom label {
+  align-items: center;
+  gap: 10px;
+  display: flex;
+}
+
+.locknight .controls-bottom select {
+  width: 110px;
+}
+
+.locknight .balance-meter {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 18px;
+}
+
+.locknight .balance-title {
+  justify-content: space-between;
+  gap: 14px;
+  font-size: 12px;
+  display: flex;
+}
+
+.locknight .balance-track {
+  background: var(--line);
+  height: 3px;
+  margin: 12px 0;
+}
+
+.locknight .balance-track > span {
+  background: var(--t-cta);
+  height: 100%;
+  transition: width .18s;
+  display: block;
+}
+
+.locknight .balance-caption {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.locknight .teams {
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  display: grid;
+}
+
+.locknight .team-header-label {
+  display: none;
+}
+
+.locknight .team .panel-head h2 {
+  color: var(--text);
+}
+
+.locknight .team-slot {
+  border-top: 1px solid var(--line);
+  align-items: center;
+  gap: 10px;
+  min-height: 64px;
+  padding: 12px 0;
+  display: flex;
+}
+
+.locknight .slot-number {
+  display: none;
+}
+
+.locknight .slot-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.locknight .team-slot select {
+  width: 125px;
+  padding: 8px;
+  font-size: 12px;
+}
+
+.locknight .empty-slot {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.locknight .result-bar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: end;
+  gap: 20px;
+  padding: 18px 0;
+  display: flex;
+}
+
+.locknight .result-bar .field {
+  flex: none;
+  width: 140px;
+}
+
+.locknight .result-bar .help {
+  margin-top: 6px;
+}
+
+.locknight .help {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.locknight .draft-turn {
+  border-left: 2px solid var(--t-cta);
+  padding: 2px 0 2px 18px;
+}
+
+.locknight .draft-turn h3 {
+  margin: 8px 0 12px;
+}
+
+.locknight .draft-turn .help {
+  margin-top: 12px;
+}
+
+.locknight .eyebrow {
+  color: var(--muted);
+  font: 400 11px var(--t-font-code, monospace);
+  letter-spacing: .03em;
+}
+
+.locknight .turn-progress {
+  gap: 4px;
+  margin-bottom: 16px;
+  display: flex;
+}
+
+.locknight .turn-progress span {
+  background: var(--line);
+  width: 20px;
+  height: 2px;
+}
+
+.locknight .turn-progress span.done {
+  background: var(--t-cta);
+}
+
+.locknight .ban-chip {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.locknight .toolbar {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+  display: flex;
+}
+
+.locknight .toolbar select {
+  max-width: 230px;
+}
+
+.locknight .muted {
+  color: var(--muted);
+}
+
+.locknight .table-wrap {
+  overflow-x: auto;
+}
+
+.locknight table {
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  font-size: 13px;
+}
+
+.locknight th {
+  color: var(--muted);
+  white-space: nowrap;
+  border-bottom: 1px solid var(--line);
+  padding: 12px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.locknight td {
+  border-bottom: 1px solid var(--line);
+  padding: 14px 12px;
+}
+
+.locknight tr:last-child td {
+  border-bottom: 0;
+}
+
+.locknight .metrics {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 16px 0 28px;
+  display: grid;
+}
+
+.locknight .metric .value {
+  font: 700 26px var(--t-font-heading, sans-serif);
+  margin: 10px 0 4px;
+}
+
+.locknight .metric .caption {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.locknight .roster-card {
+  grid-template-columns: 1fr 1.5fr;
+  gap: 32px;
+  display: grid;
+}
+
+.locknight .roster-list {
+  gap: 16px;
+  display: grid;
+}
+
+.locknight .roster-row {
+  align-items: center;
+  gap: 12px;
+  display: flex;
+}
+
+.locknight .roster-row input[type="text"] {
+  flex: 1;
+  width: 100%;
+}
+
+.locknight .preferences {
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 24px;
+  display: grid;
+}
+
+.locknight .preference {
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  display: flex;
+}
+
+.locknight .preference select {
+  width: 64px;
+}
+
+.locknight .form-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  display: grid;
+}
+
+.locknight .form-grid .wide {
+  grid-column: 1 / -1;
+}
+
+.locknight .stack {
+  align-content: start;
+  gap: 28px;
+  display: grid;
+}
+
+.locknight .data-columns {
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  display: grid;
+}
+
+.locknight .data-buttons {
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  display: flex;
+}
+
+.locknight .empty-state {
+  color: var(--muted);
+  padding: 32px 0;
+  font-size: 13px;
+}
+
+.locknight .empty-state h2 {
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.locknight .history-details {
+  color: var(--muted);
+  padding-top: 10px;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.locknight details summary {
+  cursor: pointer;
+  color: var(--text);
+}
+
+.locknight .insight-columns {
+  grid-template-columns: 1.6fr 1fr;
+  gap: 28px;
+  display: grid;
+}
+
+.locknight .chart {
+  width: 100%;
+  height: 220px;
+  margin-top: 12px;
+}
+
+.locknight #notice {
+  color: var(--text);
+  background: var(--panel2);
+  border-left: 2px solid var(--t-cta);
+  margin-bottom: 20px;
+  padding: 12px 14px;
+  font-size: 13px;
+}
+
+.locknight #notice.error {
+  border-left-color: var(--red);
+}
+
+.locknight dialog {
+  background: var(--bg);
+  color: var(--text);
+  width: min(460px, 100% - 32px);
+  box-shadow: 0 0 0 1px var(--line),0 16px 48px #0000002e;
+  border: 0;
+  border-radius: 18px;
+  margin: auto;
+  padding: 24px;
+}
+
+.locknight dialog::backdrop {
+  background: #00000080;
+}
+
+.locknight dialog h2 {
+  font-size: 22px;
+}
+
+.locknight dialog p {
+  color: var(--muted);
+  margin: 14px 0 24px;
+  font-size: 14px;
+}
+
+.locknight dialog .actions {
+  justify-content: flex-end;
+}
+
+body.presentation .sidebar, body.presentation .mobile-nav, body.presentation .footer, body.presentation .top-strip {
+  display: none;
+}
+
+body.presentation .main {
+  margin-left: 0;
+}
+
+body.presentation .locknight .players-panel, body.presentation .locknight .ln-tabs {
+  display: none;
+}
+
+body.presentation .locknight .draft-layout {
+  grid-template-columns: 1fr;
+}
+
+@media (width <= 1100px) {
+  .locknight {
+    padding: 36px 32px;
+  }
+
+  .locknight .draft-layout {
+    grid-template-columns: 220px minmax(0, 1fr);
+    gap: 24px;
+  }
+
+  .locknight .team-slot {
+    flex-wrap: wrap;
+  }
+
+  .locknight .team-slot select {
+    width: 100%;
+    margin-left: 40px;
+  }
+
+  .locknight .roster-card, .locknight .insight-columns {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (width <= 768px) {
+  .locknight {
+    padding: 28px 24px;
+  }
+
+  .locknight .ln-header {
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .locknight .ln-tabs {
+    gap: 20px;
+  }
+
+  .locknight .draft-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .locknight .players-pool {
+    grid-template-columns: 1fr 1fr;
+    max-height: 240px;
+    display: grid;
+  }
+
+  .locknight .data-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .locknight .metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .locknight .controls-bottom {
+    flex-wrap: wrap;
+  }
+}
+
+@media (width <= 480px) {
+  .locknight {
+    padding: 24px 18px;
+  }
+
+  .locknight .ln-tabs {
+    gap: 16px;
+  }
+
+  .locknight .ln-tabs button {
+    min-height: 44px;
+    font-size: 12px;
+  }
+
+  .locknight .teams {
+    gap: 18px;
+  }
+
+  .locknight .team-slot .avatar {
+    display: none;
+  }
+
+  .locknight .team-slot select {
+    margin-left: 0;
+  }
+
+  .locknight .team .panel-head {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .locknight .pool-player {
+    gap: 7px;
+  }
+
+  .locknight .pool-player .avatar {
+    display: none;
+  }
+
+  .locknight .draft-controls .field {
+    min-width: 130px;
+  }
+
+  .locknight .result-bar .actions {
+    align-items: end;
+  }
+
+  .locknight .preferences {
+    gap: 14px;
+  }
+
+  .locknight .preference {
+    font-size: 12px;
+  }
+
+  .locknight .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .locknight *, .locknight :before, .locknight :after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Shared control heights keep buttons aligned with adjacent select fields. */
+.locknight .draft-controls { display:grid; grid-template-columns:minmax(160px,1fr) minmax(190px,1.3fr) auto; align-items:end; gap:12px; }
+.locknight .captain-controls { grid-template-columns:repeat(3,minmax(0,1fr)) auto; }
+.locknight .draft-controls .field { min-width:0; }
+.locknight .button, .locknight select, .locknight input:not([type="range"]):not([type="checkbox"]) { min-height:40px; }
+.locknight .draft-controls > .button { height:40px; margin:0; }
+.locknight .actions { align-items:center; }
+.locknight .controls-bottom { gap:12px; min-height:54px; }
+.locknight #balance-bias { width:85px; }
+.locknight .controls-bottom .actions { margin-left:auto; }
+.locknight .players-pool { display:block; max-height:620px; }
+.locknight .pool-player { display:grid; grid-template-columns:40px minmax(0,1fr); align-items:center; gap:10px 14px; padding:12px 4px; cursor:grab; }
+.locknight .pool-player .avatar, .locknight .team-slot .avatar { width:40px; height:40px; }
+.locknight .availability-buttons { grid-column:1/-1; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:4px; padding:4px; border-radius:10px; background:var(--panel2); }
+.locknight .availability-buttons button { min-height:36px; border:0; border-radius:6px; padding:6px 4px; background:transparent; color:var(--muted); font:500 12px/1.3 var(--t-font-body); cursor:pointer; transition:background-color 120ms ease,color 120ms ease; }
+.locknight .availability-buttons button:hover { color:var(--text); background:color-mix(in srgb,var(--t-text) 5%,transparent); }
+.locknight .availability-buttons button[aria-pressed="true"] { background:var(--t-cta); color:var(--t-cta-text); }
+.locknight .pool-player.assigned .availability-buttons { opacity:1; }
+.locknight .pool-player[draggable="false"] { cursor:default; }
+.locknight .pool-player.assigned { opacity:.55; }
+.locknight .pool-name { min-width:0; }
+.locknight .pool-name .player-name { display:block; overflow-wrap:anywhere; }
+.locknight .player-sub { display:block; }
+.locknight .team-slot { display:grid; grid-template-columns:40px minmax(0,1fr); gap:14px; padding:18px 12px; position:relative; }
+.locknight .team-slot .avatar { grid-column:1; grid-row:1; }
+.locknight .team-slot .slot-info { grid-column:2; grid-row:1; }
+.locknight .slot-info .player-name { display:block; line-height:1.5; overflow-wrap:anywhere; }
+.locknight .slot-info .player-sub { margin-top:4px; }
+.locknight .team-slot .hero-control { grid-column:1/-1; display:grid; grid-template-columns:minmax(0,1fr) 40px; gap:7px; width:100%; }
+.locknight .team-slot select { max-width:none; min-width:0; width:100%; margin:0; }
+.locknight .hero-control > .button { width:40px; padding:0; font-size:22px; }
+.locknight .hero-choices { display:grid; grid-template-columns:1fr 1fr; gap:6px; grid-column:1/-1; }
+.locknight .hero-choices .button { min-width:0; white-space:normal; font-size:11px; padding:6px; }
+.locknight .hero-choices .chosen { box-shadow:inset 0 0 0 2px var(--t-cta); color:var(--t-cta); }
+.locknight .team-slot.drop-target { background:color-mix(in srgb,var(--t-cta) 12%,var(--t-surface)); box-shadow:inset 0 0 0 2px var(--t-cta); }
+.locknight .empty-slot { grid-column:1/-1; min-height:54px; display:flex; align-items:center; }
+.locknight .result-bar { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px; }
+.locknight .result-bar .actions { align-items:end; }
+.locknight .result-bar .actions > .button { height:40px; }
+.locknight .result-bar .field { margin:0; }
+.locknight .roster-row { display:grid; grid-template-columns:minmax(0,1fr) auto; }
+.locknight .profile-tools { margin-bottom:24px; }
+.locknight .notes-field, .locknight .profile-json { margin-top:24px; }
+.locknight .profile-review { margin-bottom:24px; }
+.locknight .profile-review h3 { margin-bottom:12px; }
+.locknight.profile-page .preferences { grid-template-columns:repeat(3,minmax(0,1fr)); }
+.locknight .preference select { width:130px; min-width:130px; }
+.locknight .profile-json textarea { width:100%; margin-top:12px; font-family:var(--t-font-code); }
+.locknight .bench { display:flex; flex-wrap:wrap; align-items:center; gap:12px; padding:12px 0; color:var(--muted); font-size:12px; }
+.locknight .bench h3 { font-size:13px; }
+.locknight .manual-pool .field { min-width:130px; flex:1; }
+.ln-tooltip { position:fixed; z-index:1000; max-width:min(310px,calc(100vw - 16px)); padding:10px 12px; border-radius:8px; background:var(--t-text); color:var(--t-surface); font:12px/1.5 var(--t-font-body); box-shadow:0 4px 16px #0003; text-wrap:pretty; }
+.ln-tooltip[hidden] { display:none; }
+.locknight #profile-notice { margin:16px 0; }
+.locknight #profile-notice.error { color:var(--t-cta); }
+@media (min-width:1101px) {
+ .locknight .teams { gap:32px; }
+ .locknight .draft-main { gap:32px; }
+ .locknight .draft-controls { gap:16px; padding-block:20px; }
+ .locknight .team-slot { gap:16px; padding:22px 16px; }
+ .locknight .team-slot .player-name { font-size:14px; }
+ .locknight .pool-player { padding:16px 6px; gap:12px 16px; }
+ .locknight .players-pool { max-height:clamp(520px,calc(100dvh - 280px),1100px); }
+ .locknight .roster-card, .locknight .insight-columns, .locknight .data-columns { gap:40px; }
+}
+@media (max-width:1100px) {
+ .locknight .captain-controls { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .locknight.profile-page .preferences { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media (max-width:768px) {
+ .locknight .players-pool { max-height:340px; }
+ .locknight .draft-controls { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ .locknight .draft-controls > .button { grid-column:1/-1; }
+ .locknight .controls-bottom .actions { margin-left:0; }
+}
+@media (max-width:480px) {
+ .locknight .pool-player { grid-template-columns:minmax(0,1fr); }
+ .locknight .availability-buttons button { min-height:44px; }
+ .locknight .teams { grid-template-columns:1fr; }
+ .locknight .team-slot { grid-template-columns:40px minmax(0,1fr); }
+ .locknight .team-slot .avatar { display:grid; }
+ .locknight .team-slot .hero-control { grid-column:1/-1; }
+ .locknight .empty-slot { grid-column:1/-1; }
+ .locknight .preferences, .locknight.profile-page .preferences { grid-template-columns:1fr; }
+ .locknight .result-bar .actions { flex-wrap:wrap; width:100%; }
+}

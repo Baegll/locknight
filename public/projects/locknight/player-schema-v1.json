@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://baegll.github.io/projects/locknight/player-schema-v1.json",
+  "title": "Locknight player preferences v1",
+  "type": "object",
+  "properties": {
+    "type": {
+      "const": "locknight-player"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "player": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{1,100}$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "preferences": {
+          "type": "object",
+          "propertyNames": {
+            "enum": [
+              "abrams",
+              "apollo",
+              "bebop",
+              "billy",
+              "calico",
+              "celeste",
+              "drifter",
+              "dynamo",
+              "graves",
+              "grey-talon",
+              "haze",
+              "holliday",
+              "infernus",
+              "ivy",
+              "kelvin",
+              "lady-geist",
+              "lash",
+              "mcginnis",
+              "mina",
+              "mirage",
+              "mo-and-krill",
+              "paige",
+              "paradox",
+              "pocket",
+              "rat-king",
+              "rem",
+              "seven",
+              "shiv",
+              "silver",
+              "sinclair",
+              "doorman",
+              "venator",
+              "victor",
+              "vindicta",
+              "viscous",
+              "vyper",
+              "warden",
+              "wraith",
+              "yamato"
+            ]
+          },
+          "additionalProperties": {
+            "type": "integer",
+            "minimum": -1,
+            "maximum": 3
+          }
+        },
+        "notes": {
+          "type": "string",
+          "maxLength": 2000
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "preferences"
+      ]
+    }
+  },
+  "required": [
+    "type",
+    "schemaVersion",
+    "player"
+  ]
+}

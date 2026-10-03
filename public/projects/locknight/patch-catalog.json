@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "sourceUrl": "https://steamdb.info/app/1422450/patchnotes/",
+  "provenance": "User-supplied SteamDB table, 2026-10-03. Live synchronization not verified.",
+  "refreshedAt": "2026-10-03T19:42:12.443Z",
+  "patches": [
+    {
+      "id": "steamdb-25689475",
+      "buildId": "25689475",
+      "title": "No title",
+      "label": "No title · 25689475",
+      "effectiveAt": "2026-10-03T00:51:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25689475/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25687758",
+      "buildId": "25687758",
+      "title": "No title",
+      "label": "No title · 25687758",
+      "effectiveAt": "2026-10-02T22:36:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25687758/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25686905",
+      "buildId": "25686905",
+      "title": "No title",
+      "label": "No title · 25686905",
+      "effectiveAt": "2026-10-02T21:34:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25686905/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25686732",
+      "buildId": "25686732",
+      "title": "No title",
+      "label": "No title · 25686732",
+      "effectiveAt": "2026-10-02T21:23:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25686732/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25686410",
+      "buildId": "25686410",
+      "title": "Listen up, Crumbums! Your King is here.",
+      "label": "Listen up, Crumbums! Your King is here.",
+      "effectiveAt": "2026-10-02T21:01:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25686410/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25686246",
+      "buildId": "25686246",
+      "title": "No title",
+      "label": "No title · 25686246",
+      "effectiveAt": "2026-10-02T21:00:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25686246/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25664168",
+      "buildId": "25664168",
+      "title": "No title",
+      "label": "No title · 25664168",
+      "effectiveAt": "2026-10-01T22:41:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25664168/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25660886",
+      "buildId": "25660886",
+      "title": "No title",
+      "label": "No title · 25660886",
+      "effectiveAt": "2026-10-01T19:36:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25660886/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25658155",
+      "buildId": "25658155",
+      "title": "No title",
+      "label": "No title · 25658155",
+      "effectiveAt": "2026-10-01T16:57:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25658155/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25639407",
+      "buildId": "25639407",
+      "title": "No title",
+      "label": "No title · 25639407",
+      "effectiveAt": "2026-09-30T22:35:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25639407/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25627654",
+      "buildId": "25627654",
+      "title": "No title",
+      "label": "No title · 25627654",
+      "effectiveAt": "2026-09-30T12:33:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25627654/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25614556",
+      "buildId": "25614556",
+      "title": "No title",
+      "label": "No title · 25614556",
+      "effectiveAt": "2026-09-29T23:01:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25614556/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25612104",
+      "buildId": "25612104",
+      "title": "No title",
+      "label": "No title · 25612104",
+      "effectiveAt": "2026-09-29T20:28:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25612104/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25611908",
+      "buildId": "25611908",
+      "title": "City Never Sleeps",
+      "label": "City Never Sleeps",
+      "effectiveAt": "2026-09-29T20:26:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25611908/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25535087",
+      "buildId": "25535087",
+      "title": "No title",
+      "label": "No title · 25535087",
+      "effectiveAt": "2026-09-25T18:23:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25535087/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25379491",
+      "buildId": "25379491",
+      "title": "No title",
+      "label": "No title · 25379491",
+      "effectiveAt": "2026-09-18T16:27:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25379491/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25379260",
+      "buildId": "25379260",
+      "title": "No title",
+      "label": "No title · 25379260",
+      "effectiveAt": "2026-09-17T22:59:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25379260/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25376188",
+      "buildId": "25376188",
+      "title": "No title",
+      "label": "No title · 25376188",
+      "effectiveAt": "2026-09-17T19:43:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25376188/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25354466",
+      "buildId": "25354466",
+      "title": "Minor Update - 09-16-2026",
+      "label": "Minor Update - 09-16-2026",
+      "effectiveAt": "2026-09-16T20:17:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25354466/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25260093",
+      "buildId": "25260093",
+      "title": "No title",
+      "label": "No title · 25260093",
+      "effectiveAt": "2026-09-11T18:51:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25260093/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25258232",
+      "buildId": "25258232",
+      "title": "No title",
+      "label": "No title · 25258232",
+      "effectiveAt": "2026-09-11T17:35:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25258232/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25213504",
+      "buildId": "25213504",
+      "title": "No title",
+      "label": "No title · 25213504",
+      "effectiveAt": "2026-09-09T17:24:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25213504/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-25173285",
+      "buildId": "25173285",
+      "title": "No title",
+      "label": "No title · 25173285",
+      "effectiveAt": "2026-09-07T19:05:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/25173285/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    },
+    {
+      "id": "steamdb-24882156",
+      "buildId": "24882156",
+      "title": "Minor Update - 08-22-2026",
+      "label": "Minor Update - 08-22-2026",
+      "effectiveAt": "2026-08-22T21:41:00.000Z",
+      "sourceUrl": "https://steamdb.info/patchnotes/24882156/",
+      "refreshedAt": "2026-10-03T19:42:12.443Z"
+    }
+  ]
+}

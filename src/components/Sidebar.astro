@@ -1,0 +1,40 @@
+---
+import type { Page } from "../layouts/Portfolio.astro"
+import ThemeIcons from "./ThemeIcons.astro"
+
+interface Props {
+  page: Page
+}
+
+const { page } = Astro.props
+const links = [
+  { href: "/", page: "home", label: "home" },
+  { href: "/projects/", page: "projects", label: "projects" },
+  { href: "/blog/", page: "blog", label: "blog" },
+  { href: "/#about", page: "about", label: "about" },
+  { href: "/#contact", page: "contact", label: "contact" },
+]
+---
+
+<aside class="sidebar" id={page === "home" ? "sidebar" : undefined} aria-label="Sidebar">
+  <a href="/" class="sidebar-logo" aria-label="Natalie Johanek home">NJ</a>
+  <nav class="sidebar-links" aria-label="Primary">
+    {
+      links.map((link) => (
+        <a
+          href={link.href}
+          class={link.page === page ? "sidebar-link active" : "sidebar-link"}
+          data-page={link.page}
+          aria-current={link.page === page ? "page" : undefined}
+        >
+          {link.label}
+        </a>
+      ))
+    }
+  </nav>
+  <div class="sidebar-bottom">
+    <button class="icon-btn" onclick="toggleTheme()" aria-label="Toggle theme">
+      <ThemeIcons size={16} />
+    </button>
+  </div>
+</aside>

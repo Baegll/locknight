@@ -1,0 +1,23 @@
+{
+  "name": "locknight",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev --host 127.0.0.1 --port 4321",
+    "build": "node scripts/astro.mjs build",
+    "preview": "node scripts/astro.mjs preview --host 127.0.0.1 --port 4321",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/browser-test.mjs",
+    "report": "node scripts/report.mjs",
+    "sync:patches": "node scripts/sync-patches.mjs",
+    "integrate": "node scripts/integrate.mjs",
+    "prepare:empty": "node scripts/prepare-empty.mjs"
+  },
+  "dependencies": {
+    "astro": "^7.3.5"
+  },
+  "engines": {
+    "node": ">=24.19.0"
+  }
+}
